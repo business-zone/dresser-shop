@@ -21,6 +21,8 @@ services:
       DB_PASSWD: root
       DB_NAME: prestashop
       PS_DOMAIN: localhost:8080
+    volumes:
+      - ./src:/var/www/html
     ports:
       - 8080:80
 
