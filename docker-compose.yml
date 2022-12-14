@@ -21,6 +21,9 @@ services:
       DB_PASSWD: root
       DB_NAME: prestashop
       PS_DOMAIN: localhost:8080
+      PS_FOLDER_ADMIN: admin9f46
+      ADMIN_MAIL: prestadev@prestashop.com
+      ADMIN_PASSWD: prestashop_dev
     volumes:
       - ./src:/var/www/html
     ports:
