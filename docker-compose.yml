@@ -24,6 +24,8 @@ services:
       PS_FOLDER_ADMIN: admin9f46
       ADMIN_MAIL: prestadev@prestashop.com
       ADMIN_PASSWD: prestashop_dev
+      PS_LANGUAGE: pl
+      PS_COUNTRY: PL
     volumes:
       - ./src:/var/www/html
     ports:
