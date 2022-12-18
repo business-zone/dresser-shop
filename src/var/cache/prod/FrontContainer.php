@@ -3013,7 +3013,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'mailer_host' => '127.0.0.1',
             'mailer_user' => NULL,
             'mailer_password' => NULL,
-            'secret' => 'XbBo31xbNeY4GFLZ1zSHm4MreJwjJFvNdg3e1f4yUFhdAnAnITOaik2YIDbkV86K',
+            'secret' => 'VPDT0A29xAIt6d1VHsGLOd4kI74bkqKNaZs2npAGYq8zYt4D9x8XPwm646qIqcsA',
             'ps_caching' => 'CacheMemcache',
             'ps_cache_enable' => false,
             'ps_creation_date' => '2022-12-18',
@@ -3021,7 +3021,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'use_debug_toolbar' => true,
             'cookie_key' => 'vMJUTfgDtDCPpoYYxbJCzIS3LGadtPy1327c6DbDLohUuE7LCtonyIkPISHHWWxC',
             'cookie_iv' => 'Ktg4epnFcuBtsj3UYcUENeCtOZgSfKVw',
-            'new_cookie_key' => 'def00000aa650751d7cb5c7cc9ec2e633984c527365e4220e104773470a14ef62ec505ab0a6ab645e40e3bdd39c6a37b2259e85bfc7788b60558d5dbe98e7a01064ff45c',
+            'new_cookie_key' => 'def00000aa68bf27bc62d29c53d8553f88a078f96794e9088296a9999dc1e6b159a290aa5fa93471f082678b8d996a88641043d4540f935c534fe55b80947ed5e16438d9',
             'cache.driver' => 'array',
             'kernel.bundles' => [
 

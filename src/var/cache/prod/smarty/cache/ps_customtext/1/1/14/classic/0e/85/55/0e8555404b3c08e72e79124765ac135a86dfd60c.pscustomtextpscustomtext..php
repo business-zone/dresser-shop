@@ -1,24 +1,24 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-18 18:50:28
+/* Smarty version 3.1.43, created on 2022-12-18 20:45:34
   from 'module:pscustomtextpscustomtext.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_639f52e4b91e65_09523595',
+  'unifunc' => 'content_639f6dde904eb1_31256169',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8654b2ba7ef103395c5eb0a4a12ed7463d291bc8' => 
     array (
       0 => 'module:pscustomtextpscustomtext.',
-      1 => 1671384996,
+      1 => 1671391623,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_639f52e4b91e65_09523595 (Smarty_Internal_Template $_smarty_tpl) {
+function content_639f6dde904eb1_31256169 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="custom-text">
   <h2>Custom Text Block</h2>

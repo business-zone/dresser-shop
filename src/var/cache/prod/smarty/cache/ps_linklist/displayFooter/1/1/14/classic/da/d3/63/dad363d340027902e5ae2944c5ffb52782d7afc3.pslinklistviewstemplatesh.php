@@ -1,38 +1,38 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-18 18:50:29
+/* Smarty version 3.1.43, created on 2022-12-18 20:45:35
   from 'module:pslinklistviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_639f52e5cf5ca1_68739350',
+  'unifunc' => 'content_639f6ddf8f8144_15149408',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '906548e89c8c6025457ddaeffb1980a0c743b872' => 
     array (
       0 => 'module:pslinklistviewstemplatesh',
-      1 => 1671384998,
+      1 => 1671391625,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_639f52e5cf5ca1_68739350 (Smarty_Internal_Template $_smarty_tpl) {
+function content_639f6ddf8f8144_15149408 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
     'compiled_filepath' => '/var/www/html/var/cache/prod/smarty/compile/classiclayouts_layout_full_width_tpl/d2/2d/85/d22d851f6d7c12eb35c1c34c8e84baa801a8cea2_2.file.helpers.tpl.php',
     'uid' => 'd22d851f6d7c12eb35c1c34c8e84baa801a8cea2',
-    'call_name' => 'smarty_template_function_renderLogo_1433925053639f52e4ee7859_68989074',
+    'call_name' => 'smarty_template_function_renderLogo_2118197274639f6ddebc7f19_84676389',
   ),
 ));
 ?><div class="col-md-6 links">
   <div class="row">
       <div class="col-md-6 wrapper">
-      <p class="h3 hidden-sm-down">Products</p>
+      <p class="h3 hidden-sm-down">Produkty</p>
       <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_1" data-toggle="collapse">
-        <span class="h3">Products</span>
+        <span class="h3">Produkty</span>
         <span class="float-xs-right">
           <span class="navbar-toggler collapse-icons">
             <i class="material-icons add">&#xE313;</i>
@@ -74,9 +74,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
               </ul>
     </div>
       <div class="col-md-6 wrapper">
-      <p class="h3 hidden-sm-down">Our company</p>
+      <p class="h3 hidden-sm-down">Nasza firma</p>
       <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_2" data-toggle="collapse">
-        <span class="h3">Our company</span>
+        <span class="h3">Nasza firma</span>
         <span class="float-xs-right">
           <span class="navbar-toggler collapse-icons">
             <i class="material-icons add">&#xE313;</i>

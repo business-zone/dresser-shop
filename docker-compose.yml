@@ -14,7 +14,7 @@ services:
   prestashop:
     image: prestashop/prestashop:1.7
     environment:
-      PS_INSTALL_AUTO: 1
+      PS_INSTALL_AUTO: 0
       PS_ERASE_DB: 0
       DB_SERVER: mysql
       DB_USER: root
