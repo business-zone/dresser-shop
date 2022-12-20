@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Czas generowania: 20 Gru 2022, 21:49
+-- Czas generowania: 20 Gru 2022, 22:27
 -- Wersja serwera: 8.0.31
 -- Wersja PHP: 8.0.19
 
@@ -913,7 +913,6 @@ CREATE TABLE `ps_address` (
 INSERT INTO `ps_address` (`id_address`, `id_country`, `id_state`, `id_customer`, `id_manufacturer`, `id_supplier`, `id_warehouse`, `alias`, `company`, `lastname`, `firstname`, `address1`, `address2`, `postcode`, `city`, `other`, `phone`, `phone_mobile`, `vat_number`, `dni`, `date_add`, `date_upd`, `active`, `deleted`) VALUES
 (2, 8, 0, 2, 0, 0, 0, 'Mon adresse', 'My Company', 'DOE', 'John', '16, Main street', '2nd floor', '75002', 'Paris ', '', '0102030405', '', '', '', '2022-12-18 20:45:05', '2022-12-18 20:45:05', 1, 0),
 (3, 21, 35, 0, 0, 1, 0, 'supplier', 'Fashion', 'supplier', 'supplier', '767 Fifth Ave.', '', '10153', 'New York', '', '(212) 336-1440', '', '', '', '2022-12-18 20:45:05', '2022-12-18 20:45:05', 1, 0),
-(4, 21, 35, 0, 1, 0, 0, 'manufacturer', 'Fashion', 'manufacturer', 'manufacturer', '767 Fifth Ave.', '', '10154', 'New York', '', '(212) 336-1666', '', '', '', '2022-12-18 20:45:05', '2022-12-18 20:45:05', 1, 0),
 (5, 21, 12, 2, 0, 0, 0, 'My address', 'My Company', 'DOE', 'John', '16, Main street', '2nd floor', '33133', 'Miami', '', '0102030405', '', '', '', '2022-12-18 20:45:05', '2022-12-18 20:45:05', 1, 0),
 (6, 8, 0, 0, 0, 2, 0, 'accessories_supplier', 'Accessories and Co', 'accessories', 'accessories', '42 Avenue Maréchal Soult', '', '64990', 'Bayonne', '', '0102030405', '', '', '', '2022-12-18 20:45:05', '2022-12-18 20:45:05', 1, 0),
 (7, 14, 0, 3, 0, 0, 0, 'Mój adres', '', 'reg', 'gder', 'sf', '', '80-555', 'gadf', '', '', '', '', '', '2022-12-20 15:26:51', '2022-12-20 15:26:51', 1, 0);
@@ -1199,7 +1198,7 @@ CREATE TABLE `ps_admin_filter` (
 INSERT INTO `ps_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`, `filter`, `filter_id`) VALUES
 (1, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_cms_category_parent\":1}}', 'cms_page_category'),
 (2, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_cms_category_parent\":1}}', 'cms_page'),
-(3, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_category_parent\":2}}', 'category'),
+(3, 1, 1, '', '', '{\"orderBy\":\"position\",\"sortOrder\":\"asc\",\"limit\":50,\"filters\":{\"id_category_parent\":\"2\"}}', 'category'),
 (4, 1, 1, 'ProductController', 'catalogAction', '{\"filter_category\":\"\",\"filter_column_id_product\":\"\",\"filter_column_name\":\"\",\"filter_column_reference\":\"\",\"filter_column_name_category\":\"\",\"filter_column_price\":\"\",\"filter_column_sav_quantity\":\"\",\"filter_column_active\":\"\",\"last_offset\":\"0\",\"last_limit\":\"20\",\"last_orderBy\":\"id_product\",\"last_sortOrder\":\"desc\"}', ''),
 (5, 1, 1, '', '', '{\"limit\":20,\"orderBy\":\"name\",\"sortOrder\":\"asc\",\"filters\":[]}', 'empty_category'),
 (6, 1, 1, '', '', '{\"limit\":20,\"orderBy\":\"name\",\"sortOrder\":\"asc\",\"filters\":[]}', 'no_qty_product_with_combination'),
@@ -1673,6 +1672,10 @@ INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
 (800, 'ROLE_MOD_MODULE_PS_METRICS_DELETE'),
 (798, 'ROLE_MOD_MODULE_PS_METRICS_READ'),
 (799, 'ROLE_MOD_MODULE_PS_METRICS_UPDATE'),
+(853, 'ROLE_MOD_MODULE_PS_NEWPRODUCTS_CREATE'),
+(856, 'ROLE_MOD_MODULE_PS_NEWPRODUCTS_DELETE'),
+(854, 'ROLE_MOD_MODULE_PS_NEWPRODUCTS_READ'),
+(855, 'ROLE_MOD_MODULE_PS_NEWPRODUCTS_UPDATE'),
 (621, 'ROLE_MOD_MODULE_PS_SEARCHBAR_CREATE'),
 (624, 'ROLE_MOD_MODULE_PS_SEARCHBAR_DELETE'),
 (622, 'ROLE_MOD_MODULE_PS_SEARCHBAR_READ'),
@@ -2860,7 +2863,7 @@ CREATE TABLE `ps_category` (
 
 INSERT INTO `ps_category` (`id_category`, `id_parent`, `id_shop_default`, `level_depth`, `nleft`, `nright`, `active`, `date_add`, `date_upd`, `position`, `is_root_category`) VALUES
 (1, 0, 1, 0, 1, 26, 1, '2022-12-18 20:42:38', '2022-12-18 20:42:38', 0, 0),
-(2, 1, 1, 1, 2, 25, 1, '2022-12-18 20:42:38', '2022-12-18 20:42:38', 0, 1),
+(2, 1, 1, 1, 2, 25, 1, '2022-12-18 20:42:38', '2022-12-20 22:57:08', 0, 1),
 (17, 2, 1, 2, 3, 4, 1, '2022-12-20 13:13:30', '2022-12-20 13:13:30', 0, 0),
 (18, 2, 1, 2, 5, 6, 1, '2022-12-20 13:13:34', '2022-12-20 13:13:34', 1, 0),
 (19, 2, 1, 2, 7, 8, 1, '2022-12-20 13:13:47', '2022-12-20 13:13:47', 2, 0),
@@ -2889,7 +2892,6 @@ CREATE TABLE `ps_category_group` (
 --
 
 INSERT INTO `ps_category_group` (`id_category`, `id_group`) VALUES
-(2, 0),
 (2, 1),
 (2, 2),
 (2, 3),
@@ -2951,7 +2953,7 @@ CREATE TABLE `ps_category_lang` (
 
 INSERT INTO `ps_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
 (1, 1, 1, 'Baza', '', 'baza', '', '', ''),
-(2, 1, 1, 'Strona główna', '', 'strona-glowna', '', '', ''),
+(2, 1, 1, 'Kategorie', '', 'kategorie', '', '', ''),
 (17, 1, 1, 'Styl rustykalny', '', 'styl-rustykalny', '', '', ''),
 (18, 1, 1, 'Styl nowoczesny', '', 'styl-nowoczesny', '', '', ''),
 (19, 1, 1, 'Styl industrialny', '', 'styl-industrialny', '', '', ''),
@@ -3876,7 +3878,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (7, NULL, NULL, 'PS_COUNTRY_DEFAULT', '14', '0000-00-00 00:00:00', '2022-12-18 20:42:39'),
 (8, NULL, NULL, 'PS_REWRITING_SETTINGS', '1', '0000-00-00 00:00:00', '2022-12-20 22:31:43'),
 (9, NULL, NULL, 'PS_ORDER_OUT_OF_STOCK', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(10, NULL, NULL, 'PS_LAST_QTIES', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(10, NULL, NULL, 'PS_LAST_QTIES', '5', '0000-00-00 00:00:00', '2022-12-20 23:18:21'),
 (11, NULL, NULL, 'PS_CONDITIONS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (12, NULL, NULL, 'PS_RECYCLABLE_PACK', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (13, NULL, NULL, 'PS_GIFT_WRAPPING', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -3894,7 +3896,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (25, NULL, NULL, 'PS_SHIPPING_METHOD', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (26, NULL, NULL, 'PS_TAX', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (27, NULL, NULL, 'PS_SHOP_ENABLE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(28, NULL, NULL, 'PS_NB_DAYS_NEW_PRODUCT', '20', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(28, NULL, NULL, 'PS_NB_DAYS_NEW_PRODUCT', '10', '0000-00-00 00:00:00', '2022-12-20 23:18:02'),
 (29, NULL, NULL, 'PS_SSL_ENABLED', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (30, NULL, NULL, 'PS_WEIGHT_UNIT', 'kg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (31, NULL, NULL, 'PS_BLOCK_CART_AJAX', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -3982,7 +3984,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (113, NULL, NULL, 'PS_COOKIE_SAMESITE', 'Lax', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (114, NULL, NULL, 'PS_USE_ECOTAX', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (115, NULL, NULL, 'PS_CANONICAL_REDIRECT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(116, NULL, NULL, 'PS_IMG_UPDATE_TIME', '1671494411', '0000-00-00 00:00:00', '2022-12-20 01:00:11'),
+(116, NULL, NULL, 'PS_IMG_UPDATE_TIME', '1671573090', '0000-00-00 00:00:00', '2022-12-20 22:51:30'),
 (117, NULL, NULL, 'PS_BACKUP_DROP_TABLE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (118, NULL, NULL, 'PS_OS_CHEQUE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (119, NULL, NULL, 'PS_OS_PAYMENT', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4057,7 +4059,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (188, NULL, NULL, 'MANUFACTURER_DISPLAY_FORM', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (189, NULL, NULL, 'MANUFACTURER_DISPLAY_TEXT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (190, NULL, NULL, 'MANUFACTURER_DISPLAY_TEXT_NB', '5', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(191, NULL, NULL, 'NEW_PRODUCTS_NBR', '5', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(191, NULL, NULL, 'NEW_PRODUCTS_NBR', '8', '0000-00-00 00:00:00', '2022-12-20 23:02:46'),
 (192, NULL, NULL, 'PS_TOKEN_ENABLE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (193, NULL, NULL, 'PS_STATS_RENDER', 'graphnvd3', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (194, NULL, NULL, 'PS_STATS_OLD_CONNECT_AUTO_CLEAN', 'never', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4077,7 +4079,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (208, NULL, NULL, 'BLOCKADVERT_LINK', 'https://www.prestashop.com', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (209, NULL, NULL, 'BLOCKSTORE_IMG', 'store.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (210, NULL, NULL, 'BLOCKADVERT_IMG_EXT', 'jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(211, NULL, NULL, 'MOD_BLOCKTOPMENU_ITEMS', 'CAT3,CAT6,CAT9', '0000-00-00 00:00:00', '2022-12-18 20:42:49'),
+(211, NULL, NULL, 'MOD_BLOCKTOPMENU_ITEMS', 'CAT2,CMS4,CMS1,CMS3', '0000-00-00 00:00:00', '2022-12-20 23:09:39'),
 (212, NULL, NULL, 'MOD_BLOCKTOPMENU_SEARCH', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (213, NULL, NULL, 'BLOCKSOCIAL_FACEBOOK', NULL, '0000-00-00 00:00:00', '2022-12-18 20:42:49'),
 (214, NULL, NULL, 'BLOCKSOCIAL_TWITTER', NULL, '0000-00-00 00:00:00', '2022-12-18 20:42:49'),
@@ -4106,7 +4108,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (237, NULL, NULL, 'PS_SHOP_EMAIL', 'dresser-shop@gmail.com', '0000-00-00 00:00:00', '2022-12-20 15:19:30'),
 (238, NULL, NULL, 'PS_MAIL_METHOD', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (239, NULL, NULL, 'PS_SHOP_ACTIVITY', 'Animaux', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(240, NULL, NULL, 'PS_LOGO', 'logo-1671494411.jpg', '0000-00-00 00:00:00', '2022-12-20 01:00:11'),
+(240, NULL, NULL, 'PS_LOGO', 'logo-1671573090.jpg', '0000-00-00 00:00:00', '2022-12-20 22:51:30'),
 (241, NULL, NULL, 'PS_FAVICON', 'favicon.ico', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (242, NULL, NULL, 'PS_STORES_ICON', 'logo_stores.png', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (243, NULL, NULL, 'PS_ROOT_CATEGORY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4179,16 +4181,16 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (308, NULL, NULL, 'GSITEMAP_PRIORITY_CATEGORY', '0.8', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
 (309, NULL, NULL, 'GSITEMAP_PRIORITY_CMS', '0.7', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
 (310, NULL, NULL, 'GSITEMAP_FREQUENCY', 'weekly', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
-(311, NULL, NULL, 'PRODUCT_COMMENTS_MINIMAL_TIME', '30', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
+(311, NULL, NULL, 'PRODUCT_COMMENTS_MINIMAL_TIME', '60', '2022-12-18 20:42:46', '2022-12-20 23:23:39'),
 (312, NULL, NULL, 'PRODUCT_COMMENTS_ALLOW_GUESTS', '0', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
 (313, NULL, NULL, 'PRODUCT_COMMENTS_USEFULNESS', '1', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
-(314, NULL, NULL, 'PRODUCT_COMMENTS_COMMENTS_PER_PAGE', '5', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
-(315, NULL, NULL, 'PRODUCT_COMMENTS_ANONYMISATION', '0', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
+(314, NULL, NULL, 'PRODUCT_COMMENTS_COMMENTS_PER_PAGE', '6', '2022-12-18 20:42:46', '2022-12-20 23:23:39'),
+(315, NULL, NULL, 'PRODUCT_COMMENTS_ANONYMISATION', '1', '2022-12-18 20:42:46', '2022-12-20 23:23:39'),
 (316, NULL, NULL, 'PRODUCT_COMMENTS_MODERATE', '1', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
 (317, NULL, NULL, 'BANNER_IMG', NULL, '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
 (318, NULL, NULL, 'BANNER_LINK', NULL, '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
 (319, NULL, NULL, 'BANNER_DESC', NULL, '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
-(320, NULL, NULL, 'BLOCK_CATEG_ROOT_CATEGORY', '1', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
+(320, NULL, NULL, 'BLOCK_CATEG_ROOT_CATEGORY', '2', '2022-12-18 20:42:46', '2022-12-20 23:13:05'),
 (321, NULL, NULL, 'CONF_PS_CHECKPAYMENT_FIXED', '0.2', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
 (322, NULL, NULL, 'CONF_PS_CHECKPAYMENT_VAR', '2', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
 (323, NULL, NULL, 'CONF_PS_CHECKPAYMENT_FIXED_FOREIGN', '0.2', '2022-12-18 20:42:46', '2022-12-18 20:42:46'),
@@ -4311,8 +4313,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (449, NULL, NULL, 'PS_SAV_IMAP_OPT_NOVALIDATE-CERT', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
 (450, NULL, NULL, 'PS_SAV_IMAP_OPT_TLS', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
 (451, NULL, NULL, 'PS_SAV_IMAP_OPT_NOTLS', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
-(452, NULL, NULL, 'PS_CCCJS_VERSION', '3', '2022-12-20 18:55:08', '2022-12-20 22:31:43'),
-(453, NULL, NULL, 'PS_CCCCSS_VERSION', '3', '2022-12-20 18:55:08', '2022-12-20 22:31:43'),
+(452, NULL, NULL, 'PS_CCCJS_VERSION', '6', '2022-12-20 18:55:08', '2022-12-20 23:19:25'),
+(453, NULL, NULL, 'PS_CCCCSS_VERSION', '6', '2022-12-20 18:55:08', '2022-12-20 23:19:25'),
 (454, NULL, NULL, 'BANK_WIRE_DETAILS', 'IBAN PL11109024021318789834756795', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
 (455, NULL, NULL, 'BANK_WIRE_OWNER', 'Dresser Shop Sp Z.o.o', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
 (456, NULL, NULL, 'BANK_WIRE_ADDRESS', 'Gdańsk 80-326, ul. Kołobrzeska', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
@@ -4321,7 +4323,13 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (459, NULL, NULL, 'CONF_PS_CASHONDELIVERY_FIXED', '0.2', '2022-12-20 22:48:36', '2022-12-20 22:48:36'),
 (460, NULL, NULL, 'CONF_PS_CASHONDELIVERY_VAR', '2', '2022-12-20 22:48:36', '2022-12-20 22:48:36'),
 (461, NULL, NULL, 'CONF_PS_CASHONDELIVERY_FIXED_FOREIGN', '0.2', '2022-12-20 22:48:36', '2022-12-20 22:48:36'),
-(462, NULL, NULL, 'CONF_PS_CASHONDELIVERY_VAR_FOREIGN', '2', '2022-12-20 22:48:36', '2022-12-20 22:48:36');
+(462, NULL, NULL, 'CONF_PS_CASHONDELIVERY_VAR_FOREIGN', '2', '2022-12-20 22:48:36', '2022-12-20 22:48:36'),
+(463, NULL, NULL, 'BLOCK_CATEG_SORT_WAY', '0', '2022-12-20 23:13:05', '2022-12-20 23:13:05'),
+(464, NULL, NULL, 'BLOCK_CATEG_SORT', '0', '2022-12-20 23:13:05', '2022-12-20 23:13:05'),
+(465, NULL, NULL, 'PS_QTY_DISCOUNT_ON_COMBINATION', '0', '2022-12-20 23:18:02', '2022-12-20 23:18:02'),
+(466, NULL, NULL, 'PS_FORCE_FRIENDLY_PRODUCT', '0', '2022-12-20 23:18:02', '2022-12-20 23:18:02'),
+(467, NULL, NULL, 'PS_PRODUCT_ACTIVATION_DEFAULT', '0', '2022-12-20 23:18:02', '2022-12-20 23:18:02'),
+(468, NULL, NULL, 'PS_DISPLAY_DISCOUNT_PRICE', '0', '2022-12-20 23:18:21', '2022-12-20 23:18:21');
 
 -- --------------------------------------------------------
 
@@ -4459,7 +4467,7 @@ INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `da
 (295, 1, 'Moja lista życzeń', '2022-12-18 20:42:44'),
 (296, 1, 'Utwórz nową listę', '2022-12-18 20:42:44'),
 (317, 1, '74ca18f6e255f3402ee9eae5402ceee1.png', '2022-12-20 13:20:49'),
-(318, 1, 'http://localhost:8080/promocje', '2022-12-19 23:56:47'),
+(318, 1, 'http://localhost/promocje', '2022-12-20 22:07:05'),
 (319, 1, 'Weekendowe obniżki!! Koniecznie sprawdź.', '2022-12-19 23:18:38'),
 (328, 1, 'Udostępnione przez Ciebie dane osobowe są wykorzystywane w celu udzielania odpowiedzi na zapytania, przetwarzania zamówień lub umożliwiania dostępu do konkretnych informacji. Przysługuje Ci prawo do modyfikowania oraz usuwania wszelkich danych osobowych zamieszczonych na stronie „Moje konto”.', '2022-12-18 20:42:47'),
 (330, 1, 'Możesz zrezygnować w każdej chwili. W tym celu należy odnaleźć szczegóły w naszej informacji prawnej.', '2022-12-18 20:42:47'),
@@ -4494,7 +4502,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (3, 1, 1, 4, 2, 2886991873, '2022-12-20 14:30:28', ''),
 (4, 1, 1, 4, 2, 2886991873, '2022-12-20 15:08:17', ''),
 (5, 1, 1, 4, 1, 2887385089, '2022-12-20 21:18:43', ''),
-(6, 1, 1, 4, 2, 2887385089, '2022-12-20 22:22:06', '');
+(6, 1, 1, 4, 2, 2887385089, '2022-12-20 22:22:06', ''),
+(7, 1, 1, 4, 1, 2887385089, '2022-12-20 23:02:18', '');
 
 -- --------------------------------------------------------
 
@@ -7308,6 +7317,8 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (61, 1, 690, 2),
 (62, 1, 750, 2),
 (64, 1, 14, 2),
+(66, 1, 19, 2),
+(66, 1, 20, 2),
 (4, 1, 682, 3),
 (5, 1, 687, 3),
 (6, 1, 693, 3),
@@ -7330,6 +7341,7 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (61, 1, 694, 3),
 (62, 1, 46, 3),
 (64, 1, 82, 3),
+(66, 1, 28, 3),
 (1, 1, 41, 4),
 (5, 1, 682, 4),
 (6, 1, 687, 4),
@@ -7348,6 +7360,7 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (61, 1, 16, 5),
 (62, 1, 71, 5),
 (63, 1, 683, 5),
+(66, 1, 15, 5),
 (43, 1, 55, 6),
 (54, 1, 682, 6),
 (62, 1, 16, 6),
@@ -17001,6 +17014,14 @@ CREATE TABLE `ps_layered_filter_block` (
   `data` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
+--
+-- Zrzut danych tabeli `ps_layered_filter_block`
+--
+
+INSERT INTO `ps_layered_filter_block` (`hash`, `data`) VALUES
+('6d834f860d1ef3ee78343e8b93a24fc4', 'a:1:{s:7:\"filters\";a:0:{}}'),
+('8ded5775b85bba05abaab4a8ba0b2e66', 'a:1:{s:7:\"filters\";a:6:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Kategorie\";s:6:\"values\";a:11:{i:17;a:2:{s:4:\"name\";s:15:\"Styl rustykalny\";s:3:\"nbr\";s:2:\"53\";}i:18;a:2:{s:4:\"name\";s:15:\"Styl nowoczesny\";s:3:\"nbr\";s:3:\"367\";}i:19;a:2:{s:4:\"name\";s:17:\"Styl industrialny\";s:3:\"nbr\";s:2:\"34\";}i:20;a:2:{s:4:\"name\";s:12:\"Styl loftowy\";s:3:\"nbr\";s:2:\"35\";}i:21;a:2:{s:4:\"name\";s:19:\"Styl modernistyczny\";s:3:\"nbr\";s:2:\"10\";}i:22;a:2:{s:4:\"name\";s:20:\"Styl minimalistyczny\";s:3:\"nbr\";s:2:\"34\";}i:23;a:2:{s:4:\"name\";s:14:\"Styl klasyczny\";s:3:\"nbr\";s:2:\"12\";}i:24;a:2:{s:4:\"name\";s:17:\"Styl skandynawski\";s:3:\"nbr\";s:2:\"37\";}i:25;a:2:{s:4:\"name\";s:12:\"Styl glamour\";s:3:\"nbr\";s:2:\"23\";}i:26;a:2:{s:4:\"name\";s:16:\"Styl romantyczny\";s:3:\"nbr\";s:1:\"4\";}i:27;a:2:{s:4:\"name\";s:17:\"Styl prowansalski\";s:3:\"nbr\";s:1:\"5\";}}s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";s:1:\"0\";}i:1;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:13:\"Dostępność\";s:6:\"values\";a:3:{i:0;a:2:{s:4:\"name\";s:12:\"Niedostępne\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:9:\"Dostępny\";s:3:\"nbr\";i:614;}i:2;a:2:{s:4:\"name\";s:11:\"W magazynie\";s:3:\"nbr\";i:614;}}s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";s:1:\"0\";}i:2;a:0:{}i:3;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Stan:\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:4:\"Nowy\";s:3:\"nbr\";s:3:\"614\";}s:4:\"used\";a:2:{s:4:\"name\";s:8:\"Używane\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:9:\"Odnowione\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";s:1:\"0\";}i:4;a:12:{s:9:\"type_lite\";s:6:\"weight\";s:4:\"type\";s:6:\"weight\";s:6:\"id_key\";i:0;s:4:\"name\";s:4:\"Waga\";s:3:\"max\";d:128;s:3:\"min\";d:5.5;s:4:\"unit\";s:2:\"kg\";s:14:\"specifications\";N;s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";i:3;s:5:\"value\";N;s:3:\"nbr\";i:614;}i:5;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:4:\"Cena\";s:3:\"max\";d:5653;s:3:\"min\";d:107;s:4:\"unit\";s:3:\"zł\";s:14:\"specifications\";a:11:{s:6:\"symbol\";a:11:{i:0;s:1:\",\";i:1;s:2:\" \";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"PLN\";s:14:\"currencySymbol\";s:3:\"zł\";s:13:\"numberSymbols\";a:11:{i:0;s:1:\",\";i:1;s:2:\" \";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:15:\"positivePattern\";s:12:\"#,##0.00 ¤\";s:15:\"negativePattern\";s:13:\"-#,##0.00 ¤\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";i:3;s:3:\"nbr\";i:614;s:5:\"value\";N;}}}');
+
 -- --------------------------------------------------------
 
 --
@@ -18473,14 +18494,6 @@ CREATE TABLE `ps_manufacturer` (
   `active` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Zrzut danych tabeli `ps_manufacturer`
---
-
-INSERT INTO `ps_manufacturer` (`id_manufacturer`, `name`, `date_add`, `date_upd`, `active`) VALUES
-(1, 'Studio Design', '2022-12-18 20:45:05', '2022-12-18 20:45:05', 1),
-(2, 'Graphic Corner', '2022-12-18 20:45:05', '2022-12-18 20:45:05', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -18497,14 +18510,6 @@ CREATE TABLE `ps_manufacturer_lang` (
   `meta_description` varchar(512) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Zrzut danych tabeli `ps_manufacturer_lang`
---
-
-INSERT INTO `ps_manufacturer_lang` (`id_manufacturer`, `id_lang`, `description`, `short_description`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
-(1, 1, '<p>Studio Design offers a range of items from ready-to-wear collections to contemporary objects. The brand has been presenting new ideas and trends since its creation in 2012.</p>', '', '', '', ''),
-(2, 1, '<p>Since 2010, Graphic Corner offers a large choice of quality posters, available on paper and many other formats. </p>', '', '', '', '');
-
 -- --------------------------------------------------------
 
 --
@@ -18515,14 +18520,6 @@ CREATE TABLE `ps_manufacturer_shop` (
   `id_manufacturer` int UNSIGNED NOT NULL,
   `id_shop` int UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Zrzut danych tabeli `ps_manufacturer_shop`
---
-
-INSERT INTO `ps_manufacturer_shop` (`id_manufacturer`, `id_shop`) VALUES
-(1, 1),
-(2, 1);
 
 -- --------------------------------------------------------
 
@@ -18761,7 +18758,8 @@ INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
 (62, 'psxmarketingwithgoogle', 1, '1.33.0'),
 (63, 'blockreassurance', 1, '5.1.0'),
 (64, 'ps_facetedsearch', 1, '3.8.0'),
-(65, 'ps_cashondelivery', 1, '2.0.1');
+(65, 'ps_cashondelivery', 1, '2.0.1'),
+(66, 'ps_newproducts', 1, '1.0.1');
 
 -- --------------------------------------------------------
 
@@ -19034,7 +19032,11 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_authorization_role`) VALUES
 (1, 849),
 (1, 850),
 (1, 851),
-(1, 852);
+(1, 852),
+(1, 853),
+(1, 854),
+(1, 855),
+(1, 856);
 
 -- --------------------------------------------------------
 
@@ -19517,7 +19519,10 @@ INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 (64, 1, 3),
 (65, 1, 1),
 (65, 1, 2),
-(65, 1, 3);
+(65, 1, 3),
+(66, 1, 1),
+(66, 1, 2),
+(66, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -19596,7 +19601,6 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (21, 1, 7),
 (22, 1, 7),
 (24, 1, 7),
-(25, 1, 7),
 (26, 1, 3),
 (27, 1, 7),
 (28, 1, 7),
@@ -19636,7 +19640,8 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (62, 1, 7),
 (63, 1, 7),
 (64, 1, 7),
-(65, 1, 7);
+(65, 1, 7),
+(66, 1, 7);
 
 -- --------------------------------------------------------
 
@@ -28917,7 +28922,7 @@ ALTER TABLE `ps_attribute_impact`
 -- AUTO_INCREMENT dla tabeli `ps_authorization_role`
 --
 ALTER TABLE `ps_authorization_role`
-  MODIFY `id_authorization_role` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=853;
+  MODIFY `id_authorization_role` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=857;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_badge`
@@ -29001,7 +29006,7 @@ ALTER TABLE `ps_condition`
 -- AUTO_INCREMENT dla tabeli `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=463;
+  MODIFY `id_configuration` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=469;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_configuration_kpi`
@@ -29013,7 +29018,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT dla tabeli `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_connections_source`
@@ -29277,7 +29282,7 @@ ALTER TABLE `ps_meta`
 -- AUTO_INCREMENT dla tabeli `ps_module`
 --
 ALTER TABLE `ps_module`
-  MODIFY `id_module` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `id_module` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_module_history`
