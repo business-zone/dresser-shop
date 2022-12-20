@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-18 20:45:35
+/* Smarty version 3.1.43, created on 2022-12-20 01:05:12
   from 'module:pslinklistviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_639f6ddf8f8144_15149408',
+  'unifunc' => 'content_63a0fc38217a43_41677252',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_639f6ddf8f8144_15149408 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63a0fc38217a43_41677252 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
@@ -89,50 +89,50 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-cms-page-1-2"
                 class="cms-page-link"
-                href="http://localhost:8080/content/1-delivery"
-                title="Our terms and conditions of delivery"
+                href="http://localhost:8080/content/1-warunki-dostawy"
+                title="Nasze warunki doręczania"
                             >
-              Delivery
+              Warunki dostawy
             </a>
           </li>
                   <li>
             <a
                 id="link-cms-page-2-2"
                 class="cms-page-link"
-                href="http://localhost:8080/content/2-legal-notice"
-                title="Legal notice"
+                href="http://localhost:8080/content/2-nota-prawna"
+                title="Nota prawna"
                             >
-              Legal Notice
+              Nota prawna
             </a>
           </li>
                   <li>
             <a
                 id="link-cms-page-3-2"
                 class="cms-page-link"
-                href="http://localhost:8080/content/3-terms-and-conditions-of-use"
-                title="Our terms and conditions of use"
+                href="http://localhost:8080/content/3-warunki-korzystania"
+                title="Nasze warunki korzystania"
                             >
-              Terms and conditions of use
+              Warunki korzystania
             </a>
           </li>
                   <li>
             <a
                 id="link-cms-page-4-2"
                 class="cms-page-link"
-                href="http://localhost:8080/content/4-about-us"
-                title="Learn more about us"
+                href="http://localhost:8080/content/4-o-nas"
+                title="Poznaj nas"
                             >
-              About us
+              O nas
             </a>
           </li>
                   <li>
             <a
                 id="link-cms-page-5-2"
                 class="cms-page-link"
-                href="http://localhost:8080/content/5-secure-payment"
-                title="Our secure payment mean"
+                href="http://localhost:8080/content/5-bezpieczna-platnosc"
+                title="Nasze bezpieczne metody płatności"
                             >
-              Secure payment
+              Bezpieczna płatność
             </a>
           </li>
                   <li>
