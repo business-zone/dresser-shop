@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* @PrestaShop/Admin/Security/compromised.html.twig */
+/* PrestaShopBundle:Admin/Security:compromised.html.twig */
 class __TwigTemplate_e47f5a69f6554442bde1fe1fd3fe37c8fdbbce6572d45f2f97c394637bf76a23 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -33,7 +33,7 @@ class __TwigTemplate_e47f5a69f6554442bde1fe1fd3fe37c8fdbbce6572d45f2f97c394637bf
 
     protected function doDisplay(array $context, array $blocks = [])
     {
-        $this->parent = $this->loadTemplate("::base.html.twig", "@PrestaShop/Admin/Security/compromised.html.twig", 25);
+        $this->parent = $this->loadTemplate("::base.html.twig", "PrestaShopBundle:Admin/Security:compromised.html.twig", 25);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -105,7 +105,7 @@ class __TwigTemplate_e47f5a69f6554442bde1fe1fd3fe37c8fdbbce6572d45f2f97c394637bf
 
     public function getTemplateName()
     {
-        return "@PrestaShop/Admin/Security/compromised.html.twig";
+        return "PrestaShopBundle:Admin/Security:compromised.html.twig";
     }
 
     public function isTraitable()
@@ -128,6 +128,6 @@ class __TwigTemplate_e47f5a69f6554442bde1fe1fd3fe37c8fdbbce6572d45f2f97c394637bf
 
     public function getSourceContext()
     {
-        return new Source("", "@PrestaShop/Admin/Security/compromised.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Security/compromised.html.twig");
+        return new Source("", "PrestaShopBundle:Admin/Security:compromised.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Security/compromised.html.twig");
     }
 }

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* @PrestaShop/Admin/Configure/ShopParameters/preferences.html.twig */
+/* PrestaShopBundle:Admin/Configure/ShopParameters:preferences.html.twig */
 class __TwigTemplate_dc142fcec1e80eb163dd725d470a7d5788a241b3d803cd831cb70827ec43ce22 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -35,7 +35,7 @@ class __TwigTemplate_dc142fcec1e80eb163dd725d470a7d5788a241b3d803cd831cb70827ec4
         // line 27
         $this->env->getRuntime("Symfony\\Component\\Form\\FormRenderer")->setTheme(($context["generalForm"] ?? null), [0 => "PrestaShopBundle:Admin/TwigTemplateForm:prestashop_ui_kit.html.twig"], true);
         // line 25
-        $this->parent = $this->loadTemplate("@PrestaShop/Admin/layout.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/preferences.html.twig", 25);
+        $this->parent = $this->loadTemplate("@PrestaShop/Admin/layout.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters:preferences.html.twig", 25);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -129,7 +129,7 @@ class __TwigTemplate_dc142fcec1e80eb163dd725d470a7d5788a241b3d803cd831cb70827ec4
 
     public function getTemplateName()
     {
-        return "@PrestaShop/Admin/Configure/ShopParameters/preferences.html.twig";
+        return "PrestaShopBundle:Admin/Configure/ShopParameters:preferences.html.twig";
     }
 
     public function isTraitable()
@@ -152,6 +152,6 @@ class __TwigTemplate_dc142fcec1e80eb163dd725d470a7d5788a241b3d803cd831cb70827ec4
 
     public function getSourceContext()
     {
-        return new Source("", "@PrestaShop/Admin/Configure/ShopParameters/preferences.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/preferences.html.twig");
+        return new Source("", "PrestaShopBundle:Admin/Configure/ShopParameters:preferences.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/preferences.html.twig");
     }
 }

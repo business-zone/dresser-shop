@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* @PrestaShop/Admin/Multistore/header.html.twig */
+/* PrestaShopBundle:Admin/Multistore:header.html.twig */
 class __TwigTemplate_13e8089c6757552e140d84c2e0472d82ccd0cae638d5927552be17a9f2ce3def extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -345,7 +345,7 @@ class __TwigTemplate_13e8089c6757552e140d84c2e0472d82ccd0cae638d5927552be17a9f2c
 
     public function getTemplateName()
     {
-        return "@PrestaShop/Admin/Multistore/header.html.twig";
+        return "PrestaShopBundle:Admin/Multistore:header.html.twig";
     }
 
     public function getDebugInfo()
@@ -363,6 +363,6 @@ class __TwigTemplate_13e8089c6757552e140d84c2e0472d82ccd0cae638d5927552be17a9f2c
 
     public function getSourceContext()
     {
-        return new Source("", "@PrestaShop/Admin/Multistore/header.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Multistore/header.html.twig");
+        return new Source("", "PrestaShopBundle:Admin/Multistore:header.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Multistore/header.html.twig");
     }
 }
