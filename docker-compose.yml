@@ -12,10 +12,15 @@ services:
       - 3306:3306
 
   prestashop:
-    image: prestashop/prestashop:1.7
+    cap_add:
+    - NET_ADMIN
+    build:
+      context: .
+      dockerfile: Dockerfile
     environment:
       PS_INSTALL_AUTO: 0
       PS_ERASE_DB: 0
+      PS_DEV_MODE: 0
       DB_SERVER: mysql
       DB_USER: root
       DB_PASSWD: root
@@ -24,18 +29,24 @@ services:
       PS_FOLDER_ADMIN: admin9f46
       ADMIN_MAIL: prestadev@prestashop.com
       ADMIN_PASSWD: prestashop_dev
+      PS_ENABLE_SSL: 1
+      ALLOW_OVERRIDE: 1
       PS_LANGUAGE: pl
       PS_COUNTRY: PL
+    restart: always
     volumes:
       - ./src:/var/www/html
     ports:
       - 8080:80
+      - 443:443
+    depends_on:
+      - mysql
 
   phpmyadmin:
-      image: phpmyadmin/phpmyadmin
-      environment:
-          PMA_HOST: mysql
-      ports:
-          - 8081:80
-      depends_on:
-          - mysql
+    image: phpmyadmin/phpmyadmin
+    environment:
+        PMA_HOST: mysql
+    ports:
+        - 8081:80
+    depends_on:
+        - mysql
