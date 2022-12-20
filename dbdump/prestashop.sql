@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Czas generowania: 20 Gru 2022, 22:27
+-- Czas generowania: 20 Gru 2022, 22:35
 -- Wersja serwera: 8.0.31
 -- Wersja PHP: 8.0.19
 
@@ -1216,7 +1216,8 @@ INSERT INTO `ps_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`,
 (18, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_address\",\"sortOrder\":\"asc\",\"filters\":[]}', 'address'),
 (19, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_order_message\",\"sortOrder\":\"asc\",\"filters\":[]}', 'order_message'),
 (20, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_meta\",\"sortOrder\":\"asc\",\"filters\":[]}', 'meta'),
-(21, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"name\",\"sortOrder\":\"asc\",\"filters\":[]}', 'supplier');
+(21, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"name\",\"sortOrder\":\"asc\",\"filters\":[]}', 'supplier'),
+(22, 1, 1, 'email', 'index', '{\"limit\":50,\"orderBy\":\"id_mail\",\"sortOrder\":\"desc\",\"filters\":[]}', '');
 
 -- --------------------------------------------------------
 
@@ -4106,7 +4107,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (235, NULL, NULL, 'PS_SHOP_DOMAIN_SSL', 'localhost', '0000-00-00 00:00:00', '2022-12-20 18:55:08'),
 (236, NULL, NULL, 'PS_SHOP_NAME', 'Dresser Shop', '0000-00-00 00:00:00', '2022-12-20 01:10:29'),
 (237, NULL, NULL, 'PS_SHOP_EMAIL', 'dresser-shop@gmail.com', '0000-00-00 00:00:00', '2022-12-20 15:19:30'),
-(238, NULL, NULL, 'PS_MAIL_METHOD', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(238, NULL, NULL, 'PS_MAIL_METHOD', '2', '0000-00-00 00:00:00', '2022-12-20 23:33:31'),
 (239, NULL, NULL, 'PS_SHOP_ACTIVITY', 'Animaux', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (240, NULL, NULL, 'PS_LOGO', 'logo-1671573090.jpg', '0000-00-00 00:00:00', '2022-12-20 22:51:30'),
 (241, NULL, NULL, 'PS_FAVICON', 'favicon.ico', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4114,11 +4115,11 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (243, NULL, NULL, 'PS_ROOT_CATEGORY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (244, NULL, NULL, 'PS_HOME_CATEGORY', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (245, NULL, NULL, 'PS_CONFIGURATION_AGREMENT', '1', '0000-00-00 00:00:00', '2022-12-18 20:42:39'),
-(246, NULL, NULL, 'PS_MAIL_SERVER', 'smtp.', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(247, NULL, NULL, 'PS_MAIL_USER', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(248, NULL, NULL, 'PS_MAIL_PASSWD', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(249, NULL, NULL, 'PS_MAIL_SMTP_ENCRYPTION', 'off', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(250, NULL, NULL, 'PS_MAIL_SMTP_PORT', '25', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(246, NULL, NULL, 'PS_MAIL_SERVER', 'smtp.gmail.com', '0000-00-00 00:00:00', '2022-12-20 23:33:31'),
+(247, NULL, NULL, 'PS_MAIL_USER', 'marek7119@gmail.com', '0000-00-00 00:00:00', '2022-12-20 23:33:31'),
+(248, NULL, NULL, 'PS_MAIL_PASSWD', 'hmxrgpyqzafknonp', '0000-00-00 00:00:00', '2022-12-20 23:33:31'),
+(249, NULL, NULL, 'PS_MAIL_SMTP_ENCRYPTION', 'tls', '0000-00-00 00:00:00', '2022-12-20 23:33:31'),
+(250, NULL, NULL, 'PS_MAIL_SMTP_PORT', '587', '0000-00-00 00:00:00', '2022-12-20 23:33:31'),
 (251, NULL, NULL, 'PS_MAIL_COLOR', '#db3484', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (252, NULL, NULL, 'NW_SALT', 'SfoKtuYApyCFZZVn', '0000-00-00 00:00:00', '2022-12-18 20:42:47'),
 (253, NULL, NULL, 'PS_PAYMENT_LOGO_CMS_ID', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4139,7 +4140,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (268, NULL, NULL, 'PS_DETECT_LANG', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (269, NULL, NULL, 'PS_DETECT_COUNTRY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (270, NULL, NULL, 'PS_ROUND_TYPE', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(271, NULL, NULL, 'PS_LOG_EMAILS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(271, NULL, NULL, 'PS_LOG_EMAILS', '1', '0000-00-00 00:00:00', '2022-12-20 23:33:31'),
 (272, NULL, NULL, 'PS_CUSTOMER_OPTIN', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (273, NULL, NULL, 'PS_CUSTOMER_BIRTHDATE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (274, NULL, NULL, 'PS_PACK_STOCK_TYPE', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4329,7 +4330,9 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (465, NULL, NULL, 'PS_QTY_DISCOUNT_ON_COMBINATION', '0', '2022-12-20 23:18:02', '2022-12-20 23:18:02'),
 (466, NULL, NULL, 'PS_FORCE_FRIENDLY_PRODUCT', '0', '2022-12-20 23:18:02', '2022-12-20 23:18:02'),
 (467, NULL, NULL, 'PS_PRODUCT_ACTIVATION_DEFAULT', '0', '2022-12-20 23:18:02', '2022-12-20 23:18:02'),
-(468, NULL, NULL, 'PS_DISPLAY_DISCOUNT_PRICE', '0', '2022-12-20 23:18:21', '2022-12-20 23:18:21');
+(468, NULL, NULL, 'PS_DISPLAY_DISCOUNT_PRICE', '0', '2022-12-20 23:18:21', '2022-12-20 23:18:21'),
+(469, NULL, NULL, 'PS_MAIL_EMAIL_MESSAGE', '1', '2022-12-20 23:33:31', '2022-12-20 23:33:31'),
+(470, NULL, NULL, 'PS_MAIL_DOMAIN', NULL, '2022-12-20 23:33:31', '2022-12-20 23:33:31');
 
 -- --------------------------------------------------------
 
@@ -4606,8 +4609,8 @@ CREATE TABLE `ps_contact` (
 --
 
 INSERT INTO `ps_contact` (`id_contact`, `email`, `customer_service`, `position`) VALUES
-(1, 'dresser-shop-ms@gmail.com', 1, 0),
-(2, 'dresser-shop-ok@gmail.com', 1, 0);
+(1, 'filip.szweda1@gmail.com', 1, 0),
+(2, 'marek7119@gmail.com', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -28874,7 +28877,7 @@ ALTER TABLE `ps_address`
 -- AUTO_INCREMENT dla tabeli `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_advice`
@@ -29006,7 +29009,7 @@ ALTER TABLE `ps_condition`
 -- AUTO_INCREMENT dla tabeli `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=469;
+  MODIFY `id_configuration` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=471;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_configuration_kpi`
