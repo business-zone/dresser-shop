@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-20 00:56:54
+/* Smarty version 3.1.43, created on 2022-12-20 13:34:36
   from 'module:pscustomtextpscustomtext.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_63a0fa46adc9a1_38667299',
+  'unifunc' => 'content_63a1abdce0bf95_83147447',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_63a0fa46adc9a1_38667299 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63a1abdce0bf95_83147447 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="custom-text">
   <h2>Witamy w sklepie dressershop</h2>
