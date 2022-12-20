@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Czas generowania: 20 Gru 2022, 21:38
+-- Czas generowania: 20 Gru 2022, 21:49
 -- Wersja serwera: 8.0.31
 -- Wersja PHP: 8.0.19
 
@@ -1216,7 +1216,8 @@ INSERT INTO `ps_admin_filter` (`id`, `employee`, `shop`, `controller`, `action`,
 (17, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"date_add\",\"sortOrder\":\"DESC\",\"filters\":[]}', 'customer'),
 (18, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_address\",\"sortOrder\":\"asc\",\"filters\":[]}', 'address'),
 (19, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_order_message\",\"sortOrder\":\"asc\",\"filters\":[]}', 'order_message'),
-(20, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_meta\",\"sortOrder\":\"asc\",\"filters\":[]}', 'meta');
+(20, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"id_meta\",\"sortOrder\":\"asc\",\"filters\":[]}', 'meta'),
+(21, 1, 1, '', '', '{\"limit\":50,\"orderBy\":\"name\",\"sortOrder\":\"asc\",\"filters\":[]}', 'supplier');
 
 -- --------------------------------------------------------
 
@@ -1584,6 +1585,10 @@ INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
 (780, 'ROLE_MOD_MODULE_PS_BUYBUTTONLITE_DELETE'),
 (778, 'ROLE_MOD_MODULE_PS_BUYBUTTONLITE_READ'),
 (779, 'ROLE_MOD_MODULE_PS_BUYBUTTONLITE_UPDATE'),
+(849, 'ROLE_MOD_MODULE_PS_CASHONDELIVERY_CREATE'),
+(852, 'ROLE_MOD_MODULE_PS_CASHONDELIVERY_DELETE'),
+(850, 'ROLE_MOD_MODULE_PS_CASHONDELIVERY_READ'),
+(851, 'ROLE_MOD_MODULE_PS_CASHONDELIVERY_UPDATE'),
 (549, 'ROLE_MOD_MODULE_PS_CATEGORYTREE_CREATE'),
 (552, 'ROLE_MOD_MODULE_PS_CATEGORYTREE_DELETE'),
 (550, 'ROLE_MOD_MODULE_PS_CATEGORYTREE_READ'),
@@ -2457,8 +2462,9 @@ INSERT INTO `ps_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `n
 (5, 5, 0, 'Dresser Shop Odbiór w sklepie', '', 1, 1, 1, 0, 0, 1, 0, 0, '', 1, 0, 0, 0, 0, '0.000000', 0),
 (6, 6, 0, 'Paczkomat', '', 1, 1, 0, 0, 0, 0, 0, 0, '', 2, 1, 50, 50, 50, '30.000000', 0),
 (7, 7, 0, 'Poczta Polska', '', 1, 0, 0, 0, 0, 0, 0, 0, '', 1, 2, 0, 0, 0, '0.000000', 0),
-(8, 5, 0, 'Dresser Shop Odbiór w sklepie', '', 1, 0, 1, 0, 0, 1, 0, 0, '', 1, 0, 0, 0, 0, '0.000000', 0),
-(9, 6, 0, 'Paczkomat', '', 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 1, 200, 200, 200, '50.000000', 0);
+(8, 5, 0, 'Dresser Shop Odbiór w sklepie', '', 1, 1, 1, 0, 0, 1, 0, 0, '', 1, 0, 0, 0, 0, '0.000000', 0),
+(9, 6, 0, 'Paczkomat', '', 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 1, 200, 200, 200, '50.000000', 0),
+(10, 5, 0, 'Dresser Shop Odbiór w sklepie', '', 1, 0, 1, 0, 0, 1, 0, 0, '', 1, 0, 0, 0, 0, '0.000000', 0);
 
 -- --------------------------------------------------------
 
@@ -2502,7 +2508,10 @@ INSERT INTO `ps_carrier_group` (`id_carrier`, `id_group`) VALUES
 (8, 3),
 (9, 1),
 (9, 2),
-(9, 3);
+(9, 3),
+(10, 1),
+(10, 2),
+(10, 3);
 
 -- --------------------------------------------------------
 
@@ -2530,7 +2539,8 @@ INSERT INTO `ps_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALU
 (6, 1, 1, 'Do trzech dni'),
 (7, 1, 1, 'Do dwóch tygodni'),
 (8, 1, 1, 'Możesz odebrać w każdej chwili'),
-(9, 1, 1, 'Do trzech dni');
+(9, 1, 1, 'Do trzech dni'),
+(10, 1, 1, 'Możesz odebrać w każdej chwili');
 
 -- --------------------------------------------------------
 
@@ -2556,7 +2566,8 @@ INSERT INTO `ps_carrier_shop` (`id_carrier`, `id_shop`) VALUES
 (6, 1),
 (7, 1),
 (8, 1),
-(9, 1);
+(9, 1),
+(10, 1);
 
 -- --------------------------------------------------------
 
@@ -2583,7 +2594,8 @@ INSERT INTO `ps_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group
 (6, 1, 1),
 (7, 0, 1),
 (8, 1, 1),
-(9, 1, 1);
+(9, 1, 1),
+(10, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -2611,7 +2623,8 @@ INSERT INTO `ps_carrier_zone` (`id_carrier`, `id_zone`) VALUES
 (6, 1),
 (7, 1),
 (8, 1),
-(9, 1);
+(9, 1),
+(10, 1);
 
 -- --------------------------------------------------------
 
@@ -3857,7 +3870,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (1, NULL, NULL, 'PS_LANG_DEFAULT', '1', '2022-12-18 20:42:37', '2022-12-18 20:42:37'),
 (2, NULL, NULL, 'PS_VERSION_DB', '1.7.8.8', '2022-12-18 20:42:37', '2022-12-18 20:42:37'),
 (3, NULL, NULL, 'PS_INSTALL_VERSION', '1.7.8.8', '2022-12-18 20:42:37', '2022-12-18 20:42:37'),
-(4, NULL, NULL, 'PS_CARRIER_DEFAULT', '8', '2022-12-18 20:42:38', '2022-12-20 15:27:56'),
+(4, NULL, NULL, 'PS_CARRIER_DEFAULT', '10', '2022-12-18 20:42:38', '2022-12-20 22:40:28'),
 (5, NULL, NULL, 'PS_GROUP_FEATURE_ACTIVE', '1', '2022-12-18 20:42:38', '2022-12-18 20:42:38'),
 (6, NULL, NULL, 'PS_CURRENCY_DEFAULT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (7, NULL, NULL, 'PS_COUNTRY_DEFAULT', '14', '0000-00-00 00:00:00', '2022-12-18 20:42:39'),
@@ -4299,7 +4312,16 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (450, NULL, NULL, 'PS_SAV_IMAP_OPT_TLS', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
 (451, NULL, NULL, 'PS_SAV_IMAP_OPT_NOTLS', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
 (452, NULL, NULL, 'PS_CCCJS_VERSION', '3', '2022-12-20 18:55:08', '2022-12-20 22:31:43'),
-(453, NULL, NULL, 'PS_CCCCSS_VERSION', '3', '2022-12-20 18:55:08', '2022-12-20 22:31:43');
+(453, NULL, NULL, 'PS_CCCCSS_VERSION', '3', '2022-12-20 18:55:08', '2022-12-20 22:31:43'),
+(454, NULL, NULL, 'BANK_WIRE_DETAILS', 'IBAN PL11109024021318789834756795', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
+(455, NULL, NULL, 'BANK_WIRE_OWNER', 'Dresser Shop Sp Z.o.o', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
+(456, NULL, NULL, 'BANK_WIRE_ADDRESS', 'Gdańsk 80-326, ul. Kołobrzeska', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
+(457, NULL, NULL, 'BANK_WIRE_RESERVATION_DAYS', NULL, '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
+(458, NULL, NULL, 'BANK_WIRE_CUSTOM_TEXT', NULL, '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
+(459, NULL, NULL, 'CONF_PS_CASHONDELIVERY_FIXED', '0.2', '2022-12-20 22:48:36', '2022-12-20 22:48:36'),
+(460, NULL, NULL, 'CONF_PS_CASHONDELIVERY_VAR', '2', '2022-12-20 22:48:36', '2022-12-20 22:48:36'),
+(461, NULL, NULL, 'CONF_PS_CASHONDELIVERY_FIXED_FOREIGN', '0.2', '2022-12-20 22:48:36', '2022-12-20 22:48:36'),
+(462, NULL, NULL, 'CONF_PS_CASHONDELIVERY_VAR_FOREIGN', '2', '2022-12-20 22:48:36', '2022-12-20 22:48:36');
 
 -- --------------------------------------------------------
 
@@ -4442,7 +4464,8 @@ INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `da
 (328, 1, 'Udostępnione przez Ciebie dane osobowe są wykorzystywane w celu udzielania odpowiedzi na zapytania, przetwarzania zamówień lub umożliwiania dostępu do konkretnych informacji. Przysługuje Ci prawo do modyfikowania oraz usuwania wszelkich danych osobowych zamieszczonych na stronie „Moje konto”.', '2022-12-18 20:42:47'),
 (330, 1, 'Możesz zrezygnować w każdej chwili. W tym celu należy odnaleźć szczegóły w naszej informacji prawnej.', '2022-12-18 20:42:47'),
 (366, 1, 'Akceptuję ogólne warunki użytkowania i politykę prywatności', '2022-12-18 20:44:35'),
-(368, 1, 'Akceptuję ogólne warunki użytkowania i politykę prywatności', '2022-12-18 20:44:35');
+(368, 1, 'Akceptuję ogólne warunki użytkowania i politykę prywatności', '2022-12-18 20:44:35'),
+(458, 1, '', '2022-12-20 22:44:20');
 
 -- --------------------------------------------------------
 
@@ -7318,6 +7341,8 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (60, 1, 741, 4),
 (61, 1, 71, 4),
 (61, 1, 683, 4),
+(65, 1, 46, 4),
+(65, 1, 702, 4),
 (7, 1, 682, 5),
 (41, 1, 55, 5),
 (61, 1, 16, 5),
@@ -18416,7 +18441,8 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (564, 1, 0, 'import Produkty (od 600 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:15:32', '2022-12-20 22:15:32'),
 (565, 1, 0, 'import Produkty (od 605 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:15:56', '2022-12-20 22:15:56'),
 (566, 1, 0, 'import Produkty (od 610 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:16:16', '2022-12-20 22:16:16'),
-(567, 1, 0, 'import Produkty (od 0 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:16:17', '2022-12-20 22:16:17');
+(567, 1, 0, 'import Produkty (od 0 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:16:17', '2022-12-20 22:16:17'),
+(568, 1, 0, 'Protect vendor folder in module ps_cashondelivery', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:48:36', '2022-12-20 22:48:36');
 
 -- --------------------------------------------------------
 
@@ -18596,7 +18622,8 @@ INSERT INTO `ps_meta` (`id_meta`, `page`, `configurable`) VALUES
 (37, 'module-ps_emailsubscription-subscription', 1),
 (38, 'module-ps_shoppingcart-ajax', 1),
 (39, 'module-ps_wirepayment-payment', 1),
-(40, 'module-ps_wirepayment-validation', 1);
+(40, 'module-ps_wirepayment-validation', 1),
+(41, 'module-ps_cashondelivery-validation', 1);
 
 -- --------------------------------------------------------
 
@@ -18650,7 +18677,8 @@ INSERT INTO `ps_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `descripti
 (37, 1, 1, '', '', '', ''),
 (38, 1, 1, '', '', '', ''),
 (39, 1, 1, '', '', '', ''),
-(40, 1, 1, '', '', '', '');
+(40, 1, 1, '', '', '', ''),
+(41, 1, 1, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -18732,7 +18760,8 @@ INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
 (61, 'ps_facebook', 1, '1.21.0'),
 (62, 'psxmarketingwithgoogle', 1, '1.33.0'),
 (63, 'blockreassurance', 1, '5.1.0'),
-(64, 'ps_facetedsearch', 1, '3.8.0');
+(64, 'ps_facetedsearch', 1, '3.8.0'),
+(65, 'ps_cashondelivery', 1, '2.0.1');
 
 -- --------------------------------------------------------
 
@@ -19001,7 +19030,11 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_authorization_role`) VALUES
 (1, 845),
 (1, 846),
 (1, 847),
-(1, 848);
+(1, 848),
+(1, 849),
+(1, 850),
+(1, 851),
+(1, 852);
 
 -- --------------------------------------------------------
 
@@ -19020,27 +19053,18 @@ CREATE TABLE `ps_module_carrier` (
 --
 
 INSERT INTO `ps_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
-(14, 1, 1),
-(14, 1, 2),
-(14, 1, 3),
-(14, 1, 4),
 (14, 1, 5),
 (14, 1, 6),
 (14, 1, 7),
-(35, 1, 1),
-(35, 1, 2),
-(35, 1, 3),
-(35, 1, 4),
 (35, 1, 5),
 (35, 1, 6),
 (35, 1, 7),
-(59, 1, 1),
-(59, 1, 2),
-(59, 1, 3),
-(59, 1, 4),
 (59, 1, 5),
 (59, 1, 6),
-(59, 1, 7);
+(59, 1, 7),
+(65, 1, 5),
+(65, 1, 6),
+(65, 1, 7);
 
 -- --------------------------------------------------------
 
@@ -19260,7 +19284,8 @@ INSERT INTO `ps_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
 (59, 1, 234),
 (59, 1, 237),
 (59, 1, 238),
-(59, 1, 239);
+(59, 1, 239),
+(65, 1, 14);
 
 -- --------------------------------------------------------
 
@@ -19281,7 +19306,8 @@ CREATE TABLE `ps_module_currency` (
 INSERT INTO `ps_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
 (14, 1, 1),
 (35, 1, 1),
-(59, 1, 1);
+(59, 1, 1),
+(65, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -19488,7 +19514,10 @@ INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 (63, 1, 3),
 (64, 1, 1),
 (64, 1, 2),
-(64, 1, 3);
+(64, 1, 3),
+(65, 1, 1),
+(65, 1, 2),
+(65, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -19509,7 +19538,10 @@ CREATE TABLE `ps_module_history` (
 --
 
 INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `date_upd`) VALUES
-(1, 1, 63, '2022-12-20 22:35:51', '2022-12-20 22:35:51');
+(1, 1, 63, '2022-12-20 22:35:51', '2022-12-20 22:35:51'),
+(2, 1, 14, '2022-12-20 22:41:09', '2022-12-20 22:41:09'),
+(3, 1, 35, '2022-12-20 22:42:45', '2022-12-20 22:42:45'),
+(4, 1, 59, '2022-12-20 22:44:50', '2022-12-20 22:44:50');
 
 -- --------------------------------------------------------
 
@@ -19555,7 +19587,6 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (11, 1, 7),
 (12, 1, 3),
 (13, 1, 7),
-(14, 1, 7),
 (15, 1, 7),
 (16, 1, 7),
 (17, 1, 7),
@@ -19604,7 +19635,8 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (61, 1, 7),
 (62, 1, 7),
 (63, 1, 7),
-(64, 1, 7);
+(64, 1, 7),
+(65, 1, 7);
 
 -- --------------------------------------------------------
 
@@ -28837,7 +28869,7 @@ ALTER TABLE `ps_address`
 -- AUTO_INCREMENT dla tabeli `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_advice`
@@ -28885,7 +28917,7 @@ ALTER TABLE `ps_attribute_impact`
 -- AUTO_INCREMENT dla tabeli `ps_authorization_role`
 --
 ALTER TABLE `ps_authorization_role`
-  MODIFY `id_authorization_role` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=849;
+  MODIFY `id_authorization_role` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=853;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_badge`
@@ -28903,7 +28935,7 @@ ALTER TABLE `ps_blockwishlist_statistics`
 -- AUTO_INCREMENT dla tabeli `ps_carrier`
 --
 ALTER TABLE `ps_carrier`
-  MODIFY `id_carrier` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_carrier` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_cart`
@@ -28969,7 +29001,7 @@ ALTER TABLE `ps_condition`
 -- AUTO_INCREMENT dla tabeli `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=454;
+  MODIFY `id_configuration` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=463;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_configuration_kpi`
@@ -29209,7 +29241,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT dla tabeli `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=568;
+  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=569;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_mail`
@@ -29239,19 +29271,19 @@ ALTER TABLE `ps_message`
 -- AUTO_INCREMENT dla tabeli `ps_meta`
 --
 ALTER TABLE `ps_meta`
-  MODIFY `id_meta` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_meta` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_module`
 --
 ALTER TABLE `ps_module`
-  MODIFY `id_module` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id_module` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_module_preference`
