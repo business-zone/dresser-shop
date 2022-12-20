@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Czas generowania: 20 Gru 2022, 21:20
+-- Czas generowania: 20 Gru 2022, 21:38
 -- Wersja serwera: 8.0.31
 -- Wersja PHP: 8.0.19
 
@@ -3861,7 +3861,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (5, NULL, NULL, 'PS_GROUP_FEATURE_ACTIVE', '1', '2022-12-18 20:42:38', '2022-12-18 20:42:38'),
 (6, NULL, NULL, 'PS_CURRENCY_DEFAULT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (7, NULL, NULL, 'PS_COUNTRY_DEFAULT', '14', '0000-00-00 00:00:00', '2022-12-18 20:42:39'),
-(8, NULL, NULL, 'PS_REWRITING_SETTINGS', '1', '0000-00-00 00:00:00', '2022-12-18 20:42:39'),
+(8, NULL, NULL, 'PS_REWRITING_SETTINGS', '1', '0000-00-00 00:00:00', '2022-12-20 22:31:43'),
 (9, NULL, NULL, 'PS_ORDER_OUT_OF_STOCK', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (10, NULL, NULL, 'PS_LAST_QTIES', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (11, NULL, NULL, 'PS_CONDITIONS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4298,8 +4298,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (449, NULL, NULL, 'PS_SAV_IMAP_OPT_NOVALIDATE-CERT', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
 (450, NULL, NULL, 'PS_SAV_IMAP_OPT_TLS', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
 (451, NULL, NULL, 'PS_SAV_IMAP_OPT_NOTLS', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
-(452, NULL, NULL, 'PS_CCCJS_VERSION', '1', '2022-12-20 18:55:08', '2022-12-20 18:55:08'),
-(453, NULL, NULL, 'PS_CCCCSS_VERSION', '1', '2022-12-20 18:55:08', '2022-12-20 18:55:08');
+(452, NULL, NULL, 'PS_CCCJS_VERSION', '3', '2022-12-20 18:55:08', '2022-12-20 22:31:43'),
+(453, NULL, NULL, 'PS_CCCCSS_VERSION', '3', '2022-12-20 18:55:08', '2022-12-20 22:31:43');
 
 -- --------------------------------------------------------
 
@@ -4470,7 +4470,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (2, 1, 1, 3, 1, 2887319553, '2022-12-18 20:45:36', ''),
 (3, 1, 1, 4, 2, 2886991873, '2022-12-20 14:30:28', ''),
 (4, 1, 1, 4, 2, 2886991873, '2022-12-20 15:08:17', ''),
-(5, 1, 1, 4, 1, 2887385089, '2022-12-20 21:18:43', '');
+(5, 1, 1, 4, 1, 2887385089, '2022-12-20 21:18:43', ''),
+(6, 1, 1, 4, 2, 2887385089, '2022-12-20 22:22:06', '');
 
 -- --------------------------------------------------------
 
@@ -19503,6 +19504,13 @@ CREATE TABLE `ps_module_history` (
   `date_upd` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Zrzut danych tabeli `ps_module_history`
+--
+
+INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `date_upd`) VALUES
+(1, 1, 63, '2022-12-20 22:35:51', '2022-12-20 22:35:51');
+
 -- --------------------------------------------------------
 
 --
@@ -22713,9 +22721,9 @@ CREATE TABLE `ps_psreassurance` (
 --
 
 INSERT INTO `ps_psreassurance` (`id_psreassurance`, `icon`, `custom_icon`, `status`, `position`, `id_shop`, `type_link`, `id_cms`, `date_add`, `date_upd`) VALUES
-(1, '//modules/blockreassurance/views/img/reassurance/pack2/security.svg', NULL, 1, 1, 1, NULL, NULL, '2022-12-18 19:44:41', NULL),
-(2, '//modules/blockreassurance/views/img/reassurance/pack2/carrier.svg', NULL, 1, 2, 1, NULL, NULL, '2022-12-18 19:44:41', NULL),
-(3, '//modules/blockreassurance/views/img/reassurance/pack2/parcel.svg', NULL, 1, 3, 1, NULL, NULL, '2022-12-18 19:44:41', NULL);
+(1, '//modules/blockreassurance/views/img/reassurance/pack2/security.svg', '', 1, 1, 1, 0, 0, '2022-12-20 22:36:38', '2022-12-20 22:36:38'),
+(2, '//modules/blockreassurance/views/img/reassurance/pack2/carrier.svg', '', 1, 2, 1, 0, 0, '2022-12-20 22:37:11', '2022-12-20 22:37:11'),
+(3, '//modules/blockreassurance/views/img/reassurance/pack2/parcel.svg', '', 1, 3, 1, 0, 0, '2022-12-20 22:37:34', '2022-12-20 22:37:34');
 
 -- --------------------------------------------------------
 
@@ -22737,9 +22745,9 @@ CREATE TABLE `ps_psreassurance_lang` (
 --
 
 INSERT INTO `ps_psreassurance_lang` (`id_psreassurance`, `id_lang`, `id_shop`, `title`, `description`, `link`) VALUES
-(1, 1, 1, 'Polityka bezpieczeństwa', '(edytuj w module Customer Reassurance)', ''),
-(2, 1, 1, 'Zasady dostawy', '(edytuj w module Customer Reassurance)', ''),
-(3, 1, 1, 'Zasady zwrotu', '(edytuj w module Customer Reassurance)', '');
+(1, 1, 1, 'Polityka bezpieczeństwa', 'Zapewniamy gwarancje na wypadek uszkodzenia przesyłki do 30 dni', ''),
+(2, 1, 1, 'Zasady dostawy', 'Gwarantujemy dostawę w przeciągu 21 dni od dnia zapłaty', ''),
+(3, 1, 1, 'Zasady zwrotu', 'Przyjmujemy zwroty towaru do 14 dni od dnia zakupu', '');
 
 -- --------------------------------------------------------
 
@@ -28973,7 +28981,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT dla tabeli `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_connections_source`
@@ -29243,7 +29251,7 @@ ALTER TABLE `ps_module`
 -- AUTO_INCREMENT dla tabeli `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_module_preference`
