@@ -33,10 +33,7 @@
  * @method toggle - Add the listener if there is no transition launched yet.
  * @return {Object} The object with methods wich permit to toggle on specific event.
 */
-
-export const MAX_MOBILE_WIDTH = 1023;
-
-export function NavbarTransitionHandler($navBar, $mainMenu, endTransitionEvent, $body) {
+function NavbarTransitionHandler($navBar, $mainMenu, endTransitionEvent, $body) {
   this.$body = $body;
   this.transitionFired = false;
   this.$navBar = $navBar.get(0);
@@ -50,10 +47,7 @@ export function NavbarTransitionHandler($navBar, $mainMenu, endTransitionEvent, 
 
     this.$navBar.removeEventListener(this.endTransitionEvent, this.showNavBarContent);
     const isSidebarClosed = this.$body.hasClass('page-sidebar-closed');
-
-    if ($(window).width() > MAX_MOBILE_WIDTH) {
-      this.$mainMenu.toggleClass('sidebar-closed', isSidebarClosed);
-    }
+    this.$mainMenu.toggleClass('sidebar-closed', isSidebarClosed);
     this.transitionFired = false;
   };
 
@@ -67,3 +61,5 @@ export function NavbarTransitionHandler($navBar, $mainMenu, endTransitionEvent, 
     this.transitionFired = !this.transitionFired;
   };
 }
+
+export default NavbarTransitionHandler;

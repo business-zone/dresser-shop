@@ -1,26 +1,26 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-18 20:45:34
+/* Smarty version 3.1.43, created on 2022-12-20 16:58:28
   from 'module:psbannerpsbanner.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_639f6dde7adad0_85225344',
+  'unifunc' => 'content_63a1dba4c2edf1_85380202',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '64034093fbda864710a2c0f526b37f921e53ee39' => 
     array (
       0 => 'module:psbannerpsbanner.tpl',
-      1 => 1671391625,
+      1 => 1658334665,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_639f6dde7adad0_85225344 (Smarty_Internal_Template $_smarty_tpl) {
-?><a class="banner" href="http://localhost:8080/" title="">
-      <img src="http://localhost:8080/modules/ps_banner/img/sale70.png" alt="" title="" class="img-fluid" loading="lazy" width="1110" height="213">
+function content_63a1dba4c2edf1_85380202 (Smarty_Internal_Template $_smarty_tpl) {
+?><a class="banner" href="http://localhost:8080/index.php?id_category=131&amp;controller=category" title="akcesoria">
+      <span>akcesoria</span>
   </a>
 <?php }
 }

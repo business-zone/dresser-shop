@@ -1,21 +1,14 @@
-FROM prestashop/prestashop:8.0.0
-
-RUN rm -rf *
-
-COPY src/ ./
+FROM prestashop/prestashop:1.7.8.7
 
 RUN chown -R www-data:root ./
 
+COPY ssl/keys /etc/ssl/farmazone
+COPY ssl/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
+RUN ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf
+
 RUN a2enmod ssl
-COPY ./ssl/apache-selfsigned.crt /etc/ssl/certs/
-COPY ./ssl/apache-selfsigned.key /etc/ssl/private/
-COPY ./ssl/000-default.conf /etc/apache2/sites-available/
-COPY ./ssl/default-ssl.conf /etc/apache2/sites-available/
-COPY ./ssl/ssl-params.conf /etc/apache2/conf-available/
 
-RUN a2ensite default-ssl.conf
 
-EXPOSE 80
+
 EXPOSE 443 
-
-
+EXPOSE 80
