@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Actions/Bulk:submit.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Actions/Bulk/submit.html.twig */
 class __TwigTemplate_52c520f75e693984f002347e01d5b2e0c11164f07b10df5620c964154cda6a34 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -79,7 +79,7 @@ class __TwigTemplate_52c520f75e693984f002347e01d5b2e0c11164f07b10df5620c964154cd
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Actions/Bulk:submit.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Actions/Bulk/submit.html.twig";
     }
 
     public function isTraitable()
@@ -102,6 +102,6 @@ class __TwigTemplate_52c520f75e693984f002347e01d5b2e0c11164f07b10df5620c964154cd
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Actions/Bulk:submit.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Actions/Bulk/submit.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Actions/Bulk/submit.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Actions/Bulk/submit.html.twig");
     }
 }

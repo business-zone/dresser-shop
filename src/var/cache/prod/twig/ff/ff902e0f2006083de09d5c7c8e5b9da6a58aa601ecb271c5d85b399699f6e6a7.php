@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Blocks:table.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Blocks/table.html.twig */
 class __TwigTemplate_06ee52ffa08065fb457007ba14e3d6da328914c3ed6bbeba911a52ee0c6c6f00 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -182,7 +182,7 @@ class __TwigTemplate_06ee52ffa08065fb457007ba14e3d6da328914c3ed6bbeba911a52ee0c6
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Blocks:table.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Blocks/table.html.twig";
     }
 
     public function isTraitable()
@@ -205,6 +205,6 @@ class __TwigTemplate_06ee52ffa08065fb457007ba14e3d6da328914c3ed6bbeba911a52ee0c6
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Blocks:table.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/table.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Blocks/table.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/table.html.twig");
     }
 }

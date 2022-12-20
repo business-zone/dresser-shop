@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:robots_file_generation.html.twig */
+/* @PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/robots_file_generation.html.twig */
 class __TwigTemplate_58c514644dcdf385ea8b7f5fc760b34beac38afa0179a7f4ea95babb1642275e extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -131,7 +131,7 @@ class __TwigTemplate_58c514644dcdf385ea8b7f5fc760b34beac38afa0179a7f4ea95babb164
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:robots_file_generation.html.twig";
+        return "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/robots_file_generation.html.twig";
     }
 
     public function getDebugInfo()
@@ -149,6 +149,6 @@ class __TwigTemplate_58c514644dcdf385ea8b7f5fc760b34beac38afa0179a7f4ea95babb164
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:robots_file_generation.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/robots_file_generation.html.twig");
+        return new Source("", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/robots_file_generation.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/robots_file_generation.html.twig");
     }
 }

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Columns/Header/Content:default.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Columns/Header/Content/default.html.twig */
 class __TwigTemplate_be6501bef49ac4b42ac622f6e3e03ace446a6c556385ac7afb02d9d2e540d6fc extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -30,7 +30,7 @@ class __TwigTemplate_be6501bef49ac4b42ac622f6e3e03ace446a6c556385ac7afb02d9d2e54
         echo "
 ";
         // line 26
-        $context["ps"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "PrestaShopBundle:Admin/Common/Grid/Columns/Header/Content:default.html.twig", 26)->unwrap();
+        $context["ps"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "@PrestaShop/Admin/Common/Grid/Columns/Header/Content/default.html.twig", 26)->unwrap();
         // line 27
         echo "
 ";
@@ -57,7 +57,7 @@ class __TwigTemplate_be6501bef49ac4b42ac622f6e3e03ace446a6c556385ac7afb02d9d2e54
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Columns/Header/Content:default.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Columns/Header/Content/default.html.twig";
     }
 
     public function isTraitable()
@@ -80,6 +80,6 @@ class __TwigTemplate_be6501bef49ac4b42ac622f6e3e03ace446a6c556385ac7afb02d9d2e54
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Columns/Header/Content:default.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Columns/Header/Content/default.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Columns/Header/Content/default.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Columns/Header/Content/default.html.twig");
     }
 }

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Blocks:bulk_actions_select_all.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Blocks/bulk_actions_select_all.html.twig */
 class __TwigTemplate_24591ec3eaf437ce2675b41b7b17d783ad3c92779927034cd13fd6a532d35b49 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -45,7 +45,7 @@ class __TwigTemplate_24591ec3eaf437ce2675b41b7b17d783ad3c92779927034cd13fd6a532d
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Blocks:bulk_actions_select_all.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Blocks/bulk_actions_select_all.html.twig";
     }
 
     public function isTraitable()
@@ -68,6 +68,6 @@ class __TwigTemplate_24591ec3eaf437ce2675b41b7b17d783ad3c92779927034cd13fd6a532d
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Blocks:bulk_actions_select_all.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/bulk_actions_select_all.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Blocks/bulk_actions_select_all.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/bulk_actions_select_all.html.twig");
     }
 }

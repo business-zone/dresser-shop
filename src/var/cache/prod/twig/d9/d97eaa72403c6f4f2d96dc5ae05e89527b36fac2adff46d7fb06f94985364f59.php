@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin:macros.html.twig */
+/* @PrestaShop/Admin/macros.html.twig */
 class __TwigTemplate_8f168cb7d646a5eba77e041a7dcb8f63fd9256ffbf0550a8bcff62441b6780b5 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -432,7 +432,7 @@ class __TwigTemplate_8f168cb7d646a5eba77e041a7dcb8f63fd9256ffbf0550a8bcff62441b6
         try {
             // line 107
             echo "  ";
-            $context["self"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "PrestaShopBundle:Admin:macros.html.twig", 107)->unwrap();
+            $context["self"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "@PrestaShop/Admin/macros.html.twig", 107)->unwrap();
             // line 108
             echo "
   ";
@@ -807,7 +807,7 @@ class __TwigTemplate_8f168cb7d646a5eba77e041a7dcb8f63fd9256ffbf0550a8bcff62441b6
         try {
             // line 249
             echo "  ";
-            $context["self"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "PrestaShopBundle:Admin:macros.html.twig", 249)->unwrap();
+            $context["self"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "@PrestaShop/Admin/macros.html.twig", 249)->unwrap();
             // line 250
             echo "
   ";
@@ -951,7 +951,7 @@ class __TwigTemplate_8f168cb7d646a5eba77e041a7dcb8f63fd9256ffbf0550a8bcff62441b6
         try {
             // line 290
             echo "  ";
-            $context["self"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "PrestaShopBundle:Admin:macros.html.twig", 290)->unwrap();
+            $context["self"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "@PrestaShop/Admin/macros.html.twig", 290)->unwrap();
             // line 291
             echo "  ";
             if ($this->getAttribute(($context["form"] ?? null), "shop_restriction_switch", [], "any", true, true)) {
@@ -1025,7 +1025,7 @@ class __TwigTemplate_8f168cb7d646a5eba77e041a7dcb8f63fd9256ffbf0550a8bcff62441b6
         try {
             // line 309
             echo "  ";
-            $context["self"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "PrestaShopBundle:Admin:macros.html.twig", 309)->unwrap();
+            $context["self"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "@PrestaShop/Admin/macros.html.twig", 309)->unwrap();
             // line 310
             echo "
   ";
@@ -1190,7 +1190,7 @@ class __TwigTemplate_8f168cb7d646a5eba77e041a7dcb8f63fd9256ffbf0550a8bcff62441b6
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin:macros.html.twig";
+        return "@PrestaShop/Admin/macros.html.twig";
     }
 
     public function isTraitable()
@@ -1213,6 +1213,6 @@ class __TwigTemplate_8f168cb7d646a5eba77e041a7dcb8f63fd9256ffbf0550a8bcff62441b6
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin:macros.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/macros.html.twig");
+        return new Source("", "@PrestaShop/Admin/macros.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/macros.html.twig");
     }
 }

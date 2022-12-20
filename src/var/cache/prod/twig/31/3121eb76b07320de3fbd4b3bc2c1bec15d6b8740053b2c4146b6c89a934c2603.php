@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig */
+/* @PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig */
 class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a93a750 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -32,7 +32,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
 
     protected function doDisplay(array $context, array $blocks = [])
     {
-        $this->parent = $this->loadTemplate("@PrestaShop/Admin/layout.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 26);
+        $this->parent = $this->loadTemplate("@PrestaShop/Admin/layout.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 26);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -44,7 +44,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
     <div class=\"col-sm\">
       ";
         // line 32
-        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/meta_showcase_card.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 32)->display($context);
+        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/meta_showcase_card.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 32)->display($context);
         // line 33
         echo "    </div>
   </div>
@@ -71,7 +71,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
       <div class=\"col\">
         ";
             // line 48
-            $this->loadTemplate("@PrestaShop/Admin/Common/Grid/grid_panel.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 48)->display(twig_array_merge($context, ["grid" => ($context["grid"] ?? null)]));
+            $this->loadTemplate("@PrestaShop/Admin/Common/Grid/grid_panel.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 48)->display(twig_array_merge($context, ["grid" => ($context["grid"] ?? null)]));
             // line 49
             echo "      </div>
     </div>
@@ -87,7 +87,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
         echo "
         ";
         // line 56
-        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/set_up_urls_configuration.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 56)->display($context);
+        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/set_up_urls_configuration.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 56)->display($context);
         // line 57
         echo "      ";
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["setUpUrlsForm"] ?? null), 'form_end');
@@ -99,7 +99,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
         echo "
         ";
         // line 60
-        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/shop_urls_configuration.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 60)->display($context);
+        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/shop_urls_configuration.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 60)->display($context);
         // line 61
         echo "      ";
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["shopUrlsForm"] ?? null), 'form_end');
@@ -107,7 +107,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
 
       ";
         // line 63
-        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/domain_name_management.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 63)->display($context);
+        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/domain_name_management.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 63)->display($context);
         // line 64
         echo "
       ";
@@ -119,7 +119,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
             echo "
           ";
             // line 67
-            $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/url_schema_configuration.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 67)->display($context);
+            $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/url_schema_configuration.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 67)->display($context);
             // line 68
             echo "        ";
             echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["urlSchemaForm"] ?? null), 'form_end');
@@ -134,7 +134,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
         echo "
         ";
         // line 72
-        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/seo_options_configuration.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 72)->display($context);
+        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/seo_options_configuration.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 72)->display($context);
         // line 73
         echo "      ";
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["seoOptionsForm"] ?? null), 'form_end');
@@ -147,7 +147,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
         echo "
         ";
         // line 77
-        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/robots_file_generation.html.twig", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", 77)->display($context);
+        $this->loadTemplate("@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/robots_file_generation.html.twig", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", 77)->display($context);
         // line 78
         echo "      ";
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["robotsForm"] ?? null), 'form_end');
@@ -178,7 +178,7 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig";
+        return "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig";
     }
 
     public function isTraitable()
@@ -201,6 +201,6 @@ class __TwigTemplate_e6c2d5c16cbfa79d8fd4a32806e329698a88ce01e9a66204887f4b392a9
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta:index.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig");
+        return new Source("", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/index.html.twig");
     }
 }

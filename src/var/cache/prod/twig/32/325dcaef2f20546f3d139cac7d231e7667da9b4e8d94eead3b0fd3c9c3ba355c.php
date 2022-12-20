@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Blocks/Table:headers_row.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Blocks/Table/headers_row.html.twig */
 class __TwigTemplate_8d3425e6b85a0aa46bc8e3f785bcdfb2831019d846ea50f5b22f7ccc25d33703 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -58,7 +58,7 @@ class __TwigTemplate_8d3425e6b85a0aa46bc8e3f785bcdfb2831019d846ea50f5b22f7ccc25d
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Blocks/Table:headers_row.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Blocks/Table/headers_row.html.twig";
     }
 
     public function isTraitable()
@@ -81,6 +81,6 @@ class __TwigTemplate_8d3425e6b85a0aa46bc8e3f785bcdfb2831019d846ea50f5b22f7ccc25d
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Blocks/Table:headers_row.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/Table/headers_row.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Blocks/Table/headers_row.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/Table/headers_row.html.twig");
     }
 }

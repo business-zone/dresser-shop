@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:shop_urls_configuration.html.twig */
+/* @PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/shop_urls_configuration.html.twig */
 class __TwigTemplate_7a095e2ceee83ecffdf5434dfaa0a469447908ac169b6db44417b9fd0124e2ef extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -127,7 +127,7 @@ class __TwigTemplate_7a095e2ceee83ecffdf5434dfaa0a469447908ac169b6db44417b9fd012
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:shop_urls_configuration.html.twig";
+        return "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/shop_urls_configuration.html.twig";
     }
 
     public function isTraitable()
@@ -150,6 +150,6 @@ class __TwigTemplate_7a095e2ceee83ecffdf5434dfaa0a469447908ac169b6db44417b9fd012
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:shop_urls_configuration.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/shop_urls_configuration.html.twig");
+        return new Source("", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/shop_urls_configuration.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/shop_urls_configuration.html.twig");
     }
 }

@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common:pagination.html.twig */
+/* @PrestaShop/Admin/Common/pagination.html.twig */
 class __TwigTemplate_6f0eba1f1c29147d7b843784bbefc4cc2062fb766190ec731ff13ed0d7b26afb extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -185,7 +185,7 @@ class __TwigTemplate_6f0eba1f1c29147d7b843784bbefc4cc2062fb766190ec731ff13ed0d7b
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common:pagination.html.twig";
+        return "@PrestaShop/Admin/Common/pagination.html.twig";
     }
 
     public function isTraitable()
@@ -208,6 +208,6 @@ class __TwigTemplate_6f0eba1f1c29147d7b843784bbefc4cc2062fb766190ec731ff13ed0d7b
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common:pagination.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/pagination.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/pagination.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/pagination.html.twig");
     }
 }

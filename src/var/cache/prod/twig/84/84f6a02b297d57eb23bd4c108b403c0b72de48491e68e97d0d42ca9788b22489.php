@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:domain_name_management.html.twig */
+/* @PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/domain_name_management.html.twig */
 class __TwigTemplate_195582115b3f894a33853767e7e0809d7fd51ecfc13053af1f7d48f0deb979d4 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -82,7 +82,7 @@ class __TwigTemplate_195582115b3f894a33853767e7e0809d7fd51ecfc13053af1f7d48f0deb
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:domain_name_management.html.twig";
+        return "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/domain_name_management.html.twig";
     }
 
     public function getDebugInfo()
@@ -100,6 +100,6 @@ class __TwigTemplate_195582115b3f894a33853767e7e0809d7fd51ecfc13053af1f7d48f0deb
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:domain_name_management.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/domain_name_management.html.twig");
+        return new Source("", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/domain_name_management.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/domain_name_management.html.twig");
     }
 }

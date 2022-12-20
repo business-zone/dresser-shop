@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:seo_options_configuration.html.twig */
+/* @PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/seo_options_configuration.html.twig */
 class __TwigTemplate_f1cc357da2a576059adecbeeba4c4536063781ec8167b7869b03b6cd3285f8b9 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -73,7 +73,7 @@ class __TwigTemplate_f1cc357da2a576059adecbeeba4c4536063781ec8167b7869b03b6cd328
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:seo_options_configuration.html.twig";
+        return "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/seo_options_configuration.html.twig";
     }
 
     public function isTraitable()
@@ -96,6 +96,6 @@ class __TwigTemplate_f1cc357da2a576059adecbeeba4c4536063781ec8167b7869b03b6cd328
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:seo_options_configuration.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/seo_options_configuration.html.twig");
+        return new Source("", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/seo_options_configuration.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/seo_options_configuration.html.twig");
     }
 }

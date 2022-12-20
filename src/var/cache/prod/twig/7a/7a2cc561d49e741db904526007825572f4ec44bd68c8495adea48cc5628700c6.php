@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Blocks:pagination.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Blocks/pagination.html.twig */
 class __TwigTemplate_0114ad2d387898b0a32b2facb03a823511d42fe8243272f6d72fb6ed937f65b5 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -86,7 +86,7 @@ class __TwigTemplate_0114ad2d387898b0a32b2facb03a823511d42fe8243272f6d72fb6ed937
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Blocks:pagination.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Blocks/pagination.html.twig";
     }
 
     public function getDebugInfo()
@@ -104,6 +104,6 @@ class __TwigTemplate_0114ad2d387898b0a32b2facb03a823511d42fe8243272f6d72fb6ed937
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Blocks:pagination.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/pagination.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Blocks/pagination.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/pagination.html.twig");
     }
 }

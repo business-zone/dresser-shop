@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Columns/Content:data.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Columns/Content/data.html.twig */
 class __TwigTemplate_e706bcbfb2ef9495e28fc8e8570a426afb6a073640c8a02c7a5baaa0f86fea70 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -37,7 +37,7 @@ class __TwigTemplate_e706bcbfb2ef9495e28fc8e8570a426afb6a073640c8a02c7a5baaa0f86
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Columns/Content:data.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Columns/Content/data.html.twig";
     }
 
     public function isTraitable()
@@ -60,6 +60,6 @@ class __TwigTemplate_e706bcbfb2ef9495e28fc8e8570a426afb6a073640c8a02c7a5baaa0f86
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Columns/Content:data.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Columns/Content/data.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Columns/Content/data.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Columns/Content/data.html.twig");
     }
 }

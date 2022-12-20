@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig */
 class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbcd16c0 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -106,7 +106,7 @@ class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbc
 
     ";
             // line 49
-            $this->loadTemplate("PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig", "PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig", 49, "100461415")->display(twig_array_merge($context, ["id" => ($this->getAttribute(            // line 50
+            $this->loadTemplate("@PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig", "@PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig", 49, "1879188971")->display(twig_array_merge($context, ["id" => ($this->getAttribute(            // line 50
 ($context["grid"] ?? null), "id", []) . "_grid_common_show_query_modal"), "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("SQL query", [], "Admin.Global"), "closable" => true, "actions" => [0 => ["type" => "button", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Export to SQL Manager", [], "Admin.Actions"), "value" => "sql_manager", "class" => "btn btn-primary btn-lg btn-sql-submit"]]]));
             // line 74
             echo "  </div>
@@ -116,7 +116,7 @@ class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbc
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig";
     }
 
     public function isTraitable()
@@ -139,13 +139,13 @@ class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbc
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/grid_actions.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/grid_actions.html.twig");
     }
 }
 
 
-/* PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig */
-class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbcd16c0___100461415 extends \Twig\Template
+/* @PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig */
+class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbcd16c0___1879188971 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -164,7 +164,7 @@ class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbc
 
     protected function doDisplay(array $context, array $blocks = [])
     {
-        $this->parent = $this->loadTemplate("@PrestaShop/Admin/Helpers/bootstrap_popup.html.twig", "PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig", 49);
+        $this->parent = $this->loadTemplate("@PrestaShop/Admin/Helpers/bootstrap_popup.html.twig", "@PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig", 49);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -194,7 +194,7 @@ class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbc
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig";
     }
 
     public function isTraitable()
@@ -217,6 +217,6 @@ class __TwigTemplate_7f5e4c8edd01e4a263fef95ad223078dc8123060c283f87b2b4e8093cbc
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Blocks:grid_actions.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/grid_actions.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Blocks/grid_actions.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/grid_actions.html.twig");
     }
 }

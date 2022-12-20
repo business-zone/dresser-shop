@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Common/Grid/Columns/Content:action.html.twig */
+/* @PrestaShop/Admin/Common/Grid/Columns/Content/action.html.twig */
 class __TwigTemplate_03afd1afa94ae0f8b0150225397637682b4710cece0086066fe1a22b1b02446b extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -271,7 +271,7 @@ $context["action"]]);
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Common/Grid/Columns/Content:action.html.twig";
+        return "@PrestaShop/Admin/Common/Grid/Columns/Content/action.html.twig";
     }
 
     public function isTraitable()
@@ -294,6 +294,6 @@ $context["action"]]);
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Common/Grid/Columns/Content:action.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Columns/Content/action.html.twig");
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Columns/Content/action.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Columns/Content/action.html.twig");
     }
 }

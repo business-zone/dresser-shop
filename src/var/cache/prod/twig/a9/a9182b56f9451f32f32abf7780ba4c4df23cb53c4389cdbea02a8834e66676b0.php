@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:meta_showcase_card.html.twig */
+/* @PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/meta_showcase_card.html.twig */
 class __TwigTemplate_aaa94dfd0f2e5a6fd22bf6366a61bb73758c7ccf105142e932d51c076344f9fe extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -91,7 +91,7 @@ class __TwigTemplate_aaa94dfd0f2e5a6fd22bf6366a61bb73758c7ccf105142e932d51c07634
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:meta_showcase_card.html.twig";
+        return "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/meta_showcase_card.html.twig";
     }
 
     public function getDebugInfo()
@@ -109,6 +109,6 @@ class __TwigTemplate_aaa94dfd0f2e5a6fd22bf6366a61bb73758c7ccf105142e932d51c07634
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks:meta_showcase_card.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/meta_showcase_card.html.twig");
+        return new Source("", "@PrestaShop/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/meta_showcase_card.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Configure/ShopParameters/TrafficSeo/Meta/Blocks/meta_showcase_card.html.twig");
     }
 }
