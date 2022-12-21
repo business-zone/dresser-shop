@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-20 23:19:34
+/* Smarty version 3.1.43, created on 2022-12-21 04:01:41
   from '/var/www/html/modules/ps_themecusto/views/templates/admin/controllers/configuration/elem/wireframe_category.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_63a234f67b23c8_48653363',
+  'unifunc' => 'content_63a27715afa9f6_94904433',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cc1a3e911c15c3458846b0637b7ac2ffee2d76b2' => 
     array (
       0 => '/var/www/html/modules/ps_themecusto/views/templates/admin/controllers/configuration/elem/wireframe_category.tpl',
-      1 => 1671564742,
+      1 => 1671588397,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63a234f67b23c8_48653363 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63a27715afa9f6_94904433 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="row no-gutter js-wireframe">
     <div class="col-xs-12 js-img-menu" data-module_name="menu">

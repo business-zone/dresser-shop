@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Czas generowania: 20 Gru 2022, 22:35
+-- Czas generowania: 21 Gru 2022, 03:05
 -- Wersja serwera: 8.0.31
 -- Wersja PHP: 8.0.19
 
@@ -1317,10 +1317,6 @@ CREATE TABLE `ps_attribute` (
 --
 
 INSERT INTO `ps_attribute` (`id_attribute`, `id_attribute_group`, `color`, `position`) VALUES
-(1, 1, '', 0),
-(2, 1, '', 1),
-(3, 1, '', 2),
-(4, 1, '', 3),
 (5, 2, '#AAB2BD', 0),
 (6, 2, '#CFC4A6', 1),
 (7, 2, '#f5f5dc', 2),
@@ -1334,14 +1330,7 @@ INSERT INTO `ps_attribute` (`id_attribute`, `id_attribute_group`, `color`, `posi
 (15, 2, '#A0D468', 10),
 (16, 2, '#F1C40F', 11),
 (17, 2, '#964B00', 12),
-(18, 2, '#FCCACD', 13),
-(19, 3, '', 0),
-(20, 3, '', 1),
-(21, 3, '', 2),
-(22, 4, '', 0),
-(23, 4, '', 1),
-(24, 4, '', 2),
-(25, 4, '', 3);
+(18, 2, '#FCCACD', 13);
 
 -- --------------------------------------------------------
 
@@ -1361,10 +1350,7 @@ CREATE TABLE `ps_attribute_group` (
 --
 
 INSERT INTO `ps_attribute_group` (`id_attribute_group`, `is_color_group`, `group_type`, `position`) VALUES
-(1, 0, 'select', 0),
-(2, 1, 'color', 1),
-(3, 0, 'select', 2),
-(4, 0, 'select', 3);
+(2, 1, 'color', 0);
 
 -- --------------------------------------------------------
 
@@ -1384,10 +1370,7 @@ CREATE TABLE `ps_attribute_group_lang` (
 --
 
 INSERT INTO `ps_attribute_group_lang` (`id_attribute_group`, `id_lang`, `name`, `public_name`) VALUES
-(1, 1, 'Rozmiar', 'Rozmiar'),
-(2, 1, 'Kolor', 'Kolor'),
-(3, 1, 'Dimension', 'Dimension'),
-(4, 1, 'Paper Type', 'Paper Type');
+(2, 1, 'Kolor', 'Kolor');
 
 -- --------------------------------------------------------
 
@@ -1405,10 +1388,7 @@ CREATE TABLE `ps_attribute_group_shop` (
 --
 
 INSERT INTO `ps_attribute_group_shop` (`id_attribute_group`, `id_shop`) VALUES
-(1, 1),
-(2, 1),
-(3, 1),
-(4, 1);
+(2, 1);
 
 -- --------------------------------------------------------
 
@@ -1441,10 +1421,6 @@ CREATE TABLE `ps_attribute_lang` (
 --
 
 INSERT INTO `ps_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
-(1, 1, 'S'),
-(2, 1, 'M'),
-(3, 1, 'L'),
-(4, 1, 'XL'),
 (5, 1, 'Szary'),
 (6, 1, 'Szarobrązowy'),
 (7, 1, 'Beżowy'),
@@ -1458,14 +1434,7 @@ INSERT INTO `ps_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
 (15, 1, 'Zielony'),
 (16, 1, 'Żółty'),
 (17, 1, 'Brązowy'),
-(18, 1, 'Różowy'),
-(19, 1, '40x60cm'),
-(20, 1, '60x90cm'),
-(21, 1, '80x120cm'),
-(22, 1, 'Ruled'),
-(23, 1, 'Plain'),
-(24, 1, 'Squarred'),
-(25, 1, 'Doted');
+(18, 1, 'Różowy');
 
 -- --------------------------------------------------------
 
@@ -1483,10 +1452,6 @@ CREATE TABLE `ps_attribute_shop` (
 --
 
 INSERT INTO `ps_attribute_shop` (`id_attribute`, `id_shop`) VALUES
-(1, 1),
-(2, 1),
-(3, 1),
-(4, 1),
 (5, 1),
 (6, 1),
 (7, 1),
@@ -1500,14 +1465,7 @@ INSERT INTO `ps_attribute_shop` (`id_attribute`, `id_shop`) VALUES
 (15, 1),
 (16, 1),
 (17, 1),
-(18, 1),
-(19, 1),
-(20, 1),
-(21, 1),
-(22, 1),
-(23, 1),
-(24, 1),
-(25, 1);
+(18, 1);
 
 -- --------------------------------------------------------
 
@@ -4017,7 +3975,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (145, NULL, NULL, 'PS_VIRTUAL_PROD_FEATURE_ACTIVE', '1', '0000-00-00 00:00:00', '2022-12-18 20:45:06'),
 (146, NULL, NULL, 'PS_CUSTOMIZATION_FEATURE_ACTIVE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (147, NULL, NULL, 'PS_CART_RULE_FEATURE_ACTIVE', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(148, NULL, NULL, 'PS_PACK_FEATURE_ACTIVE', '1', '0000-00-00 00:00:00', '2022-12-18 20:45:08'),
+(148, NULL, NULL, 'PS_PACK_FEATURE_ACTIVE', NULL, '0000-00-00 00:00:00', '2022-12-21 03:58:47'),
 (149, NULL, NULL, 'PS_ALIAS_FEATURE_ACTIVE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (150, NULL, NULL, 'PS_TAX_ADDRESS_TYPE', 'id_address_delivery', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (151, NULL, NULL, 'PS_SHOP_DEFAULT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -5820,7 +5778,7 @@ CREATE TABLE `ps_employee` (
 --
 
 INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`, `has_enabled_gravatar`) VALUES
-(1, 1, 1, 'Doe', 'John', 'prestadev@prestashop.com', '$2y$10$39SgWcwTIDUTlla23ULU/ulZO059.kVOzNzGKS6CemTKNH1l05tO.', '2022-12-18 14:42:42', '2022-11-18', '2022-12-18', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2022-12-20', NULL, '0000-00-00 00:00:00', 0);
+(1, 1, 1, 'Doe', 'John', 'prestadev@prestashop.com', '$2y$10$39SgWcwTIDUTlla23ULU/ulZO059.kVOzNzGKS6CemTKNH1l05tO.', '2022-12-18 14:42:42', '2022-11-18', '2022-12-18', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2022-12-21', NULL, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -5843,7 +5801,8 @@ INSERT INTO `ps_employee_session` (`id_employee_session`, `id_employee`, `token`
 (2, 1, '6398ef8c156203a5f250dcee813b634eadae2094'),
 (3, 1, '16a0619ee24d1d766d5eecaa62309b36bac7b1f1'),
 (4, 1, '488074332a22a90b0c5b7ddf273df67294395753'),
-(5, 1, '7ea5e6aca06a9cd86a7ab00e86667a074bef55b0');
+(5, 1, '7ea5e6aca06a9cd86a7ab00e86667a074bef55b0'),
+(6, 1, '2c642e618dc4feb57048bbb3d6d475e8b7c9db5b');
 
 -- --------------------------------------------------------
 
@@ -16919,72 +16878,6 @@ CREATE TABLE `ps_layered_category` (
   `filter_show_limit` int UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
---
--- Zrzut danych tabeli `ps_layered_category`
---
-
-INSERT INTO `ps_layered_category` (`id_layered_category`, `id_shop`, `id_category`, `id_value`, `type`, `position`, `filter_type`, `filter_show_limit`) VALUES
-(1, 1, 2, NULL, 'category', 1, 0, 0),
-(2, 1, 2, 1, 'id_attribute_group', 2, 0, 0),
-(3, 1, 2, 2, 'id_attribute_group', 3, 0, 0),
-(4, 1, 2, 1, 'id_feature', 4, 0, 0),
-(5, 1, 2, 2, 'id_feature', 5, 0, 0),
-(6, 1, 2, NULL, 'quantity', 6, 0, 0),
-(7, 1, 2, NULL, 'manufacturer', 7, 0, 0),
-(8, 1, 2, NULL, 'condition', 8, 0, 0),
-(9, 1, 2, NULL, 'weight', 9, 0, 0),
-(10, 1, 2, NULL, 'price', 10, 0, 0),
-(11, 1, 2, 3, 'id_attribute_group', 11, 0, 0),
-(12, 1, 2, 4, 'id_attribute_group', 12, 0, 0),
-(13, 1, 4, NULL, 'category', 1, 0, 0),
-(14, 1, 4, 1, 'id_attribute_group', 2, 0, 0),
-(15, 1, 4, 2, 'id_attribute_group', 3, 0, 0),
-(16, 1, 4, 1, 'id_feature', 4, 0, 0),
-(17, 1, 4, 2, 'id_feature', 5, 0, 0),
-(18, 1, 4, NULL, 'quantity', 6, 0, 0),
-(19, 1, 4, NULL, 'manufacturer', 7, 0, 0),
-(20, 1, 4, NULL, 'condition', 8, 0, 0),
-(21, 1, 4, NULL, 'weight', 9, 0, 0),
-(22, 1, 4, NULL, 'price', 10, 0, 0),
-(23, 1, 4, 3, 'id_attribute_group', 11, 0, 0),
-(24, 1, 4, 4, 'id_attribute_group', 12, 0, 0),
-(25, 1, 5, NULL, 'category', 1, 0, 0),
-(26, 1, 5, 1, 'id_attribute_group', 2, 0, 0),
-(27, 1, 5, 2, 'id_attribute_group', 3, 0, 0),
-(28, 1, 5, 1, 'id_feature', 4, 0, 0),
-(29, 1, 5, 2, 'id_feature', 5, 0, 0),
-(30, 1, 5, NULL, 'quantity', 6, 0, 0),
-(31, 1, 5, NULL, 'manufacturer', 7, 0, 0),
-(32, 1, 5, NULL, 'condition', 8, 0, 0),
-(33, 1, 5, NULL, 'weight', 9, 0, 0),
-(34, 1, 5, NULL, 'price', 10, 0, 0),
-(35, 1, 5, 3, 'id_attribute_group', 11, 0, 0),
-(36, 1, 5, 4, 'id_attribute_group', 12, 0, 0),
-(37, 1, 8, NULL, 'category', 1, 0, 0),
-(38, 1, 8, 1, 'id_attribute_group', 2, 0, 0),
-(39, 1, 8, 2, 'id_attribute_group', 3, 0, 0),
-(40, 1, 8, 1, 'id_feature', 4, 0, 0),
-(41, 1, 8, 2, 'id_feature', 5, 0, 0),
-(42, 1, 8, NULL, 'quantity', 6, 0, 0),
-(43, 1, 8, NULL, 'manufacturer', 7, 0, 0),
-(44, 1, 8, NULL, 'condition', 8, 0, 0),
-(45, 1, 8, NULL, 'weight', 9, 0, 0),
-(46, 1, 8, NULL, 'price', 10, 0, 0),
-(47, 1, 8, 3, 'id_attribute_group', 11, 0, 0),
-(48, 1, 8, 4, 'id_attribute_group', 12, 0, 0),
-(49, 1, 7, NULL, 'category', 1, 0, 0),
-(50, 1, 7, 1, 'id_attribute_group', 2, 0, 0),
-(51, 1, 7, 2, 'id_attribute_group', 3, 0, 0),
-(52, 1, 7, 1, 'id_feature', 4, 0, 0),
-(53, 1, 7, 2, 'id_feature', 5, 0, 0),
-(54, 1, 7, NULL, 'quantity', 6, 0, 0),
-(55, 1, 7, NULL, 'manufacturer', 7, 0, 0),
-(56, 1, 7, NULL, 'condition', 8, 0, 0),
-(57, 1, 7, NULL, 'weight', 9, 0, 0),
-(58, 1, 7, NULL, 'price', 10, 0, 0),
-(59, 1, 7, 3, 'id_attribute_group', 11, 0, 0),
-(60, 1, 7, 4, 'id_attribute_group', 12, 0, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -16999,13 +16892,6 @@ CREATE TABLE `ps_layered_filter` (
   `date_add` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
---
--- Zrzut danych tabeli `ps_layered_filter`
---
-
-INSERT INTO `ps_layered_filter` (`id_layered_filter`, `name`, `filters`, `n_categories`, `date_add`) VALUES
-(1, 'Mój szablon 2022-12-18', 'a:14:{s:10:\"categories\";a:5:{i:0;i:2;i:2;i:4;i:3;i:5;i:6;i:8;i:7;i:7;}s:9:\"shop_list\";a:1:{i:1;i:1;}s:31:\"layered_selection_subcategories\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_1\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_2\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:24:\"layered_selection_feat_1\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:24:\"layered_selection_feat_2\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:23:\"layered_selection_stock\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:30:\"layered_selection_manufacturer\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:27:\"layered_selection_condition\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:31:\"layered_selection_weight_slider\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:30:\"layered_selection_price_slider\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_3\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_4\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}}', 8, '2022-12-18 19:45:10');
-
 -- --------------------------------------------------------
 
 --
@@ -17016,14 +16902,6 @@ CREATE TABLE `ps_layered_filter_block` (
   `hash` char(32) NOT NULL DEFAULT '',
   `data` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-
---
--- Zrzut danych tabeli `ps_layered_filter_block`
---
-
-INSERT INTO `ps_layered_filter_block` (`hash`, `data`) VALUES
-('6d834f860d1ef3ee78343e8b93a24fc4', 'a:1:{s:7:\"filters\";a:0:{}}'),
-('8ded5775b85bba05abaab4a8ba0b2e66', 'a:1:{s:7:\"filters\";a:6:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Kategorie\";s:6:\"values\";a:11:{i:17;a:2:{s:4:\"name\";s:15:\"Styl rustykalny\";s:3:\"nbr\";s:2:\"53\";}i:18;a:2:{s:4:\"name\";s:15:\"Styl nowoczesny\";s:3:\"nbr\";s:3:\"367\";}i:19;a:2:{s:4:\"name\";s:17:\"Styl industrialny\";s:3:\"nbr\";s:2:\"34\";}i:20;a:2:{s:4:\"name\";s:12:\"Styl loftowy\";s:3:\"nbr\";s:2:\"35\";}i:21;a:2:{s:4:\"name\";s:19:\"Styl modernistyczny\";s:3:\"nbr\";s:2:\"10\";}i:22;a:2:{s:4:\"name\";s:20:\"Styl minimalistyczny\";s:3:\"nbr\";s:2:\"34\";}i:23;a:2:{s:4:\"name\";s:14:\"Styl klasyczny\";s:3:\"nbr\";s:2:\"12\";}i:24;a:2:{s:4:\"name\";s:17:\"Styl skandynawski\";s:3:\"nbr\";s:2:\"37\";}i:25;a:2:{s:4:\"name\";s:12:\"Styl glamour\";s:3:\"nbr\";s:2:\"23\";}i:26;a:2:{s:4:\"name\";s:16:\"Styl romantyczny\";s:3:\"nbr\";s:1:\"4\";}i:27;a:2:{s:4:\"name\";s:17:\"Styl prowansalski\";s:3:\"nbr\";s:1:\"5\";}}s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";s:1:\"0\";}i:1;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:13:\"Dostępność\";s:6:\"values\";a:3:{i:0;a:2:{s:4:\"name\";s:12:\"Niedostępne\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:9:\"Dostępny\";s:3:\"nbr\";i:614;}i:2;a:2:{s:4:\"name\";s:11:\"W magazynie\";s:3:\"nbr\";i:614;}}s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";s:1:\"0\";}i:2;a:0:{}i:3;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Stan:\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:4:\"Nowy\";s:3:\"nbr\";s:3:\"614\";}s:4:\"used\";a:2:{s:4:\"name\";s:8:\"Używane\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:9:\"Odnowione\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";s:1:\"0\";}i:4;a:12:{s:9:\"type_lite\";s:6:\"weight\";s:4:\"type\";s:6:\"weight\";s:6:\"id_key\";i:0;s:4:\"name\";s:4:\"Waga\";s:3:\"max\";d:128;s:3:\"min\";d:5.5;s:4:\"unit\";s:2:\"kg\";s:14:\"specifications\";N;s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";i:3;s:5:\"value\";N;s:3:\"nbr\";i:614;}i:5;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:4:\"Cena\";s:3:\"max\";d:5653;s:3:\"min\";d:107;s:4:\"unit\";s:3:\"zł\";s:14:\"specifications\";a:11:{s:6:\"symbol\";a:11:{i:0;s:1:\",\";i:1;s:2:\" \";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"PLN\";s:14:\"currencySymbol\";s:3:\"zł\";s:13:\"numberSymbols\";a:11:{i:0;s:1:\",\";i:1;s:2:\" \";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:15:\"positivePattern\";s:12:\"#,##0.00 ¤\";s:15:\"negativePattern\";s:13:\"-#,##0.00 ¤\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";i:0;s:11:\"filter_type\";i:3;s:3:\"nbr\";i:614;s:5:\"value\";N;}}}');
 
 -- --------------------------------------------------------
 
@@ -17783,6 +17661,17 @@ CREATE TABLE `ps_layered_product_attribute` (
   `id_shop` int UNSIGNED NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
+--
+-- Zrzut danych tabeli `ps_layered_product_attribute`
+--
+
+INSERT INTO `ps_layered_product_attribute` (`id_attribute`, `id_product`, `id_attribute_group`, `id_shop`) VALUES
+(5, 614, 2, 1),
+(6, 608, 2, 1),
+(8, 614, 2, 1),
+(12, 608, 2, 1),
+(17, 608, 2, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -18466,7 +18355,17 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (565, 1, 0, 'import Produkty (od 605 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:15:56', '2022-12-20 22:15:56'),
 (566, 1, 0, 'import Produkty (od 610 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:16:16', '2022-12-20 22:16:16'),
 (567, 1, 0, 'import Produkty (od 0 do 5) z zaokrągleniem', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:16:17', '2022-12-20 22:16:17'),
-(568, 1, 0, 'Protect vendor folder in module ps_cashondelivery', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:48:36', '2022-12-20 22:48:36');
+(568, 1, 0, 'Protect vendor folder in module ps_cashondelivery', '', 0, 1, NULL, 1, 0, 1, '2022-12-20 22:48:36', '2022-12-20 22:48:36'),
+(569, 1, 0, 'Połączenie z panelem administracyjnym z 192.168.32.1', '', 0, NULL, NULL, 1, 1, 1, '2022-12-21 03:53:37', '2022-12-21 03:53:37'),
+(570, 1, 0, 'usunięcie AttributeGroup', 'AttributeGroup', 1, 1, NULL, 1, 0, 1, '2022-12-21 03:53:54', '2022-12-21 03:53:54'),
+(571, 1, 0, 'usunięcie AttributeGroup', 'AttributeGroup', 3, 1, NULL, 1, 0, 1, '2022-12-21 03:54:00', '2022-12-21 03:54:00'),
+(572, 1, 0, 'usunięcie AttributeGroup', 'AttributeGroup', 4, 1, NULL, 1, 0, 1, '2022-12-21 03:54:07', '2022-12-21 03:54:07'),
+(573, 1, 0, 'Product modification', 'Product', 614, 1, NULL, 1, 0, 1, '2022-12-21 03:54:54', '2022-12-21 03:54:54'),
+(574, 1, 0, 'Product modification', 'Product', 614, 1, NULL, 1, 0, 1, '2022-12-21 03:55:03', '2022-12-21 03:55:03'),
+(575, 1, 0, 'Product modification', 'Product', 614, 1, NULL, 1, 0, 1, '2022-12-21 03:55:05', '2022-12-21 03:55:05'),
+(576, 1, 0, 'Product modification', 'Product', 608, 1, NULL, 1, 0, 1, '2022-12-21 03:58:02', '2022-12-21 03:58:02'),
+(577, 1, 0, 'Product modification', 'Product', 608, 1, NULL, 1, 0, 1, '2022-12-21 03:58:21', '2022-12-21 03:58:21'),
+(578, 1, 0, 'Product modification', 'Product', 608, 1, NULL, 1, 0, 1, '2022-12-21 03:58:47', '2022-12-21 03:58:47');
 
 -- --------------------------------------------------------
 
@@ -20972,13 +20871,13 @@ INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_ca
 (605, 0, 0, 18, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '454.471545', '0.000000', '', '0.000000', '0.000000', '', '', '', '63.400000', '95.500000', '40.000000', '30.000000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:14:58', '2022-12-20 22:14:58', 0, 3, 1, ''),
 (606, 0, 0, 18, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '2430.146341', '0.000000', '', '0.000000', '0.000000', '', '', '', '210.000000', '67.000000', '46.000000', '92.000000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 0, 3, 1, ''),
 (607, 0, 0, 18, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '251.219512', '0.000000', '', '0.000000', '0.000000', '', '', '', '63.400000', '55.500000', '40.000000', '14.500000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 0, 3, 1, ''),
-(608, 0, 0, 18, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '2332.520325', '0.000000', '', '0.000000', '0.000000', '', '', '', '158.400000', '94.000000', '43.600000', '82.000000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 0, 3, 1, ''),
+(608, 0, 0, 18, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '2332.520325', '0.000000', '', '0.000000', '0.000000', '', '', '', '158.400000', '94.000000', '43.600000', '82.000000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 0, 0, 0, 3, '2022-12-20 22:15:32', '2022-12-21 03:58:46', 0, 3, 1, 'combinations'),
 (609, 0, 0, 18, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '454.471545', '0.000000', '', '0.000000', '0.000000', '', '', '', '60.000000', '100.000000', '40.000000', '33.000000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 0, 3, 1, ''),
 (610, 0, 0, 27, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '275.609756', '0.000000', '', '0.000000', '0.000000', '', '', '', '146.600000', '44.000000', '53.200000', '41.000000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 0, 3, 1, ''),
 (611, 0, 0, 27, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '633.333333', '0.000000', '', '0.000000', '0.000000', '', '', '', '95.000000', '51.000000', '44.000000', '18.000000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:56', '2022-12-20 22:15:56', 0, 3, 1, ''),
 (612, 0, 0, 27, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '1178.048780', '0.000000', '', '0.000000', '0.000000', '', '', '', '132.000000', '80.000000', '43.000000', '33.000000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:56', '2022-12-20 22:15:56', 0, 3, 1, ''),
 (613, 0, 0, 27, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '893.495935', '0.000000', '', '0.000000', '0.000000', '', '', '', '91.000000', '81.000000', '43.000000', '24.500000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:56', '2022-12-20 22:15:56', 0, 3, 1, ''),
-(614, 0, 0, 27, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '934.146341', '0.000000', '', '0.000000', '0.000000', '', '', '', '149.900000', '95.500000', '49.800000', '88.100000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, 0, 0, '2022-12-20 22:15:56', '2022-12-20 22:15:56', 0, 3, 1, '');
+(614, 0, 0, 27, 1, 1, 0, 0, '', '', '', '', '0.000000', 0, 1, NULL, 0, '934.146341', '0.000000', '', '0.000000', '0.000000', '', '', '', '149.900000', '95.500000', '49.800000', '88.100000', 2, 1, 0, 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 0, 0, 0, 2, '2022-12-20 22:15:56', '2022-12-21 03:55:05', 0, 3, 1, 'combinations');
 
 -- --------------------------------------------------------
 
@@ -21020,6 +20919,17 @@ CREATE TABLE `ps_product_attribute` (
   `available_date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Zrzut danych tabeli `ps_product_attribute`
+--
+
+INSERT INTO `ps_product_attribute` (`id_product_attribute`, `id_product`, `reference`, `supplier_reference`, `location`, `ean13`, `isbn`, `upc`, `mpn`, `wholesale_price`, `price`, `ecotax`, `quantity`, `weight`, `unit_price_impact`, `default_on`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `available_date`) VALUES
+(1, 614, '', '', '', '', '', '', '', '0.000000', '0.000000', '0.000000', 10, '0.000000', '0.000000', NULL, 1, NULL, 0, '0000-00-00'),
+(2, 614, '', '', '', '', '', '', '', '0.000000', '0.000000', '0.000000', 10, '0.000000', '0.000000', 1, 1, NULL, 0, '0000-00-00'),
+(3, 608, '', '', '', '', '', '', '', '0.000000', '0.000000', '0.000000', 24, '0.000000', '0.000000', 1, 1, NULL, 0, '0000-00-00'),
+(4, 608, '', '', '', '', '', '', '', '0.000000', '0.000000', '0.000000', 20, '0.000000', '0.000000', NULL, 1, NULL, 0, '0000-00-00'),
+(5, 608, '', '', '', '', '', '', '', '0.000000', '0.000000', '0.000000', 40, '0.000000', '0.000000', NULL, 1, NULL, 0, '0000-00-00');
+
 -- --------------------------------------------------------
 
 --
@@ -21030,6 +20940,17 @@ CREATE TABLE `ps_product_attribute_combination` (
   `id_attribute` int UNSIGNED NOT NULL,
   `id_product_attribute` int UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Zrzut danych tabeli `ps_product_attribute_combination`
+--
+
+INSERT INTO `ps_product_attribute_combination` (`id_attribute`, `id_product_attribute`) VALUES
+(8, 1),
+(5, 2),
+(6, 3),
+(17, 4),
+(12, 5);
 
 -- --------------------------------------------------------
 
@@ -21063,6 +20984,17 @@ CREATE TABLE `ps_product_attribute_shop` (
   `low_stock_alert` tinyint(1) NOT NULL DEFAULT '0',
   `available_date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Zrzut danych tabeli `ps_product_attribute_shop`
+--
+
+INSERT INTO `ps_product_attribute_shop` (`id_product`, `id_product_attribute`, `id_shop`, `wholesale_price`, `price`, `ecotax`, `weight`, `unit_price_impact`, `default_on`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `available_date`) VALUES
+(614, 1, 1, '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', NULL, 1, NULL, 0, '0000-00-00'),
+(614, 2, 1, '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', 1, 1, NULL, 0, '0000-00-00'),
+(608, 3, 1, '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', 1, 1, NULL, 0, '0000-00-00'),
+(608, 4, 1, '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', NULL, 1, NULL, 0, '0000-00-00'),
+(608, 5, 1, '0.000000', '0.000000', '0.000000', '0.000000', '0.000000', NULL, 1, NULL, 0, '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -21882,13 +21814,13 @@ INSERT INTO `ps_product_lang` (`id_product`, `id_shop`, `id_lang`, `description`
 (605, 1, 1, 'Mała komoda BILBAO pomoże uporządkować drobiazgi w przedpokoju. Geometryczne wykończenie frontów kolekcji BILBAO podkreśli nietuzinkowy design wnętrza. WNĘTRZE Za drzwiami znajduje się 1 duża wnęka. Maksymalne obciążenie półki wynosi 5 kg . 2 szuflady są wyposażone w prowadnice kulkowe . Na blacie możesz ułożyć stylowe dekoracje lub ramki z ulubionymi zdjęciami domowników, które wprowadzą rodzinny klimat do wnętrza. Komodę wyposażono w zawiasy z cichym domykiem , więc unikniesz hałasu przy zamykaniu frontu. WYKOŃCZENIE Grafitowe fronty są wykończone w macie,dlatego nadają przytulności wnętrzu. Połączenie dwóch kolorów: grafitu i dębu artisan sprawia, że meble pasują do nowoczesnego mieszkania. MEBLE Z GEOMETRYCZNYM WZOREM Szukasz mebli, które wyróżniają się ciekawym designem i pasują do współczesnych wnętrz? Kolekcja mebli BILBAO łączy w sobie elementy stylu skandynawskiego i nowoczesnego, a geometrycznie zdobione fronty nadają wnętrzu nietuzinkowy charakter. Duża ilość mebli z kolekcji BILBAO pozwoli zaaranżować przestrzeń zarówno w przedpokoju, jak i pokoju dziennego.', '', 'komoda-z-szarym-frontem-bilbao', '', '', '', 'Komoda z szarym frontem BILBAO', '', '', '', ''),
 (606, 1, 1, 'Niekwestionowana elegancja kolekcji mebli do salonu SANTORI wiąże nowoczesną prostotę designu z wysoką jakością wykonania. Jasny, ciepły odcień dębu bielonego zdobiony unikatowymi słojami podkreśla ponadczasową klasę, jaką prezentuje naturalne drewno. Szafka RTV SANTORI doskonale uzupełnia aranżację salonu, zapewniając sporo miejsca na przechowanie akcesoriów i gadżetów elektronicznych. Przestronny blat szafki świetnie nadaje się do umiejscowienia telewizora, ale także bibelotów dekoracyjnych i ozdób w przypadku, gdy telewizor zostaje zawieszony na ścianie. WNĘTRZE Szafka zawiera 4 zamykane wnęki, które pozwolą rozsądnie rozłożyć potrzebne akcesoria i gadżety. Maksymalne obciążenie półki wynosi 10 kg; Umieszczone pod blatem dwie otwarte wnęki świetnie nadają się do przechowania sprzętu elektronicznego – dekodera telewizyjnego i konsoli oraz różnych typów odtwarzaczy, do których konieczny jest łatwy i szybki dostęp. WYKOŃCZENIE Korpus mebla jest wykonany z płyty wiórowej o grubości 15 mm i wykończony olejowaną okleiną z naturalnego drewna dębowego. Półki szafki są wykończone folią. Wykończenia są utrzymane w barwie dębu Bianco – jasnym, ciepłym odcieniu, który wnosi do pomieszczenia przytulny, domowy klimat.', '', 'szafka-rtv-santori-2d2s', '', '', '', 'Szafka RTV SANTORI 2D2S', '', '', '', ''),
 (607, 1, 1, 'Potrzebujesz małej szafki na buty do swojego przedpokoju ? Szafka na buty BILBAO to mebel o prostych kształtach z minimalistyczną formą, która sprawia, że mebel pasuje do nowoczesnych wnętrz . Jasna kolorystyka szafki wprowadza do pomieszczenia przytulny klimat. Kolor: dąb craft jest popularny, co ułatwia zestawienie mebla z innymi. WNĘTRZE Masz do dyspozycji 1 wnękę , w której przechowasz obuwie lub akcesoria. Dzięki standardowym drzwiom łatwiej Ci będzie chować i wyciągać nawet duże przedmioty. WYKOŃCZENIE Mebel jest pokryty laminatem, który łatwo utrzymasz w czystości. MEBLE Z GEOMETRYCZNYM WZOREM Szukasz mebli, które wyróżniają się ciekawym designem i pasują do współczesnych wnętrz? Kolekcja mebli BILBAO łączy w sobie elementy stylu skandynawskiego i nowoczesnego, a geometrycznie zdobione fronty nadają wnętrzu nietuzinkowy charakter. Duża ilość mebli z kolekcji BILBAO pozwoli zaaranżować przestrzeń zarówno w przedpokoju, jak i pokoju dziennego.', '', 'szafka-na-buty-z-szarym-frontem-bilbao', '', '', '', 'Szafka na buty z szarym frontem BILBAO', '', '', '', ''),
-(608, 1, 1, 'Komoda SANTOS z frontami z litego drewna spodoba się wielbicielom naturalnych materiałów. Możesz wyeksponować w niej reprezentacyjne przedmioty, a w zamkniętych wnękach ukryć dokumenty lub tekstylia domowe. WNĘTRZE Do dyspozycji masz 2 przeszklone wnęki, 3 szuflady oraz 4 wnęki za pełnymi drzwiami . Możesz dokupić wewnętrzne oświetlenie do witryny, dzięki któremu sprawisz, że środek mebla będzie emanować ciepłem i przytulnym klimatem. NATURALNA FORMA I KOLOR Nie można wyobrazić sobie przytulnego wnętrza bez drewna. Komodę SANTOS docenisz za naturalny design – fronty z litego drewna, które podkreślają unikatowy wygląd mebla. MEBLE DO SALONU Z kolekcją FLORA możesz urządzić salon i jadalnię w spójnym stylu. Świetnie wpiszą zarówno w nowoczesne, jak i bardziej surowe wnętrza.', '', 'komoda-z-drewnianym-frontem-santos', '', '', '', 'Komoda z drewnianym frontem SANTOS', '', '', '', ''),
+(608, 1, 1, '<p>Komoda SANTOS z frontami z litego drewna spodoba się wielbicielom naturalnych materiałów. Możesz wyeksponować w niej reprezentacyjne przedmioty, a w zamkniętych wnękach ukryć dokumenty lub tekstylia domowe. WNĘTRZE Do dyspozycji masz 2 przeszklone wnęki, 3 szuflady oraz 4 wnęki za pełnymi drzwiami . Możesz dokupić wewnętrzne oświetlenie do witryny, dzięki któremu sprawisz, że środek mebla będzie emanować ciepłem i przytulnym klimatem. NATURALNA FORMA I KOLOR Nie można wyobrazić sobie przytulnego wnętrza bez drewna. Komodę SANTOS docenisz za naturalny design – fronty z litego drewna, które podkreślają unikatowy wygląd mebla. MEBLE DO SALONU Z kolekcją FLORA możesz urządzić salon i jadalnię w spójnym stylu. Świetnie wpiszą zarówno w nowoczesne, jak i bardziej surowe wnętrza.</p>', '', 'komoda-z-drewnianym-frontem-santos', '', '', '', 'Komoda z drewnianym frontem SANTOS', '', '', '', ''),
 (609, 1, 1, 'Komoda mała z 3 szufladami z serii REMO to świetne rozwiązanie do młodzieżowych pomieszczeń o niewielkim metrażu. WNĘTRZE 3 półki: książki, które obiecałeś sobie przeczytać? To na nie idealne miejsce. 2 szuflady: na bieliznę, ubrania albo rzeczy, o których wiesz tylko Ty. WYKOŃCZENIE Komodę wykonano z płyty meblowej. Mebel został pokryty laminatem w kolorze białego dębu wilton, szarym i białego matu.', '', 'komoda-mala-z-szufladami-remo', '', '', '', 'Komoda mała z szufladami REMO', '', '', '', ''),
 (610, 1, 1, 'Szafka RTV VIRGINIA 1K1S to prosty i bardzo funkcjonalny mebel, który umożliwia przechowanie sprzętów elektronicznych i dodatkowych akcesoriów w estetyczny sposób wkomponowując je we wnętrze salonu. Kolekcja VIRGINIA wyróżnia się nowoczesnym designem, który wprowadza do pomieszczenia chłodny kolorystycznie klimat. Symetria konstrukcji udanie łączy się z uniwersalnością barwy i subtelnym wykończeniem. Meble z serii VIRGINIA umożliwiają funkcjonalne urządzenie domu z optymalnym wykorzystaniem przestrzeni wprowadzającym do aranżacji poczucie ładu i harmonii. WNĘTRZE Szafka zawiera dwie wnęki zamykane klapowo po obu stronach – idealne do przechowywania podręcznych gadżetów i akcesoriów. Szuflada na prowadnicach kulkowych przyda się jako dodatkowa przestrzeń służąca do uporządkowania drobnych dodatków. Wnęka pośrodku szafki świetnie nadaje się do przechowania dekodera lub konsoli. Wymiary wnęki: szerokość 43 cm, głębokość 50,5 cm, wysokość 17,5 cm . WYKOŃCZENIE Szafka jest wykonana z płyty meblowej o grubości 1,6 cm . Laminat pozytywnie wpływa na trwałość mebli, a dodatkowo ułatwia ich odkurzanie i mycie. Wizerunek białego drewna sosnowego dodaje aranżacji oryginalnego charakteru i jednocześnie rozjaśnia pomieszczenia. W połączeniu z metalowymi uchwytami stanowi bardzo uniwersalną propozycję do nowoczesnego salonu. Meble z serii VIRGINIA możesz zestawiać z szarościami, złamanymi odcieniami bieli, z beżem, brązem, granatem. Dobrze prezentują się także w pomieszczeniach o ciemnej kolorystyce.', '', 'szafka-rtv-virginia-2k1s', '', '', '', 'Szafka RTV VIRGINIA 2K1S', '', '', '', ''),
 (611, 1, 1, 'Twoje sprzęty RTV potrzebują wyjątkowej oprawy? Szafka pod telewizor CRAMENA spełni nie tylko swoje funkcjonalne zadanie, ale również będzie stanowiła element dekoracji. Szeroka na 95 cm , nie zajmuje wiele miejsca w Twoim domowym centrum rozrywki. Wyposażona we wnękę i 2 szuflady o głębokości 44 cm , oferuje dodatkowe miejsce na dekoder oraz mniejsze akcesoria i gadżety, które chcesz mieć zawsze pod ręką. Szafka RTV CRAMENA , to doskonała propozycja dla koneserów antyków - stanowi element kolekcji, która wprowadzi do Twojego wnętrza odrobinę dworkowego stylu. WNĘTRZE 2 szuflady przydadzą się na drobiazki Wnęka otwarta jest z obu stron, dzięki czemu z łatwością przeciągniesz okablowanie. OZDOBA WNĘTRZA Wyposażona w ozdobny panel na dole mebla. Szafka została wzbogacona efektem ryflowania . Wprowadza przytulny klimat do Twoich wnętrz. WYKOŃCZENIE Wykonana z sosn y, pokryta szarym woskiem antykowanym, który nadaje jej postarzany wygląd. Metalowe uchwyty podkreślają jej surowy charakter. Szary odcień sprawia, że mebel staje się uniwersalny i ponadczasowy.', '', 'szafka-rtv-prowansalska-szara-cramena', '', '', '', 'Szafka RTV prowansalska szara CRAMENA', '', '', '', ''),
 (612, 1, 1, 'Szukasz oryginalnej komody na dekoracje, obrusy lub gry? Komodę CRAMENĘ możesz postawić przy ścianie o długości 132 cm, a na jej blacie wyeksponować ważne dla Ciebie dekoracje. Mebel może pochwalić się nie tylko funkcjonalnością, ale również wyjątkowym wykonaniem w stylu prowansalskim . Kolekcja CRAMENA - to doskonała propozycja dla miłośników postarzanych mebli. WNĘTRZE ? W 6 zamykanych wnękach uporządkujesz swoje rzeczy 2 szuflady przydadzą się na dokumenty lub drobne akcesoria OZDOBA WNĘTRZA Wyposażona w ozdobny panel na dole mebla. Szafka została wzbogacona efektem ryflowania . Metalowe dodatki wzmacniają prowansalski styl. Wprowadza przytulny klimat do Twoich wnętrz. WYKOŃCZENIE Wykonana z sosny , pokryta szarym woskiem antykowanym, który nadał jej postarzany wygląd. Szary odcień sprawia, że mebel staje się uniwersalny i ponadczasowy.', '', 'komoda-3-drzwiowa-szara-cramena', '', '', '', 'Komoda 3-drzwiowa szara CRAMENA', '', '', '', ''),
 (613, 1, 1, 'Obrusy, dekoracje, zastawa stołowa - komoda CRAMENA ułatwia uporządkowanie wszystkich rzeczy, po które często sięgasz, przebywając w salonie lub jadalni. Mebel może pochwalić się nie tylko funkcjonalnością, ale również wyjątkowym wykonaniem w stylu prowansalskim . Wyposażona w 2 półki ukryte za podwójnymi drzwiami oraz 2 wysuwane szuflady. Wysoka na 81 cm i szeroka na 91 cm , pozwala wyeksponować na niej ważne dla Ciebie pamiątki. To element kolekcji, która wprowadzi do wnętrza odrobinę dworkowego stylu. Przenieś się myślami do początku XX wieku ! Kolekcja CRAMENA - to doskonała propozycja dla koneserów antyków . WNĘTRZE 4 wnęki za zamkniętymi drzwiami pozwolą Ci uporządkować rzeczy. 2 szuflady przydadzą się na drobne przedmioty OZDOBNY WYGLĄD Wyposażona w ozdobny panel na dole mebla. Szafka została wzbogacona efektem ryflowania . Metalowe dodatki wzmacniają prowansalski styl. Wprowadza przytulny klimat do Twoich wnętrz. WYKOŃCZENIE Wykonana z sosny , pokryta szarym woskiem antykowanym, nadaje jej postarzany wygląd. Szary odcień sprawia, że mebel staje się uniwersalny i ponadczasowy.', '', 'komoda-prowansalska-szara-cramena', '', '', '', 'Komoda prowansalska szara CRAMENA', '', '', '', ''),
-(614, 1, 1, 'Niewielka komoda ANTHONY to mebel praktyczny, który zadba o porządek w domowym zaciszu. Przeznaczona raczej do kameralnych wnętrz, bo dzięki zastosowaniu drzwi przesuwnych, idealnie wpisuje się w przestrzeń niewielkiego salonu, przedpokoju oraz jadalni. Jej kolorystyka łącząca biel sosny andersen i naturalny odcień dębu wotan rozjaśni wnętrze, a design stylizowany na meble w stylu prowansalskim podkreśli oryginalność wystroju wnętrza. WNĘTRZE Zamykane wnęki stanowią doskonałe miejsce do przechowywania rzeczy, których nie chcesz eksponować. Dostaniesz się do nich za pomocą drzwi przesuwnych. 2 szuflady pomogą zorganizować drobne przedmioty. Blat wykorzystaj jako miejsce na stylowe dodatki, które podkreślą charakter Twojego wnętrza. WYKOŃCZENIE Komoda jest wykonana z płyty meblowej i wykończona laminatem w kolorze sosny andersen i dąb wotan. Takie wykończenie wprowadza do wnętrza przytulny klimat. Uroku dodają ładnie wkomponowane w bryłę uchwyty. Meble do pokoju dziennego i jadalni Kolekcja mebli ANTHONY świetnie wypełni wnętrze mieszkania urządzonego w stylu prowansalskim. Jasna kolorystyka nadaje dużym bryłom lekkości, a intrygujący rysunek drewna wprowadza do aranżacji odrobinę surowego charakteru. Możesz zestawić je z dodatkami z wizerunkiem polnych kwiatów i elementami z jasnego drewna.', '', 'komoda-prowansalska-z-drzwiami-przesuwnymi-anthony', '', '', '', 'Komoda prowansalska z drzwiami przesuwnymi ANTHONY', '', '', '', '');
+(614, 1, 1, '<p>Niewielka komoda ANTHONY to mebel praktyczny, który zadba o porządek w domowym zaciszu. Przeznaczona raczej do kameralnych wnętrz, bo dzięki zastosowaniu drzwi przesuwnych, idealnie wpisuje się w przestrzeń niewielkiego salonu, przedpokoju oraz jadalni. Jej kolorystyka łącząca biel sosny andersen i naturalny odcień dębu wotan rozjaśni wnętrze, a design stylizowany na meble w stylu prowansalskim podkreśli oryginalność wystroju wnętrza. WNĘTRZE Zamykane wnęki stanowią doskonałe miejsce do przechowywania rzeczy, których nie chcesz eksponować. Dostaniesz się do nich za pomocą drzwi przesuwnych. 2 szuflady pomogą zorganizować drobne przedmioty. Blat wykorzystaj jako miejsce na stylowe dodatki, które podkreślą charakter Twojego wnętrza. WYKOŃCZENIE Komoda jest wykonana z płyty meblowej i wykończona laminatem w kolorze sosny andersen i dąb wotan. Takie wykończenie wprowadza do wnętrza przytulny klimat. Uroku dodają ładnie wkomponowane w bryłę uchwyty. Meble do pokoju dziennego i jadalni Kolekcja mebli ANTHONY świetnie wypełni wnętrze mieszkania urządzonego w stylu prowansalskim. Jasna kolorystyka nadaje dużym bryłom lekkości, a intrygujący rysunek drewna wprowadza do aranżacji odrobinę surowego charakteru. Możesz zestawić je z dodatkami z wizerunkiem polnych kwiatów i elementami z jasnego drewna.</p>', '', 'komoda-prowansalska-z-drzwiami-przesuwnymi-anthony', '', '', '', 'Komoda prowansalska z drzwiami przesuwnymi ANTHONY', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -22559,13 +22491,13 @@ INSERT INTO `ps_product_shop` (`id_product`, `id_shop`, `id_category_default`, `
 (605, 1, 18, 1, 0, 0, '0.000000', 1, NULL, 0, '454.471545', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:14:58', '2022-12-20 22:14:58', 3),
 (606, 1, 18, 1, 0, 0, '0.000000', 1, NULL, 0, '2430.146341', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 3),
 (607, 1, 18, 1, 0, 0, '0.000000', 1, NULL, 0, '251.219512', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 3),
-(608, 1, 18, 1, 0, 0, '0.000000', 1, NULL, 0, '2332.520325', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 3),
+(608, 1, 18, 1, 0, 0, '0.000000', 1, NULL, 0, '2332.520325', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 3, 0, '2022-12-20 22:15:32', '2022-12-21 03:58:46', 3),
 (609, 1, 18, 1, 0, 0, '0.000000', 1, NULL, 0, '454.471545', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 3),
 (610, 1, 27, 1, 0, 0, '0.000000', 1, NULL, 0, '275.609756', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:32', '2022-12-20 22:15:32', 3),
 (611, 1, 27, 1, 0, 0, '0.000000', 1, NULL, 0, '633.333333', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:56', '2022-12-20 22:15:56', 3),
 (612, 1, 27, 1, 0, 0, '0.000000', 1, NULL, 0, '1178.048780', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:56', '2022-12-20 22:15:56', 3),
 (613, 1, 27, 1, 0, 0, '0.000000', 1, NULL, 0, '893.495935', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:56', '2022-12-20 22:15:56', 3),
-(614, 1, 27, 1, 0, 0, '0.000000', 1, NULL, 0, '934.146341', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 0, 'both', 0, 0, '2022-12-20 22:15:56', '2022-12-20 22:15:56', 3);
+(614, 1, 27, 1, 0, 0, '0.000000', 1, NULL, 0, '934.146341', '0.000000', '', '0.000000', '0.000000', 0, 0, 0, 1, '404', 0, 1, '0000-00-00', 0, 'new', 1, 1, 'both', 2, 0, '2022-12-20 22:15:56', '2022-12-21 03:55:05', 3);
 
 -- --------------------------------------------------------
 
@@ -23080,6 +23012,218 @@ CREATE TABLE `ps_search_index` (
   `weight` smallint UNSIGNED NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Zrzut danych tabeli `ps_search_index`
+--
+
+INSERT INTO `ps_search_index` (`id_product`, `id_word`, `weight`) VALUES
+(608, 773, 1),
+(608, 788, 1),
+(608, 796, 1),
+(608, 798, 1),
+(608, 805, 1),
+(608, 810, 1),
+(608, 811, 1),
+(608, 813, 1),
+(608, 814, 1),
+(608, 819, 1),
+(608, 821, 1),
+(608, 832, 1),
+(608, 836, 1),
+(608, 842, 1),
+(608, 866, 1),
+(608, 868, 1),
+(608, 879, 1),
+(608, 884, 1),
+(608, 1147, 1),
+(608, 1148, 1),
+(608, 1149, 1),
+(608, 1150, 1),
+(608, 1151, 1),
+(608, 1152, 1),
+(608, 1153, 1),
+(608, 1154, 1),
+(608, 1155, 1),
+(608, 1156, 1),
+(608, 1157, 1),
+(608, 1158, 1),
+(608, 1159, 1),
+(608, 1160, 1),
+(608, 1161, 1),
+(608, 1162, 1),
+(608, 1163, 1),
+(608, 1164, 1),
+(608, 1165, 1),
+(608, 1166, 1),
+(608, 1167, 1),
+(608, 1168, 1),
+(608, 1169, 1),
+(608, 1170, 1),
+(608, 1171, 1),
+(608, 1172, 1),
+(608, 1173, 1),
+(608, 1174, 1),
+(608, 1175, 1),
+(608, 1176, 1),
+(608, 1177, 1),
+(608, 1178, 1),
+(608, 1179, 1),
+(608, 1180, 1),
+(608, 1181, 1),
+(608, 1182, 1),
+(608, 1183, 1),
+(608, 1184, 1),
+(608, 1185, 1),
+(608, 1186, 1),
+(608, 1187, 1),
+(608, 1188, 1),
+(608, 1189, 1),
+(608, 1190, 1),
+(608, 1191, 1),
+(608, 1192, 1),
+(608, 1193, 1),
+(608, 1194, 1),
+(608, 1195, 1),
+(608, 1196, 1),
+(608, 1197, 1),
+(608, 1198, 1),
+(608, 1199, 1),
+(608, 1200, 1),
+(608, 1222, 2),
+(608, 1223, 2),
+(608, 1224, 2),
+(608, 892, 3),
+(608, 1201, 3),
+(608, 1144, 6),
+(608, 1145, 6),
+(608, 771, 7),
+(608, 1146, 7),
+(614, 776, 1),
+(614, 777, 1),
+(614, 778, 1),
+(614, 779, 1),
+(614, 780, 1),
+(614, 781, 1),
+(614, 782, 1),
+(614, 783, 1),
+(614, 784, 1),
+(614, 785, 1),
+(614, 786, 1),
+(614, 787, 1),
+(614, 788, 1),
+(614, 789, 1),
+(614, 790, 1),
+(614, 791, 1),
+(614, 792, 1),
+(614, 793, 1),
+(614, 794, 1),
+(614, 795, 1),
+(614, 796, 1),
+(614, 797, 1),
+(614, 798, 1),
+(614, 799, 1),
+(614, 800, 1),
+(614, 801, 1),
+(614, 802, 1),
+(614, 803, 1),
+(614, 804, 1),
+(614, 805, 1),
+(614, 806, 1),
+(614, 807, 1),
+(614, 808, 1),
+(614, 809, 1),
+(614, 810, 1),
+(614, 811, 1),
+(614, 812, 1),
+(614, 813, 1),
+(614, 814, 1),
+(614, 815, 1),
+(614, 816, 1),
+(614, 817, 1),
+(614, 818, 1),
+(614, 819, 1),
+(614, 820, 1),
+(614, 821, 1),
+(614, 822, 1),
+(614, 823, 1),
+(614, 824, 1),
+(614, 825, 1),
+(614, 826, 1),
+(614, 827, 1),
+(614, 828, 1),
+(614, 829, 1),
+(614, 830, 1),
+(614, 831, 1),
+(614, 832, 1),
+(614, 833, 1),
+(614, 834, 1),
+(614, 835, 1),
+(614, 836, 1),
+(614, 837, 1),
+(614, 838, 1),
+(614, 839, 1),
+(614, 840, 1),
+(614, 841, 1),
+(614, 842, 1),
+(614, 843, 1),
+(614, 844, 1),
+(614, 845, 1),
+(614, 846, 1),
+(614, 847, 1),
+(614, 848, 1),
+(614, 849, 1),
+(614, 850, 1),
+(614, 851, 1),
+(614, 852, 1),
+(614, 853, 1),
+(614, 854, 1),
+(614, 855, 1),
+(614, 856, 1),
+(614, 857, 1),
+(614, 858, 1),
+(614, 859, 1),
+(614, 860, 1),
+(614, 861, 1),
+(614, 862, 1),
+(614, 863, 1),
+(614, 864, 1),
+(614, 865, 1),
+(614, 866, 1),
+(614, 867, 1),
+(614, 868, 1),
+(614, 869, 1),
+(614, 870, 1),
+(614, 871, 1),
+(614, 872, 1),
+(614, 873, 1),
+(614, 874, 1),
+(614, 875, 1),
+(614, 876, 1),
+(614, 877, 1),
+(614, 878, 1),
+(614, 879, 1),
+(614, 880, 1),
+(614, 881, 1),
+(614, 882, 1),
+(614, 883, 1),
+(614, 884, 1),
+(614, 885, 1),
+(614, 886, 1),
+(614, 887, 1),
+(614, 888, 1),
+(614, 889, 1),
+(614, 890, 1),
+(614, 891, 1),
+(614, 894, 2),
+(614, 895, 2),
+(614, 892, 3),
+(614, 893, 3),
+(614, 772, 6),
+(614, 773, 6),
+(614, 774, 6),
+(614, 771, 7),
+(614, 775, 7);
+
 -- --------------------------------------------------------
 
 --
@@ -23092,6 +23236,198 @@ CREATE TABLE `ps_search_word` (
   `id_lang` int UNSIGNED NOT NULL,
   `word` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Zrzut danych tabeli `ps_search_word`
+--
+
+INSERT INTO `ps_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
+(804, 1, 1, 'andersen'),
+(775, 1, 1, 'anthony'),
+(880, 1, 1, 'aranzacji'),
+(1199, 1, 1, 'bardziej'),
+(1173, 1, 1, 'bedzie'),
+(894, 1, 1, 'bialy'),
+(802, 1, 1, 'biel'),
+(837, 1, 1, 'blat'),
+(1222, 1, 1, 'brazowy'),
+(862, 1, 1, 'bryle'),
+(875, 1, 1, 'brylom'),
+(844, 1, 1, 'charakter'),
+(883, 1, 1, 'charakteru'),
+(828, 1, 1, 'chcesz'),
+(1175, 1, 1, 'cieplem'),
+(853, 1, 1, 'dab'),
+(807, 1, 1, 'debu'),
+(811, 1, 1, 'design'),
+(1186, 1, 1, 'docenisz'),
+(859, 1, 1, 'dodaja'),
+(886, 1, 1, 'dodatkami'),
+(841, 1, 1, 'dodatki'),
+(1158, 1, 1, 'dokumenty'),
+(1165, 1, 1, 'dokupic'),
+(1160, 1, 1, 'domowe'),
+(782, 1, 1, 'domowym'),
+(823, 1, 1, 'doskonale'),
+(830, 1, 1, 'dostaniesz'),
+(879, 1, 1, 'drewna'),
+(1144, 1, 1, 'drewnianym'),
+(835, 1, 1, 'drobne'),
+(790, 1, 1, 'drzwi'),
+(773, 1, 1, 'drzwiami'),
+(874, 1, 1, 'duzym'),
+(1161, 1, 1, 'dyspozycji'),
+(788, 1, 1, 'dzieki'),
+(865, 1, 1, 'dziennego'),
+(829, 1, 1, 'eksponowac'),
+(890, 1, 1, 'elementami'),
+(1174, 1, 1, 'emanowac'),
+(1191, 1, 1, 'flora'),
+(1179, 1, 1, 'forma'),
+(1147, 1, 1, 'frontami'),
+(1145, 1, 1, 'frontem'),
+(1187, 1, 1, 'fronty'),
+(792, 1, 1, 'idealnie'),
+(877, 1, 1, 'intrygujacy'),
+(799, 1, 1, 'jadalni'),
+(1194, 1, 1, 'jadalnie'),
+(839, 1, 1, 'jako'),
+(872, 1, 1, 'jasna'),
+(891, 1, 1, 'jasnego'),
+(786, 1, 1, 'kameralnych'),
+(857, 1, 1, 'klimat'),
+(1177, 1, 1, 'klimatem'),
+(866, 1, 1, 'kolekcja'),
+(1180, 1, 1, 'kolor'),
+(800, 1, 1, 'kolorystyka'),
+(852, 1, 1, 'kolorze'),
+(771, 1, 1, 'komoda'),
+(1185, 1, 1, 'komode'),
+(842, 1, 1, 'ktore'),
+(1169, 1, 1, 'ktoremu'),
+(779, 1, 1, 'ktory'),
+(827, 1, 1, 'ktorych'),
+(889, 1, 1, 'kwiatow'),
+(801, 1, 1, 'laczaca'),
+(860, 1, 1, 'ladnie'),
+(851, 1, 1, 'laminatem'),
+(876, 1, 1, 'lekkosci'),
+(1148, 1, 1, 'litego'),
+(1162, 1, 1, 'masz'),
+(1152, 1, 1, 'materialow'),
+(777, 1, 1, 'mebel'),
+(1172, 1, 1, 'mebla'),
+(813, 1, 1, 'meble'),
+(867, 1, 1, 'mebli'),
+(849, 1, 1, 'meblowej'),
+(824, 1, 1, 'miejsce'),
+(870, 1, 1, 'mieszkania'),
+(884, 1, 1, 'mozesz'),
+(1181, 1, 1, 'mozna'),
+(873, 1, 1, 'nadaje'),
+(1178, 1, 1, 'naturalna'),
+(805, 1, 1, 'naturalny'),
+(1151, 1, 1, 'naturalnych'),
+(776, 1, 1, 'niewielka'),
+(795, 1, 1, 'niewielkiego'),
+(1198, 1, 1, 'nowoczesne'),
+(1201, 1, 1, 'nowoczesny'),
+(806, 1, 1, 'odcien'),
+(881, 1, 1, 'odrobine'),
+(798, 1, 1, 'oraz'),
+(817, 1, 1, 'oryginalnosc'),
+(1167, 1, 1, 'oswietlenie'),
+(1164, 1, 1, 'pelnymi'),
+(848, 1, 1, 'plyty'),
+(843, 1, 1, 'podkresla'),
+(1188, 1, 1, 'podkreslaja'),
+(816, 1, 1, 'podkresli'),
+(864, 1, 1, 'pokoju'),
+(888, 1, 1, 'polnych'),
+(831, 1, 1, 'pomoca'),
+(833, 1, 1, 'pomoga'),
+(781, 1, 1, 'porzadek'),
+(778, 1, 1, 'praktyczny'),
+(772, 1, 1, 'prowansalska'),
+(893, 1, 1, 'prowansalski'),
+(815, 1, 1, 'prowansalskim'),
+(825, 1, 1, 'przechowywania'),
+(836, 1, 1, 'przedmioty'),
+(797, 1, 1, 'przedpokoju'),
+(794, 1, 1, 'przestrzen'),
+(791, 1, 1, 'przesuwnych'),
+(774, 1, 1, 'przesuwnymi'),
+(1163, 1, 1, 'przeszklone'),
+(784, 1, 1, 'przeznaczona'),
+(1184, 1, 1, 'przytulnego'),
+(856, 1, 1, 'przytulny'),
+(1176, 1, 1, 'przytulnym'),
+(785, 1, 1, 'raczej'),
+(1154, 1, 1, 'reprezentacyjne'),
+(809, 1, 1, 'rozjasni'),
+(878, 1, 1, 'rysunek'),
+(826, 1, 1, 'rzeczy'),
+(1193, 1, 1, 'salon'),
+(796, 1, 1, 'salonu'),
+(1146, 1, 1, 'santos'),
+(1183, 1, 1, 'sobie'),
+(803, 1, 1, 'sosny'),
+(1149, 1, 1, 'spodoba'),
+(1195, 1, 1, 'spojnym'),
+(1170, 1, 1, 'sprawisz'),
+(1171, 1, 1, 'srodek'),
+(822, 1, 1, 'stanowia'),
+(892, 1, 1, 'styl'),
+(812, 1, 1, 'stylizowany'),
+(840, 1, 1, 'stylowe'),
+(814, 1, 1, 'stylu'),
+(1200, 1, 1, 'surowe'),
+(882, 1, 1, 'surowego'),
+(868, 1, 1, 'swietnie'),
+(1224, 1, 1, 'szarobrazowy'),
+(895, 1, 1, 'szary'),
+(832, 1, 1, 'szuflady'),
+(854, 1, 1, 'takie'),
+(1159, 1, 1, 'tekstylia'),
+(845, 1, 1, 'twojego'),
+(863, 1, 1, 'uchwyty'),
+(1157, 1, 1, 'ukryc'),
+(1189, 1, 1, 'unikatowy'),
+(858, 1, 1, 'uroku'),
+(1192, 1, 1, 'urzadzic'),
+(871, 1, 1, 'urzadzonego'),
+(1166, 1, 1, 'wewnetrzne'),
+(1150, 1, 1, 'wielbicielom'),
+(1223, 1, 1, 'wielblad'),
+(1168, 1, 1, 'witryny'),
+(887, 1, 1, 'wizerunkiem'),
+(861, 1, 1, 'wkomponowane'),
+(1156, 1, 1, 'wnekach'),
+(821, 1, 1, 'wneki'),
+(787, 1, 1, 'wnetrz'),
+(819, 1, 1, 'wnetrza'),
+(810, 1, 1, 'wnetrze'),
+(808, 1, 1, 'wotan'),
+(793, 1, 1, 'wpisuje'),
+(1196, 1, 1, 'wpisza'),
+(855, 1, 1, 'wprowadza'),
+(1153, 1, 1, 'wyeksponowac'),
+(1190, 1, 1, 'wyglad'),
+(847, 1, 1, 'wykonana'),
+(846, 1, 1, 'wykonczenie'),
+(850, 1, 1, 'wykonczona'),
+(838, 1, 1, 'wykorzystaj'),
+(1182, 1, 1, 'wyobrazic'),
+(869, 1, 1, 'wypelni'),
+(818, 1, 1, 'wystroju'),
+(783, 1, 1, 'zaciszu'),
+(780, 1, 1, 'zadba'),
+(1155, 1, 1, 'zamknietych'),
+(820, 1, 1, 'zamykane'),
+(1197, 1, 1, 'zarowno'),
+(789, 1, 1, 'zastosowaniu'),
+(885, 1, 1, 'zestawic'),
+(834, 1, 1, 'zorganizowac');
 
 -- --------------------------------------------------------
 
@@ -23242,6 +23578,14 @@ CREATE TABLE `ps_specific_price_priority` (
   `id_product` int NOT NULL,
   `priority` varchar(80) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Zrzut danych tabeli `ps_specific_price_priority`
+--
+
+INSERT INTO `ps_specific_price_priority` (`id_specific_price_priority`, `id_product`, `priority`) VALUES
+(1, 614, 'id_shop;id_currency;id_country;id_group'),
+(4, 608, 'id_shop;id_currency;id_country;id_group');
 
 -- --------------------------------------------------------
 
@@ -24337,7 +24681,12 @@ INSERT INTO `ps_stock_available` (`id_stock_available`, `id_product`, `id_produc
 (611, 611, 0, 1, 0, 91, 0, 0, 0, 2, ''),
 (612, 612, 0, 1, 0, 43, 0, 0, 0, 2, ''),
 (613, 613, 0, 1, 0, 26, 0, 0, 0, 2, ''),
-(614, 614, 0, 1, 0, 20, 0, 0, 0, 2, '');
+(614, 614, 0, 1, 0, 20, 0, 0, 0, 2, ''),
+(615, 614, 1, 1, 0, 10, 0, 0, 0, 2, ''),
+(616, 614, 2, 1, 0, 10, 0, 0, 0, 2, ''),
+(617, 608, 3, 1, 0, 24, 0, 0, 0, 2, ''),
+(618, 608, 4, 1, 0, 20, 0, 0, 0, 2, ''),
+(619, 608, 5, 1, 0, 40, 0, 0, 0, 2, '');
 
 -- --------------------------------------------------------
 
@@ -24982,7 +25331,12 @@ INSERT INTO `ps_stock_mvt` (`id_stock_mvt`, `id_stock`, `id_order`, `id_supply_o
 (611, 611, NULL, NULL, 11, 1, 'Doe', 'John', 91, '2022-12-20 22:16:02', 1, '0.000000', '0.000000', '0.000000', NULL),
 (612, 612, NULL, NULL, 11, 1, 'Doe', 'John', 43, '2022-12-20 22:16:08', 1, '0.000000', '0.000000', '0.000000', NULL),
 (613, 613, NULL, NULL, 11, 1, 'Doe', 'John', 26, '2022-12-20 22:16:14', 1, '0.000000', '0.000000', '0.000000', NULL),
-(614, 614, NULL, NULL, 11, 1, 'Doe', 'John', 20, '2022-12-20 22:16:15', 1, '0.000000', '0.000000', '0.000000', NULL);
+(614, 614, NULL, NULL, 11, 1, 'Doe', 'John', 20, '2022-12-20 22:16:15', 1, '0.000000', '0.000000', '0.000000', NULL),
+(615, 616, NULL, NULL, 11, 1, 'Doe', 'John', 10, '2022-12-21 03:55:03', 1, '0.000000', '0.000000', '0.000000', NULL),
+(616, 615, NULL, NULL, 11, 1, 'Doe', 'John', 10, '2022-12-21 03:55:03', 1, '0.000000', '0.000000', '0.000000', NULL),
+(617, 617, NULL, NULL, 11, 1, 'Doe', 'John', 24, '2022-12-21 03:58:21', 1, '0.000000', '0.000000', '0.000000', NULL),
+(618, 619, NULL, NULL, 11, 1, 'Doe', 'John', 40, '2022-12-21 03:58:21', 1, '0.000000', '0.000000', '0.000000', NULL),
+(619, 618, NULL, NULL, 11, 1, 'Doe', 'John', 20, '2022-12-21 03:58:21', 1, '0.000000', '0.000000', '0.000000', NULL);
 
 -- --------------------------------------------------------
 
@@ -29111,7 +29465,7 @@ ALTER TABLE `ps_employee`
 -- AUTO_INCREMENT dla tabeli `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
-  MODIFY `id_employee_session` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_employee_session` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_feature`
@@ -29219,7 +29573,7 @@ ALTER TABLE `ps_lang`
 -- AUTO_INCREMENT dla tabeli `ps_layered_category`
 --
 ALTER TABLE `ps_layered_category`
-  MODIFY `id_layered_category` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id_layered_category` int UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_layered_filter`
@@ -29249,7 +29603,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT dla tabeli `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=569;
+  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=579;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_mail`
@@ -29405,7 +29759,7 @@ ALTER TABLE `ps_product`
 -- AUTO_INCREMENT dla tabeli `ps_product_attribute`
 --
 ALTER TABLE `ps_product_attribute`
-  MODIFY `id_product_attribute` int UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_product_attribute` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_product_comment`
@@ -29531,7 +29885,7 @@ ALTER TABLE `ps_search_engine`
 -- AUTO_INCREMENT dla tabeli `ps_search_word`
 --
 ALTER TABLE `ps_search_word`
-  MODIFY `id_word` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=771;
+  MODIFY `id_word` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1384;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_shop`
@@ -29561,7 +29915,7 @@ ALTER TABLE `ps_specific_price`
 -- AUTO_INCREMENT dla tabeli `ps_specific_price_priority`
 --
 ALTER TABLE `ps_specific_price_priority`
-  MODIFY `id_specific_price_priority` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_specific_price_priority` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_specific_price_rule`
@@ -29603,13 +29957,13 @@ ALTER TABLE `ps_stock`
 -- AUTO_INCREMENT dla tabeli `ps_stock_available`
 --
 ALTER TABLE `ps_stock_available`
-  MODIFY `id_stock_available` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=615;
+  MODIFY `id_stock_available` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=620;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_stock_mvt`
 --
 ALTER TABLE `ps_stock_mvt`
-  MODIFY `id_stock_mvt` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=615;
+  MODIFY `id_stock_mvt` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=620;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_stock_mvt_reason`

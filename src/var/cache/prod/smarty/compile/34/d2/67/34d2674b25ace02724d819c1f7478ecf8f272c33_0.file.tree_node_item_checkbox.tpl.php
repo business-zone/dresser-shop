@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-20 23:23:51
+/* Smarty version 3.1.43, created on 2022-12-21 04:03:33
   from '/var/www/html/admin9f46/themes/default/template/helpers/tree/tree_node_item_checkbox.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_63a235f70e84c7_15554079',
+  'unifunc' => 'content_63a27785490880_01239788',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '34d2674b25ace02724d819c1f7478ecf8f272c33' => 
     array (
       0 => '/var/www/html/admin9f46/themes/default/template/helpers/tree/tree_node_item_checkbox.tpl',
-      1 => 1671564740,
+      1 => 1671588392,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63a235f70e84c7_15554079 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63a27785490880_01239788 (Smarty_Internal_Template $_smarty_tpl) {
 ?><li class="tree-item<?php if ((isset($_smarty_tpl->tpl_vars['node']->value['disabled'])) && $_smarty_tpl->tpl_vars['node']->value['disabled'] == true) {?> tree-item-disable<?php }?>">
 	<span class="tree-item-name<?php if ((isset($_smarty_tpl->tpl_vars['node']->value['disabled'])) && $_smarty_tpl->tpl_vars['node']->value['disabled'] == true) {?> tree-item-name-disable<?php }?>">
 		<input type="checkbox" name="<?php echo $_smarty_tpl->tpl_vars['input_name']->value;?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-20 23:19:34
+/* Smarty version 3.1.43, created on 2022-12-21 04:01:41
   from '/var/www/html/modules/ps_themecusto/views/templates/admin/controllers/configuration/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_63a234f66a26e1_19399505',
+  'unifunc' => 'content_63a27715a308d6_22485059',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9857db22f2ab4d5c0362700d4f5462106f0ff790' => 
     array (
       0 => '/var/www/html/modules/ps_themecusto/views/templates/admin/controllers/configuration/index.tpl',
-      1 => 1671564742,
+      1 => 1671588397,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./elem/modal.tpl' => 1,
   ),
 ),false)) {
-function content_63a234f66a26e1_19399505 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63a27715a308d6_22485059 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="psthemecusto" class="container-fluid clearfix">
     <?php if ($_smarty_tpl->tpl_vars['isPsReady']->value) {?>
