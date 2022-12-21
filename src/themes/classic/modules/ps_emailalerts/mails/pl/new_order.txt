@@ -1,43 +1,36 @@
- 
-
-{shop_url}
-
+[{shop_name}]({shop_url})
 Gratulacje!
+Zostało złożone nowe zamówienie w {shop_name} przez następującego klienta: {firstname}{lastname} ({email})
 
-Nowe zamówienie zostało złożone w {shop_name} przez następującego klienta: {firstname} {lastname} ({email})
-
-Szczegóły zamówienia
-
-Zamówienie: {order_name} Złożone w dniu {date}
+Zamówienie: {order_name} Złożone w {date}
 
 Płatność: {payment}
 
-Odnośnik Produkt Cena jednostkowa Ilość Cena całkowita {items}
-Produkty {total_products}
-Rabaty {total_discounts}
-Pakowanie prezentów {total_wrapping}
-Wysyłka {total_shipping}
-W tym całkowity podatek {total_tax_paid}
-Całkowita kwota zapłacona {total_paid}
+Indeks	Produkt	Cena jednostkowa	Ilość	Cena końcowa    {items}
 
-Przewoźnik
+Produkty
+{total_products}
 
-Przewoźnik: {carrier}
+Rabaty
+{total_discounts}
 
-Płatność: {płatność}
+Pakowanie prezentowe
+{total_wrapping}
 
-Adres dostawy.
+Wysyłka
+{total_shipping}
+
+Całkowity zapłacony podatek
+{total_tax_paid}
+
+Zapłacono w sumie
+{total_paid}
+
+{carrier}
 
 {delivery_block_html}
-
-Adres do faktury
-
 {invoice_block_html}
-
-Wiadomość dla klienta:
 
 {message}
 
-[{shop_name}]({shop_url})
-
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

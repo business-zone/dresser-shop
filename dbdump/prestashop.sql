@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Czas generowania: 21 Gru 2022, 14:14
+-- Czas generowania: 21 Gru 2022, 14:39
 -- Wersja serwera: 8.0.31
 -- Wersja PHP: 8.0.19
 
@@ -918,7 +918,8 @@ INSERT INTO `ps_address` (`id_address`, `id_country`, `id_state`, `id_customer`,
 (7, 14, 0, 3, 0, 0, 0, 'Mój adres', '', 'reg', 'gder', 'sf', '', '80-555', 'gadf', '', '', '', '', '', '2022-12-20 15:26:51', '2022-12-20 15:26:51', 1, 0),
 (8, 14, 0, 4, 0, 0, 0, 'Mój adres', '', 'wyxdiqnsvd', 'lbgkpilg', 'wehkmrhn6', '', '14-870', 'bxlvyaeozb', '', '', '', '', '', '2022-12-21 04:38:07', '2022-12-21 04:38:07', 1, 0),
 (9, 14, 0, 5, 0, 0, 0, 'Mój adres', '', 'Nowakowski', 'Piotr', 'ul. Malinowa', '', '83-400', 'Kościerzyna', '', '', '', '', '', '2022-12-21 14:24:15', '2022-12-21 14:24:15', 1, 0),
-(10, 14, 0, 6, 0, 0, 0, 'Mój adres', '', 'Garb', 'Piotr ', 'ul. Chlopska', '', '83-400', 'Kościerzyna', '', '', '', '', '', '2022-12-21 14:54:12', '2022-12-21 14:54:12', 1, 0);
+(10, 14, 0, 6, 0, 0, 0, 'Mój adres', '', 'Garb', 'Piotr ', 'ul. Chlopska', '', '83-400', 'Kościerzyna', '', '', '', '', '', '2022-12-21 14:54:12', '2022-12-21 14:54:12', 1, 0),
+(11, 14, 0, 7, 0, 0, 0, 'Mój adres', '', 'Brandt', 'Marek', 'wodna', '', '83-400', 'Kościerzyna', '', '', '', '', '', '2022-12-21 15:36:20', '2022-12-21 15:36:20', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -2634,7 +2635,10 @@ INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `del
 (7, 1, 1, 10, '{\"8\":\"10,\"}', 1, 8, 8, 1, 4, 5, '259fe03eaafd691e43bab9dc05882f8c', 0, 0, '', 0, 0, '2022-12-21 04:37:09', '2022-12-21 04:38:10', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"174755034ad86fc1ec5148bc5d213f3c9aa36ae8\"}'),
 (8, 1, 1, 7, '{\"9\":\"7,\"}', 1, 9, 9, 1, 5, 6, '09c6a4d09a8052c4c2242d3bd0baf124', 0, 0, '', 0, 0, '2022-12-21 14:23:01', '2022-12-21 14:24:32', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"6945876484a262dff6cd0e7f65738b90651f5635\"}'),
 (9, 1, 1, 7, '{\"10\":\"7,\"}', 1, 10, 10, 1, 6, 7, '782e7add06857beceed41888a971dbd9', 0, 0, '', 0, 0, '2022-12-21 14:53:25', '2022-12-21 14:54:18', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"e33101bbdc910fd72c3ef0ba9045569d67185c6e\"}'),
-(10, 1, 1, 7, '{\"10\":\"7,\"}', 1, 10, 10, 1, 6, 7, '782e7add06857beceed41888a971dbd9', 0, 0, '', 0, 0, '2022-12-21 15:13:38', '2022-12-21 15:13:38', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":false,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checkout-payment-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checksum\":\"e33101bbdc910fd72c3ef0ba9045569d67185c6e\"}');
+(10, 1, 1, 7, '{\"10\":\"7,\"}', 1, 10, 10, 1, 6, 7, '782e7add06857beceed41888a971dbd9', 0, 0, '', 0, 0, '2022-12-21 15:13:38', '2022-12-21 15:17:23', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"2610d1250fe526f9adad7933a53e9e18d50b900e\"}'),
+(11, 1, 1, 7, '{\"10\":\"7,\"}', 1, 10, 10, 1, 6, 7, '782e7add06857beceed41888a971dbd9', 0, 0, '', 0, 0, '2022-12-21 15:21:50', '2022-12-21 15:22:16', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"87190a3697c8a7d7cf016f00b2fdf8a616c8f311\"}'),
+(12, 1, 1, 7, '{\"11\":\"7,\"}', 1, 11, 11, 1, 7, 8, 'e3bfa1f2f94751b68be184f39f523180', 0, 0, '', 0, 0, '2022-12-21 15:35:02', '2022-12-21 15:36:24', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"3651ee7b12c59b8ffcaaab35a42482ace1278b25\"}'),
+(13, 1, 1, 7, '{\"11\":\"7,\"}', 1, 11, 11, 1, 7, 8, 'e3bfa1f2f94751b68be184f39f523180', 0, 0, '', 0, 0, '2022-12-21 15:37:48', '2022-12-21 15:38:00', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"5082be700d1b7eefe3eb139f4501ad4cceec5873\"}');
 
 -- --------------------------------------------------------
 
@@ -2680,7 +2684,10 @@ INSERT INTO `ps_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `
 (7, 139, 8, 1, 0, 0, 1, '2022-12-21 04:37:24'),
 (8, 613, 9, 1, 0, 0, 1, '2022-12-21 14:23:01'),
 (9, 611, 10, 1, 0, 0, 1, '2022-12-21 14:53:35'),
-(10, 611, 10, 1, 0, 0, 1, '2022-12-21 15:13:38');
+(10, 609, 10, 1, 0, 0, 1, '2022-12-21 15:17:07'),
+(11, 608, 10, 1, 4, 0, 1, '2022-12-21 15:21:50'),
+(12, 611, 11, 1, 0, 0, 1, '2022-12-21 15:35:36'),
+(13, 614, 11, 1, 1, 0, 1, '2022-12-21 15:37:48');
 
 -- --------------------------------------------------------
 
@@ -4144,7 +4151,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (284, NULL, NULL, 'PS_LABEL_OOS_PRODUCTS_BOA', 'Product available for orders', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (285, NULL, NULL, 'PS_LABEL_OOS_PRODUCTS_BOD', 'Out-of-Stock', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (286, NULL, NULL, 'PS_CATALOG_MODE_WITH_PRICES', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(287, NULL, NULL, 'PS_MAIL_THEME', 'modern', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(287, NULL, NULL, 'PS_MAIL_THEME', 'classic', '0000-00-00 00:00:00', '2022-12-21 15:19:44'),
 (288, NULL, NULL, 'PS_ORDER_PRODUCTS_NB_PER_PAGE', '8', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (289, NULL, NULL, 'PS_LOGS_EMAIL_RECEIVERS', 'prestadev@prestashop.com', '0000-00-00 00:00:00', '2022-12-18 20:42:42'),
 (290, NULL, NULL, 'PS_SHOW_LABEL_OOS_LISTING_PAGES', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4517,7 +4524,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (7, 1, 1, 4, 1, 2887385089, '2022-12-20 23:02:18', ''),
 (8, 1, 1, 5, 1, 3232243713, '2022-12-21 04:37:03', ''),
 (9, 1, 1, 6, 1, 3232243713, '2022-12-21 14:21:30', ''),
-(10, 1, 1, 7, 3, 3232243713, '2022-12-21 14:24:49', '');
+(10, 1, 1, 7, 3, 3232243713, '2022-12-21 14:24:49', ''),
+(11, 1, 1, 8, 4, 3232243713, '2022-12-21 15:34:22', '');
 
 -- --------------------------------------------------------
 
@@ -5563,7 +5571,8 @@ INSERT INTO `ps_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender
 (3, 1, 1, 1, 2, 1, 0, '', '', '', 'gder', 'reg', 'reth@gmail.com', '$2y$10$iqqfnhAstPVtfmstPwUz9utbmslTUmDvYPKS/CyRyTalODSktOVuq', '2022-12-20 09:26:11', '0000-00-00', 0, '', '0000-00-00 00:00:00', 0, '', '0.000000', 0, 0, '65632da15906b22f9fee4afd2cb4fddc', '', 1, 1, 0, '2022-12-20 15:26:11', '2022-12-20 15:26:11', '', '0000-00-00 00:00:00'),
 (4, 1, 1, 2, 3, 1, 0, '', '', '', 'lbgkpilg', 'wyxdiqnsvd', 'difsyq@yahoo.com', '$2y$10$j7QZ64Qiqlxxp.1tXxlLe.Dq5OnhnLiZjOkHOBTgIPuH8nzJc67OG', '2022-12-20 22:37:09', '0000-00-00', 0, '', '0000-00-00 00:00:00', 0, '', '0.000000', 0, 0, '259fe03eaafd691e43bab9dc05882f8c', '', 1, 0, 0, '2022-12-21 04:37:09', '2022-12-21 04:37:09', '', '0000-00-00 00:00:00'),
 (5, 1, 1, 1, 2, 1, 0, '', '', '', 'Piotr', 'Nowakowski', 'piotrgarbowski2@gmail.com', '$2y$10$FAngIKCgg7C4e4v7bGdTXe4Nx1bhl79T7KES.ZmZb2KYkbopXBnHG', '2022-12-21 08:23:50', '0000-00-00', 0, '', '0000-00-00 00:00:00', 0, '', '0.000000', 0, 0, '09c6a4d09a8052c4c2242d3bd0baf124', '', 1, 1, 0, '2022-12-21 14:23:50', '2022-12-21 14:23:50', '', '0000-00-00 00:00:00'),
-(6, 1, 1, 1, 3, 1, 0, '', '', '', 'Piotr ', 'Garb', 'piotrgarbowski2@gmail.com', '$2y$10$cklzJuQ/Ly4LO1SPK.RU5uKq03gb7NC6cHqS7luEE5.CXCunIiIpm', '2022-12-21 08:53:25', '1970-05-31', 0, '', '0000-00-00 00:00:00', 0, '', '0.000000', 0, 0, '782e7add06857beceed41888a971dbd9', '', 1, 0, 0, '2022-12-21 14:53:25', '2022-12-21 14:53:25', '', '0000-00-00 00:00:00');
+(6, 1, 1, 1, 3, 1, 0, '', '', '', 'Piotr ', 'Garb', 'piotrgarbowski2@gmail.com', '$2y$10$cklzJuQ/Ly4LO1SPK.RU5uKq03gb7NC6cHqS7luEE5.CXCunIiIpm', '2022-12-21 08:53:25', '1970-05-31', 0, '', '0000-00-00 00:00:00', 0, '', '0.000000', 0, 0, '782e7add06857beceed41888a971dbd9', '', 1, 0, 0, '2022-12-21 14:53:25', '2022-12-21 14:53:25', '', '0000-00-00 00:00:00'),
+(7, 1, 1, 1, 3, 1, 0, '', '', '', 'Marek', 'Brandt', 'marek7119@gmail.com', '$2y$10$sPK6QEwfofiiWU5cfFRupurrhkI.4b0uwAob/jtpcWYSN6opz5SRm', '2022-12-21 09:35:02', '2001-03-17', 0, '', '0000-00-00 00:00:00', 0, '', '0.000000', 0, 0, 'e3bfa1f2f94751b68be184f39f523180', '', 1, 0, 0, '2022-12-21 15:35:02', '2022-12-21 15:35:02', '', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -5584,7 +5593,8 @@ INSERT INTO `ps_customer_group` (`id_customer`, `id_group`) VALUES
 (3, 2),
 (5, 2),
 (4, 3),
-(6, 3);
+(6, 3),
+(7, 3);
 
 -- --------------------------------------------------------
 
@@ -5605,6 +5615,13 @@ CREATE TABLE `ps_customer_message` (
   `private` tinyint NOT NULL DEFAULT '0',
   `read` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Zrzut danych tabeli `ps_customer_message`
+--
+
+INSERT INTO `ps_customer_message` (`id_customer_message`, `id_customer_thread`, `id_employee`, `message`, `file_name`, `ip_address`, `user_agent`, `date_add`, `date_upd`, `private`, `read`) VALUES
+(1, 1, 0, 'cdvbd', '', '3232243713', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', '2022-12-21 15:16:18', '2022-12-21 15:16:18', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -5635,7 +5652,7 @@ CREATE TABLE `ps_customer_session` (
 INSERT INTO `ps_customer_session` (`id_customer_session`, `id_customer`, `token`) VALUES
 (1, 3, 'ea4cf10f036913fed1adf16dda875ef560bdffd8'),
 (2, 4, '1fc297b4a3d925ec8965a6aa2c1ba9549f0e26b9'),
-(4, 6, '79d3989d33a9d26b82f4c916475481e3d222a4fd');
+(5, 7, 'c271788fa75bd372dd94ec4a96cacb5dd578c82c');
 
 -- --------------------------------------------------------
 
@@ -5657,6 +5674,13 @@ CREATE TABLE `ps_customer_thread` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Zrzut danych tabeli `ps_customer_thread`
+--
+
+INSERT INTO `ps_customer_thread` (`id_customer_thread`, `id_shop`, `id_lang`, `id_contact`, `id_customer`, `id_order`, `id_product`, `status`, `email`, `token`, `date_add`, `date_upd`) VALUES
+(1, 1, 1, 1, 6, 8, 0, 'open', 'piotrgarbowski2@gmail.com', 'YOSa2xkqi5st', '2022-12-21 15:16:18', '2022-12-21 15:16:18');
 
 -- --------------------------------------------------------
 
@@ -6072,7 +6096,11 @@ CREATE TABLE `ps_ganalytics` (
 INSERT INTO `ps_ganalytics` (`id_google_analytics`, `id_order`, `id_customer`, `id_shop`, `sent`, `refund_sent`, `date_add`) VALUES
 (1, 6, 0, 1, 1, NULL, '2022-12-21 03:38:18'),
 (2, 7, 0, 1, 1, NULL, '2022-12-21 13:24:50'),
-(3, 8, 0, 1, 1, NULL, '2022-12-21 13:54:26');
+(3, 8, 0, 1, 1, NULL, '2022-12-21 13:54:26'),
+(4, 9, 0, 1, 1, NULL, '2022-12-21 14:17:33'),
+(5, 10, 0, 1, 1, NULL, '2022-12-21 14:22:30'),
+(6, 11, 0, 1, 1, NULL, '2022-12-21 14:36:31'),
+(7, 12, 0, 1, 1, NULL, '2022-12-21 14:38:07');
 
 -- --------------------------------------------------------
 
@@ -6093,7 +6121,11 @@ CREATE TABLE `ps_ganalytics_data` (
 INSERT INTO `ps_ganalytics_data` (`id_cart`, `id_shop`, `data`) VALUES
 (7, 1, '[[[[[{\"3\":{\"id\":\"3\",\"name\":\"komoda-toronto-3d3s-e\",\"category\":\"styl-nowoczesny\",\"brand\":\"\",\"variant\":false,\"type\":\"typical\",\"position\":\"0\",\"quantity\":-1,\"list\":\"cart\",\"url\":\"http%3A%2F%2Flocalhost%2Fstyl-nowoczesny%2F3-komoda-toronto-3d3s-e.html\",\"price\":999}}]]]]]'),
 (8, 1, '[[[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]]]'),
-(9, 1, '[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]');
+(9, 1, '[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]'),
+(10, 1, '[[[[[{\"611\":{\"id\":\"611\",\"name\":\"szafka-rtv-prowansalska-szara-cramena\",\"category\":\"styl-prowansalski\",\"brand\":\"\",\"variant\":false,\"type\":\"typical\",\"position\":\"0\",\"quantity\":-1,\"list\":\"cart\",\"url\":\"http%3A%2F%2Flocalhost%2Fstyl-prowansalski%2F611-szafka-rtv-prowansalska-szara-cramena.html\",\"price\":779}}]]]]]'),
+(11, 1, '[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]'),
+(12, 1, '[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]'),
+(13, 1, '[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]');
 
 -- --------------------------------------------------------
 
@@ -6259,7 +6291,8 @@ INSERT INTO `ps_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id
 (4, 8, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0),
 (5, 8, 11, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0),
 (6, 8, 11, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0),
-(7, 8, 11, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0);
+(7, 8, 11, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0),
+(8, 8, 11, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0);
 
 -- --------------------------------------------------------
 
@@ -18502,7 +18535,118 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (580, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 7, 1, NULL, 1, 0, 0, '2022-12-21 04:38:16', '2022-12-21 04:38:16'),
 (581, 1, 0, 'Połączenie z panelem administracyjnym z 192.168.32.1', '', 0, NULL, NULL, 1, 1, 1, '2022-12-21 14:22:22', '2022-12-21 14:22:22'),
 (582, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 8, 1, NULL, 1, 0, 0, '2022-12-21 14:24:49', '2022-12-21 14:24:49'),
-(583, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 9, 1, NULL, 1, 0, 0, '2022-12-21 14:54:25', '2022-12-21 14:54:25');
+(583, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 9, 1, NULL, 1, 0, 0, '2022-12-21 14:54:25', '2022-12-21 14:54:25'),
+(584, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 10, 1, NULL, 1, 0, 0, '2022-12-21 15:17:32', '2022-12-21 15:17:32'),
+(585, 1, 0, 'Exporting mail with theme classic for language Polski (Polish)', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:20:20', '2022-12-21 15:20:20'),
+(586, 1, 0, 'Core output folder: /var/www/html/app/../themes/classic/mails', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:20:20', '2022-12-21 15:20:20'),
+(587, 1, 0, 'Modules output folder: /var/www/html/app/../themes/classic/modules', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:20:20', '2022-12-21 15:20:20'),
+(588, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 11, 1, NULL, 1, 0, 0, '2022-12-21 15:22:29', '2022-12-21 15:22:29'),
+(589, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 12, 1, NULL, 1, 0, 0, '2022-12-21 15:36:31', '2022-12-21 15:36:31'),
+(590, 1, 0, 'Exporting mail with theme classic for language Polski (Polish)', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(591, 1, 0, 'Core output folder: /var/www/html/app/../themes/classic/mails', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(592, 1, 0, 'Modules output folder: /var/www/html/app/../themes/classic/modules', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(593, 1, 0, 'Generate html template account at /var/www/html/app/../themes/classic/mails/pl/account.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(594, 1, 0, 'Generate txt template account at /var/www/html/app/../themes/classic/mails/pl/account.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(595, 1, 0, 'Generate html template backoffice_order at /var/www/html/app/../themes/classic/mails/pl/backoffice_order.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(596, 1, 0, 'Generate txt template backoffice_order at /var/www/html/app/../themes/classic/mails/pl/backoffice_order.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(597, 1, 0, 'Generate html template bankwire at /var/www/html/app/../themes/classic/mails/pl/bankwire.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(598, 1, 0, 'Generate txt template bankwire at /var/www/html/app/../themes/classic/mails/pl/bankwire.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:24', '2022-12-21 15:37:24'),
+(599, 1, 0, 'Generate html template cheque at /var/www/html/app/../themes/classic/mails/pl/cheque.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(600, 1, 0, 'Generate txt template cheque at /var/www/html/app/../themes/classic/mails/pl/cheque.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(601, 1, 0, 'Generate html template contact at /var/www/html/app/../themes/classic/mails/pl/contact.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(602, 1, 0, 'Generate txt template contact at /var/www/html/app/../themes/classic/mails/pl/contact.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(603, 1, 0, 'Generate html template contact_form at /var/www/html/app/../themes/classic/mails/pl/contact_form.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(604, 1, 0, 'Generate txt template contact_form at /var/www/html/app/../themes/classic/mails/pl/contact_form.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(605, 1, 0, 'Generate html template credit_slip at /var/www/html/app/../themes/classic/mails/pl/credit_slip.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(606, 1, 0, 'Generate txt template credit_slip at /var/www/html/app/../themes/classic/mails/pl/credit_slip.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(607, 1, 0, 'Generate html template download_product at /var/www/html/app/../themes/classic/mails/pl/download_product.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(608, 1, 0, 'Generate txt template download_product at /var/www/html/app/../themes/classic/mails/pl/download_product.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(609, 1, 0, 'Generate html template employee_password at /var/www/html/app/../themes/classic/mails/pl/employee_password.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(610, 1, 0, 'Generate txt template employee_password at /var/www/html/app/../themes/classic/mails/pl/employee_password.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(611, 1, 0, 'Generate html template forward_msg at /var/www/html/app/../themes/classic/mails/pl/forward_msg.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(612, 1, 0, 'Generate txt template forward_msg at /var/www/html/app/../themes/classic/mails/pl/forward_msg.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(613, 1, 0, 'Generate html template guest_to_customer at /var/www/html/app/../themes/classic/mails/pl/guest_to_customer.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(614, 1, 0, 'Generate txt template guest_to_customer at /var/www/html/app/../themes/classic/mails/pl/guest_to_customer.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(615, 1, 0, 'Generate html template import at /var/www/html/app/../themes/classic/mails/pl/import.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(616, 1, 0, 'Generate txt template import at /var/www/html/app/../themes/classic/mails/pl/import.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(617, 1, 0, 'Generate html template in_transit at /var/www/html/app/../themes/classic/mails/pl/in_transit.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(618, 1, 0, 'Generate txt template in_transit at /var/www/html/app/../themes/classic/mails/pl/in_transit.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(619, 1, 0, 'Generate html template log_alert at /var/www/html/app/../themes/classic/mails/pl/log_alert.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(620, 1, 0, 'Generate txt template log_alert at /var/www/html/app/../themes/classic/mails/pl/log_alert.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(621, 1, 0, 'Generate html template newsletter at /var/www/html/app/../themes/classic/mails/pl/newsletter.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(622, 1, 0, 'Generate txt template newsletter at /var/www/html/app/../themes/classic/mails/pl/newsletter.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(623, 1, 0, 'Generate html template order_canceled at /var/www/html/app/../themes/classic/mails/pl/order_canceled.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(624, 1, 0, 'Generate txt template order_canceled at /var/www/html/app/../themes/classic/mails/pl/order_canceled.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(625, 1, 0, 'Generate html template order_changed at /var/www/html/app/../themes/classic/mails/pl/order_changed.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(626, 1, 0, 'Generate txt template order_changed at /var/www/html/app/../themes/classic/mails/pl/order_changed.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(627, 1, 0, 'Generate html template order_conf at /var/www/html/app/../themes/classic/mails/pl/order_conf.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(628, 1, 0, 'Generate txt template order_conf at /var/www/html/app/../themes/classic/mails/pl/order_conf.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(629, 1, 0, 'Generate html template order_customer_comment at /var/www/html/app/../themes/classic/mails/pl/order_customer_comment.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(630, 1, 0, 'Generate txt template order_customer_comment at /var/www/html/app/../themes/classic/mails/pl/order_customer_comment.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(631, 1, 0, 'Generate html template order_merchant_comment at /var/www/html/app/../themes/classic/mails/pl/order_merchant_comment.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(632, 1, 0, 'Generate txt template order_merchant_comment at /var/www/html/app/../themes/classic/mails/pl/order_merchant_comment.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(633, 1, 0, 'Generate html template order_return_state at /var/www/html/app/../themes/classic/mails/pl/order_return_state.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(634, 1, 0, 'Generate txt template order_return_state at /var/www/html/app/../themes/classic/mails/pl/order_return_state.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(635, 1, 0, 'Generate html template outofstock at /var/www/html/app/../themes/classic/mails/pl/outofstock.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(636, 1, 0, 'Generate txt template outofstock at /var/www/html/app/../themes/classic/mails/pl/outofstock.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(637, 1, 0, 'Generate html template password at /var/www/html/app/../themes/classic/mails/pl/password.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(638, 1, 0, 'Generate txt template password at /var/www/html/app/../themes/classic/mails/pl/password.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(639, 1, 0, 'Generate html template password_query at /var/www/html/app/../themes/classic/mails/pl/password_query.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(640, 1, 0, 'Generate txt template password_query at /var/www/html/app/../themes/classic/mails/pl/password_query.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(641, 1, 0, 'Generate html template payment at /var/www/html/app/../themes/classic/mails/pl/payment.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(642, 1, 0, 'Generate txt template payment at /var/www/html/app/../themes/classic/mails/pl/payment.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(643, 1, 0, 'Generate html template payment_error at /var/www/html/app/../themes/classic/mails/pl/payment_error.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(644, 1, 0, 'Generate txt template payment_error at /var/www/html/app/../themes/classic/mails/pl/payment_error.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(645, 1, 0, 'Generate html template preparation at /var/www/html/app/../themes/classic/mails/pl/preparation.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(646, 1, 0, 'Generate txt template preparation at /var/www/html/app/../themes/classic/mails/pl/preparation.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(647, 1, 0, 'Generate html template productoutofstock at /var/www/html/app/../themes/classic/mails/pl/productoutofstock.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(648, 1, 0, 'Generate txt template productoutofstock at /var/www/html/app/../themes/classic/mails/pl/productoutofstock.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:25', '2022-12-21 15:37:25'),
+(649, 1, 0, 'Generate html template refund at /var/www/html/app/../themes/classic/mails/pl/refund.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(650, 1, 0, 'Generate txt template refund at /var/www/html/app/../themes/classic/mails/pl/refund.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(651, 1, 0, 'Generate html template reply_msg at /var/www/html/app/../themes/classic/mails/pl/reply_msg.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(652, 1, 0, 'Generate txt template reply_msg at /var/www/html/app/../themes/classic/mails/pl/reply_msg.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(653, 1, 0, 'Generate html template shipped at /var/www/html/app/../themes/classic/mails/pl/shipped.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(654, 1, 0, 'Generate txt template shipped at /var/www/html/app/../themes/classic/mails/pl/shipped.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(655, 1, 0, 'Generate html template test at /var/www/html/app/../themes/classic/mails/pl/test.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(656, 1, 0, 'Generate txt template test at /var/www/html/app/../themes/classic/mails/pl/test.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(657, 1, 0, 'Generate html template voucher at /var/www/html/app/../themes/classic/mails/pl/voucher.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(658, 1, 0, 'Generate txt template voucher at /var/www/html/app/../themes/classic/mails/pl/voucher.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(659, 1, 0, 'Generate html template voucher_new at /var/www/html/app/../themes/classic/mails/pl/voucher_new.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(660, 1, 0, 'Generate txt template voucher_new at /var/www/html/app/../themes/classic/mails/pl/voucher_new.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(661, 1, 0, 'Generate html template followup_1 at /var/www/html/app/../themes/classic/modules/ps_reminder/mails/pl/followup_1.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(662, 1, 0, 'Generate txt template followup_1 at /var/www/html/app/../themes/classic/modules/ps_reminder/mails/pl/followup_1.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(663, 1, 0, 'Generate html template followup_2 at /var/www/html/app/../themes/classic/modules/ps_reminder/mails/pl/followup_2.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(664, 1, 0, 'Generate txt template followup_2 at /var/www/html/app/../themes/classic/modules/ps_reminder/mails/pl/followup_2.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(665, 1, 0, 'Generate html template followup_3 at /var/www/html/app/../themes/classic/modules/ps_reminder/mails/pl/followup_3.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(666, 1, 0, 'Generate txt template followup_3 at /var/www/html/app/../themes/classic/modules/ps_reminder/mails/pl/followup_3.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(667, 1, 0, 'Generate html template followup_4 at /var/www/html/app/../themes/classic/modules/ps_reminder/mails/pl/followup_4.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(668, 1, 0, 'Generate txt template followup_4 at /var/www/html/app/../themes/classic/modules/ps_reminder/mails/pl/followup_4.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(669, 1, 0, 'Generate html template referralprogram-congratulations at /var/www/html/app/../themes/classic/modules/referralprogram/mails/pl/referralprogram-congratulations.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(670, 1, 0, 'Generate txt template referralprogram-congratulations at /var/www/html/app/../themes/classic/modules/referralprogram/mails/pl/referralprogram-congratulations.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(671, 1, 0, 'Generate html template referralprogram-invitation at /var/www/html/app/../themes/classic/modules/referralprogram/mails/pl/referralprogram-invitation.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(672, 1, 0, 'Generate txt template referralprogram-invitation at /var/www/html/app/../themes/classic/modules/referralprogram/mails/pl/referralprogram-invitation.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(673, 1, 0, 'Generate html template referralprogram-voucher at /var/www/html/app/../themes/classic/modules/referralprogram/mails/pl/referralprogram-voucher.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(674, 1, 0, 'Generate txt template referralprogram-voucher at /var/www/html/app/../themes/classic/modules/referralprogram/mails/pl/referralprogram-voucher.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(675, 1, 0, 'Generate html template customer_qty at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/customer_qty.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(676, 1, 0, 'Generate txt template customer_qty at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/customer_qty.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(677, 1, 0, 'Generate html template new_order at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/new_order.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(678, 1, 0, 'Generate txt template new_order at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/new_order.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(679, 1, 0, 'Generate html template order_changed at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/order_changed.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(680, 1, 0, 'Generate txt template order_changed at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/order_changed.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(681, 1, 0, 'Generate html template productcoverage at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/productcoverage.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(682, 1, 0, 'Generate txt template productcoverage at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/productcoverage.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(683, 1, 0, 'Generate html template productoutofstock at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/productoutofstock.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(684, 1, 0, 'Generate txt template productoutofstock at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/productoutofstock.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(685, 1, 0, 'Generate html template return_slip at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/return_slip.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26');
+INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_type`, `object_id`, `id_shop`, `id_shop_group`, `id_lang`, `in_all_shops`, `id_employee`, `date_add`, `date_upd`) VALUES
+(686, 1, 0, 'Generate txt template return_slip at /var/www/html/app/../themes/classic/modules/ps_emailalerts/mails/pl/return_slip.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(687, 1, 0, 'Generate html template newsletter_conf at /var/www/html/app/../themes/classic/modules/ps_emailsubscription/mails/pl/newsletter_conf.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(688, 1, 0, 'Generate txt template newsletter_conf at /var/www/html/app/../themes/classic/modules/ps_emailsubscription/mails/pl/newsletter_conf.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(689, 1, 0, 'Generate html template newsletter_verif at /var/www/html/app/../themes/classic/modules/ps_emailsubscription/mails/pl/newsletter_verif.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(690, 1, 0, 'Generate txt template newsletter_verif at /var/www/html/app/../themes/classic/modules/ps_emailsubscription/mails/pl/newsletter_verif.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(691, 1, 0, 'Generate html template newsletter_voucher at /var/www/html/app/../themes/classic/modules/ps_emailsubscription/mails/pl/newsletter_voucher.html', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(692, 1, 0, 'Generate txt template newsletter_voucher at /var/www/html/app/../themes/classic/modules/ps_emailsubscription/mails/pl/newsletter_voucher.txt', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 15:37:26', '2022-12-21 15:37:26'),
+(693, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 13, 1, NULL, 1, 0, 0, '2022-12-21 15:38:07', '2022-12-21 15:38:07');
 
 -- --------------------------------------------------------
 
@@ -18532,7 +18676,17 @@ INSERT INTO `ps_mail` (`id_mail`, `recipient`, `template`, `subject`, `id_lang`,
 (6, 'piotrgarbowski2@gmail.com', 'payment', '[Dresser Shop] Płatność zaakceptowana', 1, '2022-12-21 14:39:25'),
 (7, 'piotrgarbowski2@gmail.com', 'account', '[Dresser Shop] Witaj !', 1, '2022-12-21 14:53:26'),
 (8, 'piotrgarbowski2@gmail.com', 'bankwire', '[Dresser Shop] Oczekiwanie na płatność przelewem', 1, '2022-12-21 14:54:23'),
-(9, 'piotrgarbowski2@gmail.com', 'order_conf', '[Dresser Shop] Potwierdzenie zamówienia', 1, '2022-12-21 14:54:25');
+(9, 'piotrgarbowski2@gmail.com', 'order_conf', '[Dresser Shop] Potwierdzenie zamówienia', 1, '2022-12-21 14:54:25'),
+(10, 'piotrgarbowski2@gmail.com', 'bankwire', '[Dresser Shop] Oczekiwanie na płatność przelewem', 1, '2022-12-21 15:17:31'),
+(11, 'piotrgarbowski2@gmail.com', 'order_conf', '[Dresser Shop] Potwierdzenie zamówienia', 1, '2022-12-21 15:17:32'),
+(12, 'piotrgarbowski2@gmail.com', 'bankwire', '[Dresser Shop] Oczekiwanie na płatność przelewem', 1, '2022-12-21 15:22:28'),
+(13, 'piotrgarbowski2@gmail.com', 'order_conf', '[Dresser Shop] Potwierdzenie zamówienia', 1, '2022-12-21 15:22:29'),
+(14, 'marek7119@gmail.com', 'account', '[Dresser Shop] Witaj !', 1, '2022-12-21 15:35:03'),
+(15, 'marek7119@gmail.com', 'bankwire', '[Dresser Shop] Oczekiwanie na płatność przelewem', 1, '2022-12-21 15:36:29'),
+(16, 'marek7119@gmail.com', 'order_conf', '[Dresser Shop] Potwierdzenie zamówienia', 1, '2022-12-21 15:36:30'),
+(17, 'marek7119@gmail.com', 'bankwire', '[Dresser Shop] Oczekiwanie na płatność przelewem', 1, '2022-12-21 15:38:06'),
+(18, 'marek7119@gmail.com', 'order_conf', '[Dresser Shop] Potwierdzenie zamówienia', 1, '2022-12-21 15:38:07'),
+(19, 'marek7119@gmail.com', 'payment', '[Dresser Shop] Płatność zaakceptowana', 1, '2022-12-21 15:39:04');
 
 -- --------------------------------------------------------
 
@@ -19801,7 +19955,11 @@ INSERT INTO `ps_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `i
 (5, 'KHWLILZLL', 1, 1, 2, 1, 2, 5, 1, 5, 5, 10, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 'Bank wire', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '20.900000', '27.300000', '25.900000', '0.000000', '18.900000', '18.900000', '7.000000', '8.400000', '7.000000', '0.000', '0.000000', '0.000000', '0.000000', 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2022-12-18 20:45:08', '2022-12-18 20:45:08', ''),
 (6, 'NIDWBVBXE', 1, 1, 10, 1, 4, 7, 1, 8, 8, 10, '259fe03eaafd691e43bab9dc05882f8c', 'Płatności elektroniczne', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '12128.060000', '12128.060000', '9860.210000', '0.000000', '9860.200000', '12128.060000', '0.000000', '0.000000', '0.000000', '23.000', '0.000000', '0.000000', '0.000000', 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2022-12-21 04:38:13', '2022-12-21 04:38:14', ''),
 (7, 'TKYNYSUBB', 1, 1, 7, 1, 5, 8, 1, 9, 9, 2, '09c6a4d09a8052c4c2242d3bd0baf124', 'Płatności elektroniczne', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '1199.000000', '1199.000000', '993.500000', '1199.000000', '893.500000', '1099.000000', '100.000000', '100.000000', '100.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 1, 0, '2022-12-21 14:39:22', '0000-00-00 00:00:00', 1, '2022-12-21 14:24:46', '2022-12-21 14:39:22', ''),
-(8, 'DZUZHEKVP', 1, 1, 7, 1, 6, 9, 1, 10, 10, 10, '782e7add06857beceed41888a971dbd9', 'Płatności elektroniczne', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '809.000000', '809.000000', '663.330000', '0.000000', '633.330000', '779.000000', '30.000000', '30.000000', '30.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2022-12-21 14:54:22', '2022-12-21 14:54:22', '');
+(8, 'DZUZHEKVP', 1, 1, 7, 1, 6, 9, 1, 10, 10, 10, '782e7add06857beceed41888a971dbd9', 'Płatności elektroniczne', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '809.000000', '809.000000', '663.330000', '0.000000', '633.330000', '779.000000', '30.000000', '30.000000', '30.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2022-12-21 14:54:22', '2022-12-21 14:54:22', ''),
+(9, 'AWBJSMJLB', 1, 1, 7, 1, 6, 10, 1, 10, 10, 10, '782e7add06857beceed41888a971dbd9', 'Płatności elektroniczne', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '659.000000', '659.000000', '554.470000', '0.000000', '454.470000', '559.000000', '100.000000', '100.000000', '100.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2022-12-21 15:17:29', '2022-12-21 15:17:29', ''),
+(10, 'HQHKQJUJM', 1, 1, 7, 1, 6, 11, 1, 10, 10, 10, '782e7add06857beceed41888a971dbd9', 'Płatności elektroniczne', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '2869.000000', '2869.000000', '2332.520000', '0.000000', '2332.520000', '2869.000000', '0.000000', '0.000000', '0.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2022-12-21 15:22:26', '2022-12-21 15:22:27', ''),
+(11, 'GNPCDNRQC', 1, 1, 7, 1, 7, 12, 1, 11, 11, 10, 'e3bfa1f2f94751b68be184f39f523180', 'Płatności elektroniczne', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '809.000000', '809.000000', '663.330000', '0.000000', '633.330000', '779.000000', '30.000000', '30.000000', '30.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2022-12-21 15:36:28', '2022-12-21 15:36:28', ''),
+(12, 'ENAGALTMT', 1, 1, 7, 1, 7, 13, 1, 11, 11, 2, 'e3bfa1f2f94751b68be184f39f523180', 'Płatności elektroniczne', '1.000000', 'ps_wirepayment', 0, 0, '', 0, '', '0.000000', '0.000000', '0.000000', '1249.000000', '1249.000000', '1034.150000', '1249.000000', '934.150000', '1149.000000', '100.000000', '100.000000', '100.000000', '0.000', '0.000000', '0.000000', '0.000000', 2, 2, 2, 0, '2022-12-21 15:39:02', '0000-00-00 00:00:00', 1, '2022-12-21 15:38:04', '2022-12-21 15:39:02', '');
 
 -- --------------------------------------------------------
 
@@ -19833,7 +19991,11 @@ INSERT INTO `ps_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `i
 (5, 5, 2, 0, '0.000000', '7.000000', '8.400000', '', '2022-12-18 20:45:08'),
 (6, 6, 10, 0, '488.100000', '0.000000', '0.000000', '', '2022-12-21 04:38:14'),
 (7, 7, 7, 1, '24.500000', '100.000000', '100.000000', '', '2022-12-21 14:24:46'),
-(8, 8, 7, 0, '18.000000', '30.000000', '30.000000', '', '2022-12-21 14:54:22');
+(8, 8, 7, 0, '18.000000', '30.000000', '30.000000', '', '2022-12-21 14:54:22'),
+(9, 9, 7, 0, '33.000000', '100.000000', '100.000000', '', '2022-12-21 15:17:29'),
+(10, 10, 7, 0, '82.000000', '0.000000', '0.000000', '', '2022-12-21 15:22:27'),
+(11, 11, 7, 0, '18.000000', '30.000000', '30.000000', '', '2022-12-21 15:36:28'),
+(12, 12, 7, 2, '88.100000', '100.000000', '100.000000', '', '2022-12-21 15:38:04');
 
 -- --------------------------------------------------------
 
@@ -19933,7 +20095,11 @@ INSERT INTO `ps_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice`
 (15, 6, 0, 0, 1, 44, 0, 0, 'Szafka RTV POOLE L/P 1D2S ENJT121-C605', 1, 1, 0, 0, 0, '974.796748', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '55.500000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '1199.000000', '974.800000', '1199.000000', '974.796748', '0.000000', '0.000000', '0.000000', '974.796748', '0.000000', '0.000000', '0.000000'),
 (16, 6, 0, 0, 1, 29, 0, 0, 'Komoda BRUGIA BUGK231B z oświetleniem', 1, 1, 0, 0, 0, '1294.390244', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '75.000000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '1592.100000', '1294.390000', '1592.100000', '1294.390244', '0.000000', '0.000000', '0.000000', '1294.390244', '0.000000', '0.000000', '0.000000'),
 (17, 7, 1, 0, 1, 613, 0, 0, 'Komoda prowansalska szara CRAMENA', 1, 1, 0, 0, 0, '893.495935', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '24.500000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '1099.000000', '893.500000', '1099.000000', '893.495935', '0.000000', '0.000000', '0.000000', '893.495935', '0.000000', '0.000000', '0.000000'),
-(18, 8, 0, 0, 1, 611, 0, 0, 'Szafka RTV prowansalska szara CRAMENA', 1, 1, 0, 0, 0, '633.333333', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '18.000000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '779.000000', '633.330000', '779.000000', '633.333333', '0.000000', '0.000000', '0.000000', '633.333333', '0.000000', '0.000000', '0.000000');
+(18, 8, 0, 0, 1, 611, 0, 0, 'Szafka RTV prowansalska szara CRAMENA', 1, 1, 0, 0, 0, '633.333333', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '18.000000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '779.000000', '633.330000', '779.000000', '633.333333', '0.000000', '0.000000', '0.000000', '633.333333', '0.000000', '0.000000', '0.000000'),
+(19, 9, 0, 0, 1, 609, 0, 0, 'Komoda mała z szufladami REMO', 1, 1, 0, 0, 0, '454.471545', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '33.000000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '559.000000', '454.470000', '559.000000', '454.471545', '0.000000', '0.000000', '0.000000', '454.471545', '0.000000', '0.000000', '0.000000'),
+(20, 10, 0, 0, 1, 608, 4, 0, 'Komoda z drewnianym frontem SANTOS (Kolor: Brązowy)', 1, 1, 0, 0, 0, '2332.520325', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '82.000000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '2869.000000', '2332.520000', '2869.000000', '2332.520325', '0.000000', '0.000000', '0.000000', '2332.520325', '0.000000', '0.000000', '0.000000'),
+(21, 11, 0, 0, 1, 611, 0, 0, 'Szafka RTV prowansalska szara CRAMENA', 1, 1, 0, 0, 0, '633.333333', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '18.000000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '779.000000', '633.330000', '779.000000', '633.333333', '0.000000', '0.000000', '0.000000', '633.333333', '0.000000', '0.000000', '0.000000'),
+(22, 12, 2, 0, 1, 614, 1, 0, 'Komoda prowansalska z drzwiami przesuwnymi ANTHONY (Kolor: Biały)', 1, 1, 0, 0, 0, '934.146341', '0.00', '0.000000', '0.000000', '0.000000', '0.00', '0.000000', '', '', '', '', '', '', '88.100000', 1, 0, 'PTU PL 23%', '23.000', '0.000000', '0.000', 0, '', 0, '0000-00-00 00:00:00', '1149.000000', '934.150000', '1148.999999', '934.146341', '0.000000', '0.000000', '0.000000', '934.146341', '0.000000', '0.000000', '0.000000');
 
 -- --------------------------------------------------------
 
@@ -19963,7 +20129,11 @@ INSERT INTO `ps_order_detail_tax` (`id_order_detail`, `id_tax`, `unit_amount`, `
 (9, 1, '97.086179', '97.090000'),
 (10, 1, '65.465854', '65.470000'),
 (17, 1, '205.504065', '205.500000'),
-(18, 1, '145.666667', '145.670000');
+(18, 1, '145.666667', '145.670000'),
+(19, 1, '104.528455', '104.530000'),
+(20, 1, '536.479675', '536.480000'),
+(21, 1, '145.666667', '145.670000'),
+(22, 1, '214.853658', '214.850000');
 
 -- --------------------------------------------------------
 
@@ -19994,7 +20164,12 @@ INSERT INTO `ps_order_history` (`id_order_history`, `id_employee`, `id_order`, `
 (8, 0, 6, 10, '2022-12-21 04:38:14'),
 (9, 0, 7, 10, '2022-12-21 14:24:46'),
 (10, 1, 7, 2, '2022-12-21 14:39:22'),
-(11, 0, 8, 10, '2022-12-21 14:54:22');
+(11, 0, 8, 10, '2022-12-21 14:54:22'),
+(12, 0, 9, 10, '2022-12-21 15:17:29'),
+(13, 0, 10, 10, '2022-12-21 15:22:27'),
+(14, 0, 11, 10, '2022-12-21 15:36:28'),
+(15, 0, 12, 10, '2022-12-21 15:38:04'),
+(16, 1, 12, 2, '2022-12-21 15:39:02');
 
 -- --------------------------------------------------------
 
@@ -20029,7 +20204,8 @@ CREATE TABLE `ps_order_invoice` (
 --
 
 INSERT INTO `ps_order_invoice` (`id_order_invoice`, `id_order`, `number`, `delivery_number`, `delivery_date`, `total_discount_tax_excl`, `total_discount_tax_incl`, `total_paid_tax_excl`, `total_paid_tax_incl`, `total_products`, `total_products_wt`, `total_shipping_tax_excl`, `total_shipping_tax_incl`, `shipping_tax_computation_method`, `total_wrapping_tax_excl`, `total_wrapping_tax_incl`, `shop_address`, `note`, `date_add`) VALUES
-(1, 7, 1, 0, '0000-00-00 00:00:00', '0.000000', '0.000000', '993.500000', '1199.000000', '893.500000', '1099.000000', '100.000000', '100.000000', 0, '0.000000', '0.000000', 'Dresser Shop<br />ul. Gwiezdna<br />83-287 Gdańsk<br />Polska<br />1409807232', '', '2022-12-21 14:39:22');
+(1, 7, 1, 0, '0000-00-00 00:00:00', '0.000000', '0.000000', '993.500000', '1199.000000', '893.500000', '1099.000000', '100.000000', '100.000000', 0, '0.000000', '0.000000', 'Dresser Shop<br />ul. Gwiezdna<br />83-287 Gdańsk<br />Polska<br />1409807232', '', '2022-12-21 14:39:22'),
+(2, 12, 2, 0, '0000-00-00 00:00:00', '0.000000', '0.000000', '1034.150000', '1249.000000', '934.150000', '1149.000000', '100.000000', '100.000000', 0, '0.000000', '0.000000', 'Dresser Shop<br />ul. Gwiezdna<br />83-287 Gdańsk<br />Polska<br />1409807232', '', '2022-12-21 15:39:02');
 
 -- --------------------------------------------------------
 
@@ -20048,7 +20224,8 @@ CREATE TABLE `ps_order_invoice_payment` (
 --
 
 INSERT INTO `ps_order_invoice_payment` (`id_order_invoice`, `id_order_payment`, `id_order`) VALUES
-(1, 1, 7);
+(1, 1, 7),
+(2, 2, 12);
 
 -- --------------------------------------------------------
 
@@ -20127,7 +20304,8 @@ CREATE TABLE `ps_order_payment` (
 --
 
 INSERT INTO `ps_order_payment` (`id_order_payment`, `order_reference`, `id_currency`, `amount`, `payment_method`, `conversion_rate`, `transaction_id`, `card_number`, `card_brand`, `card_expiration`, `card_holder`, `date_add`) VALUES
-(1, 'TKYNYSUBB', 1, '1199.000000', 'Płatności elektroniczne', '1.000000', '', '', '', '', '', '2022-12-21 14:39:22');
+(1, 'TKYNYSUBB', 1, '1199.000000', 'Płatności elektroniczne', '1.000000', '', '', '', '', '', '2022-12-21 14:39:22'),
+(2, 'ENAGALTMT', 1, '1249.000000', 'Płatności elektroniczne', '1.000000', '', '', '', '', '', '2022-12-21 15:39:02');
 
 -- --------------------------------------------------------
 
@@ -20363,7 +20541,8 @@ CREATE TABLE `ps_page` (
 INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
 (1, 1, NULL),
 (2, 2, NULL),
-(3, 3, NULL);
+(3, 3, NULL),
+(4, 4, NULL);
 
 -- --------------------------------------------------------
 
@@ -20396,6 +20575,7 @@ CREATE TABLE `ps_page_type` (
 --
 
 INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
+(4, 'authentication'),
 (1, 'index'),
 (3, 'orderconfirmation'),
 (2, 'pagenotfound');
@@ -22063,7 +22243,8 @@ CREATE TABLE `ps_product_sale` (
 --
 
 INSERT INTO `ps_product_sale` (`id_product`, `quantity`, `sale_nbr`, `date_upd`) VALUES
-(613, 1, 1, '2022-12-21');
+(613, 1, 1, '2022-12-21'),
+(614, 1, 1, '2022-12-21');
 
 -- --------------------------------------------------------
 
@@ -22900,7 +23081,8 @@ INSERT INTO `ps_psgdpr_log` (`id_gdpr_log`, `id_customer`, `id_guest`, `client_n
 (1, 3, 0, 'gder reg', 0, 1, '2022-12-20 15:26:12', '2022-12-20 15:26:12'),
 (2, 4, 0, 'lbgkpilg wyxdiqnsvd', 0, 1, '2022-12-21 04:37:11', '2022-12-21 04:37:11'),
 (3, 5, 0, 'Piotr Nowakowski', 0, 1, '2022-12-21 14:23:50', '2022-12-21 14:23:50'),
-(4, 6, 0, 'Piotr  Garb', 0, 1, '2022-12-21 14:53:26', '2022-12-21 14:53:26');
+(4, 6, 0, 'Piotr  Garb', 0, 1, '2022-12-21 14:53:26', '2022-12-21 14:53:26'),
+(5, 7, 0, 'Marek Brandt', 0, 1, '2022-12-21 15:35:03', '2022-12-21 15:35:03');
 
 -- --------------------------------------------------------
 
@@ -24908,18 +25090,18 @@ INSERT INTO `ps_stock_available` (`id_stock_available`, `id_product`, `id_produc
 (605, 605, 0, 1, 0, 56, 0, 0, 0, 2, ''),
 (606, 606, 0, 1, 0, 12, 0, 0, 0, 2, ''),
 (607, 607, 0, 1, 0, 86, 0, 0, 0, 2, ''),
-(608, 608, 0, 1, 0, 84, 0, 0, 0, 2, ''),
-(609, 609, 0, 1, 0, 69, 0, 0, 0, 2, ''),
+(608, 608, 0, 1, 0, 83, 83, 0, 0, 2, ''),
+(609, 609, 0, 1, 0, 68, 69, 1, 0, 2, ''),
 (610, 610, 0, 1, 0, 33, 0, 0, 0, 2, ''),
-(611, 611, 0, 1, 0, 90, 91, 1, 0, 2, ''),
+(611, 611, 0, 1, 0, 89, 91, 2, 0, 2, ''),
 (612, 612, 0, 1, 0, 43, 0, 0, 0, 2, ''),
 (613, 613, 0, 1, 0, 25, 26, 1, 0, 2, ''),
-(614, 614, 0, 1, 0, 20, 0, 0, 0, 2, ''),
-(615, 614, 1, 1, 0, 10, 0, 0, 0, 2, ''),
-(616, 614, 2, 1, 0, 10, 0, 0, 0, 2, ''),
-(617, 608, 3, 1, 0, 24, 0, 0, 0, 2, ''),
-(618, 608, 4, 1, 0, 20, 0, 0, 0, 2, ''),
-(619, 608, 5, 1, 0, 40, 0, 0, 0, 2, '');
+(614, 614, 0, 1, 0, 19, 19, 0, 0, 2, ''),
+(615, 614, 1, 1, 0, 9, 10, 1, 0, 2, ''),
+(616, 614, 2, 1, 0, 10, 10, 0, 0, 2, ''),
+(617, 608, 3, 1, 0, 24, 24, 0, 0, 2, ''),
+(618, 608, 4, 1, 0, 19, 20, 1, 0, 2, ''),
+(619, 608, 5, 1, 0, 40, 40, 0, 0, 2, '');
 
 -- --------------------------------------------------------
 
@@ -27362,7 +27544,8 @@ CREATE TABLE `ps_wishlist` (
 
 INSERT INTO `ps_wishlist` (`id_wishlist`, `id_customer`, `id_shop`, `id_shop_group`, `token`, `name`, `counter`, `date_add`, `date_upd`, `default`) VALUES
 (1, 4, 1, 1, '78BA50D9B1CDF25C', 'Moja lista życzeń', NULL, '2022-12-21 04:37:12', '2022-12-21 04:37:12', 1),
-(2, 6, 1, 1, '30598D7024D447B3', 'Moja lista życzeń', NULL, '2022-12-21 14:53:27', '2022-12-21 14:53:27', 1);
+(2, 6, 1, 1, '30598D7024D447B3', 'Moja lista życzeń', NULL, '2022-12-21 14:53:27', '2022-12-21 14:53:27', 1),
+(3, 7, 1, 1, 'B304C868CD785AFC', 'Moja lista życzeń', NULL, '2022-12-21 15:35:04', '2022-12-21 15:35:04', 1);
 
 -- --------------------------------------------------------
 
@@ -29480,7 +29663,7 @@ ALTER TABLE `ps_zone_shop`
 -- AUTO_INCREMENT dla tabeli `ps_address`
 --
 ALTER TABLE `ps_address`
-  MODIFY `id_address` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_address` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_admin_filter`
@@ -29558,7 +29741,7 @@ ALTER TABLE `ps_carrier`
 -- AUTO_INCREMENT dla tabeli `ps_cart`
 --
 ALTER TABLE `ps_cart`
-  MODIFY `id_cart` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_cart` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_cart_rule`
@@ -29630,7 +29813,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT dla tabeli `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_connections_source`
@@ -29660,25 +29843,25 @@ ALTER TABLE `ps_currency`
 -- AUTO_INCREMENT dla tabeli `ps_customer`
 --
 ALTER TABLE `ps_customer`
-  MODIFY `id_customer` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_customer` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_customer_message`
 --
 ALTER TABLE `ps_customer_message`
-  MODIFY `id_customer_message` int UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_customer_message` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_customer_session`
 --
 ALTER TABLE `ps_customer_session`
-  MODIFY `id_customer_session` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_customer_session` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_customer_thread`
 --
 ALTER TABLE `ps_customer_thread`
-  MODIFY `id_customer_thread` int UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_customer_thread` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_customization`
@@ -29744,7 +29927,7 @@ ALTER TABLE `ps_feature_value`
 -- AUTO_INCREMENT dla tabeli `ps_ganalytics`
 --
 ALTER TABLE `ps_ganalytics`
-  MODIFY `id_google_analytics` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_google_analytics` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_gender`
@@ -29768,7 +29951,7 @@ ALTER TABLE `ps_group_reduction`
 -- AUTO_INCREMENT dla tabeli `ps_guest`
 --
 ALTER TABLE `ps_guest`
-  MODIFY `id_guest` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_guest` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_homeslider`
@@ -29864,13 +30047,13 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT dla tabeli `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=584;
+  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=694;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_mail`
 --
 ALTER TABLE `ps_mail`
-  MODIFY `id_mail` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_mail` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_manufacturer`
@@ -29924,13 +30107,13 @@ ALTER TABLE `ps_operating_system`
 -- AUTO_INCREMENT dla tabeli `ps_orders`
 --
 ALTER TABLE `ps_orders`
-  MODIFY `id_order` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_order` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_order_carrier`
 --
 ALTER TABLE `ps_order_carrier`
-  MODIFY `id_order_carrier` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_order_carrier` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_order_cart_rule`
@@ -29942,19 +30125,19 @@ ALTER TABLE `ps_order_cart_rule`
 -- AUTO_INCREMENT dla tabeli `ps_order_detail`
 --
 ALTER TABLE `ps_order_detail`
-  MODIFY `id_order_detail` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_order_detail` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_order_history`
 --
 ALTER TABLE `ps_order_history`
-  MODIFY `id_order_history` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_order_history` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_order_invoice`
 --
 ALTER TABLE `ps_order_invoice`
-  MODIFY `id_order_invoice` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_order_invoice` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_order_message`
@@ -29966,7 +30149,7 @@ ALTER TABLE `ps_order_message`
 -- AUTO_INCREMENT dla tabeli `ps_order_payment`
 --
 ALTER TABLE `ps_order_payment`
-  MODIFY `id_order_payment` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_order_payment` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_order_return`
@@ -29996,7 +30179,7 @@ ALTER TABLE `ps_order_state`
 -- AUTO_INCREMENT dla tabeli `ps_page`
 --
 ALTER TABLE `ps_page`
-  MODIFY `id_page` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_page` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_pagenotfound`
@@ -30008,7 +30191,7 @@ ALTER TABLE `ps_pagenotfound`
 -- AUTO_INCREMENT dla tabeli `ps_page_type`
 --
 ALTER TABLE `ps_page_type`
-  MODIFY `id_page_type` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_page_type` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_product`
@@ -30080,7 +30263,7 @@ ALTER TABLE `ps_psgdpr_consent_lang`
 -- AUTO_INCREMENT dla tabeli `ps_psgdpr_log`
 --
 ALTER TABLE `ps_psgdpr_log`
-  MODIFY `id_gdpr_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_gdpr_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_psreassurance`
@@ -30356,7 +30539,7 @@ ALTER TABLE `ps_web_browser`
 -- AUTO_INCREMENT dla tabeli `ps_wishlist`
 --
 ALTER TABLE `ps_wishlist`
-  MODIFY `id_wishlist` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_wishlist` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_wishlist_product`

@@ -1,29 +1,17 @@
- 
+[{shop_name}]({shop_url})
+Witaj {firstname} {lastname},
+Dziękujemy za utworzenie konta klienta na stronie {shop_name}.
 
-{shop_url}
-
-Cześć {firstname} {lastname},
-
-Dziękujemy za założenie konta klienta w {shop_name}.
-
-Twoje dane do logowania w {shop_name}
-
-Oto Twoje dane do logowania:
-
+Oto twój adres e-mail do logowania:
 Adres e-mail: {email}
 
 Ważne wskazówki dotyczące bezpieczeństwa:
 
-1. Zawsze dbaj o bezpieczeństwo danych swojego konta.
+- Zawsze trzymaj dane do Twojego konta w bezpiecznym miejscu.
+- Nigdy nie ujawniaj nikomu swojego loginu i hasła.
+- Regularnie zmieniaj swoje hasło.
+- Jeśli podejrzewasz, że ktoś używa Twojego konta nielegalnie, prosimy o natychmiastowe poinformowanie nas o tym.
 
-2. Nigdy nie ujawniaj nikomu swoich danych do logowania.
+Możesz teraz składać zamówienia w naszym sklepie: [{shop_name}]({shop_url})
 
-3. Regularnie zmieniaj swoje hasło.
-
-4. Jeśli podejrzewasz, że ktoś nielegalnie korzysta z Twojego konta, natychmiast nas o tym powiadom.
-
-Możesz już składać zamówienia w naszym sklepie: [{shop_name}]({shop_url})
-
-[{shop_name}]({shop_url})
-
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
