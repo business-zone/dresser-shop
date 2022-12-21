@@ -1,0 +1,21 @@
+ 
+
+{shop_url}
+
+Cześć {firstname} {lastname},
+
+{meta_products}
+
+Order ID {order_name} - w trakcie realizacji.
+
+Twoje zamówienie o numerze referencyjnym {order_name} jest w drodze.
+
+Możesz śledzić swoją paczkę korzystając z poniższego linku: {followup}
+
+Śledź swoje zamówienie i pobierz fakturę w naszym sklepie, przejdź do sekcji [Historia i szczegóły zamówienia]({historia_url}) na swoim koncie klienta.
+
+Jeśli masz konto gościa, możesz śledzić swoje zamówienie poprzez sekcję [Śledzenie gości]({guest_tracking_url}) w naszym sklepie.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

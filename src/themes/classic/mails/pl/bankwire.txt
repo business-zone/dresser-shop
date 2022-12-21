@@ -1,0 +1,33 @@
+ 
+
+{shop_url}
+
+Cześć {firstname} {lastname},
+
+Dziękujemy za zakupy w {shop_name}!
+
+Zamówienie o numerze referencyjnym {order_name} - płatność w toku
+
+Twoje zamówienie o numerze referencyjnym {order_name} zostało złożone z powodzeniem. Możesz spodziewać się dostawy, jak tylko wpłynie płatność.
+
+Metoda płatności: przelew bankowy
+
+Zdecydowałeś się na płatność przelewem bankowym. Poniżej znajdują się informacje potrzebne do wykonania przelewu:
+
+Kwota:  {total_paid}
+
+Właściciel konta: {bankwire_owner}
+
+Szczegóły konta: {bankwire_details}
+
+Adres banku: {bankwire_address}
+
+W opisie bankwire podaj numer zamówienia.
+
+Aby śledzić swoje zamówienie i pobrać fakturę w naszym sklepie, przejdź do sekcji [Historia i szczegóły zamówienia]({historia_url}) na swoim koncie klienta.
+
+Jeśli masz konto gościa, możesz śledzić swoje zamówienie poprzez sekcję [Guest Tracking]({guest_tracking_url}) w naszym sklepie.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
