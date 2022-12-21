@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Czas generowania: 21 Gru 2022, 14:00
+-- Czas generowania: 21 Gru 2022, 14:14
 -- Wersja serwera: 8.0.31
 -- Wersja PHP: 8.0.19
 
@@ -2633,7 +2633,8 @@ INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `del
 (6, 1, 1, 8, '{\"7\":\"8,\"}', 1, 7, 7, 1, 3, 4, '65632da15906b22f9fee4afd2cb4fddc', 0, 0, '', 0, 0, '2022-12-20 15:25:29', '2022-12-20 15:28:17', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"1f22416f304c73ebcfcd9bc1a0079eb519d26d6e\"}'),
 (7, 1, 1, 10, '{\"8\":\"10,\"}', 1, 8, 8, 1, 4, 5, '259fe03eaafd691e43bab9dc05882f8c', 0, 0, '', 0, 0, '2022-12-21 04:37:09', '2022-12-21 04:38:10', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"174755034ad86fc1ec5148bc5d213f3c9aa36ae8\"}'),
 (8, 1, 1, 7, '{\"9\":\"7,\"}', 1, 9, 9, 1, 5, 6, '09c6a4d09a8052c4c2242d3bd0baf124', 0, 0, '', 0, 0, '2022-12-21 14:23:01', '2022-12-21 14:24:32', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"6945876484a262dff6cd0e7f65738b90651f5635\"}'),
-(9, 1, 1, 7, '{\"10\":\"7,\"}', 1, 10, 10, 1, 6, 7, '782e7add06857beceed41888a971dbd9', 0, 0, '', 0, 0, '2022-12-21 14:53:25', '2022-12-21 14:54:18', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"e33101bbdc910fd72c3ef0ba9045569d67185c6e\"}');
+(9, 1, 1, 7, '{\"10\":\"7,\"}', 1, 10, 10, 1, 6, 7, '782e7add06857beceed41888a971dbd9', 0, 0, '', 0, 0, '2022-12-21 14:53:25', '2022-12-21 14:54:18', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"e33101bbdc910fd72c3ef0ba9045569d67185c6e\"}'),
+(10, 1, 1, 7, '{\"10\":\"7,\"}', 1, 10, 10, 1, 6, 7, '782e7add06857beceed41888a971dbd9', 0, 0, '', 0, 0, '2022-12-21 15:13:38', '2022-12-21 15:13:38', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":false,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checkout-payment-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checksum\":\"e33101bbdc910fd72c3ef0ba9045569d67185c6e\"}');
 
 -- --------------------------------------------------------
 
@@ -2678,7 +2679,8 @@ INSERT INTO `ps_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `
 (7, 136, 8, 1, 0, 0, 1, '2022-12-21 04:37:20'),
 (7, 139, 8, 1, 0, 0, 1, '2022-12-21 04:37:24'),
 (8, 613, 9, 1, 0, 0, 1, '2022-12-21 14:23:01'),
-(9, 611, 10, 1, 0, 0, 1, '2022-12-21 14:53:35');
+(9, 611, 10, 1, 0, 0, 1, '2022-12-21 14:53:35'),
+(10, 611, 10, 1, 0, 0, 1, '2022-12-21 15:13:38');
 
 -- --------------------------------------------------------
 
@@ -4475,8 +4477,8 @@ INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `da
 (294, 1, 'Moje listy życzeń', '2022-12-18 20:42:44'),
 (295, 1, 'Moja lista życzeń', '2022-12-18 20:42:44'),
 (296, 1, 'Utwórz nową listę', '2022-12-18 20:42:44'),
-(317, 1, '74ca18f6e255f3402ee9eae5402ceee1.png', '2022-12-20 13:20:49'),
-(318, 1, 'http://localhost/promocje', '2022-12-20 22:07:05'),
+(317, 1, '88b757133689ac02b9bafb12e73a7497.jpg', '2022-12-21 14:13:01'),
+(318, 1, 'https://localhost/promocje', '2022-12-21 14:12:11'),
 (319, 1, 'Weekendowe obniżki!! Koniecznie sprawdź.', '2022-12-19 23:18:38'),
 (328, 1, 'Udostępnione przez Ciebie dane osobowe są wykorzystywane w celu udzielania odpowiedzi na zapytania, przetwarzania zamówień lub umożliwiania dostępu do konkretnych informacji. Przysługuje Ci prawo do modyfikowania oraz usuwania wszelkich danych osobowych zamieszczonych na stronie „Moje konto”.', '2022-12-18 20:42:47'),
 (330, 1, 'Możesz zrezygnować w każdej chwili. W tym celu należy odnaleźć szczegóły w naszej informacji prawnej.', '2022-12-18 20:42:47'),
@@ -6321,9 +6323,9 @@ CREATE TABLE `ps_homeslider_slides_lang` (
 --
 
 INSERT INTO `ps_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `title`, `description`, `legend`, `url`, `image`) VALUES
-(1, 1, 'Sample 1', '<h3>EXCEPTEUR OCCAECAT</h3>\n                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p>', 'sample-1', 'http://www.prestashop.com/?utm_source=back-office&utm_medium=v17_homeslider&utm_campaign=back-office-PL&utm_content=download', 'sample-1.jpg'),
-(2, 1, 'Sample 2', '<h3>EXCEPTEUR OCCAECAT</h3>\n                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p>', 'sample-2', 'http://www.prestashop.com/?utm_source=back-office&utm_medium=v17_homeslider&utm_campaign=back-office-PL&utm_content=download', 'sample-2.jpg'),
-(3, 1, 'Sample 3', '<h3>EXCEPTEUR OCCAECAT</h3>\n                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p>', 'sample-3', 'http://www.prestashop.com/?utm_source=back-office&utm_medium=v17_homeslider&utm_campaign=back-office-PL&utm_content=download', 'sample-3.jpg');
+(1, 1, '', '', '', 'https://localhost/2-kategorie', 'b74afa6ed38b01546a16a4e67e8a92dbb32964b7_1.jpg'),
+(2, 1, '', '', '', 'https://localhost/2-kategorie', 'd0b78b815e96c33d2559372a7666516e95e84d58_2.jpg'),
+(3, 1, '', '', '', 'https://localhost/2-kategorie', '7e3a529fba75b4086cbfb5a7317d72e838d5346f_3.gif');
 
 -- --------------------------------------------------------
 
@@ -17028,7 +17030,9 @@ CREATE TABLE `ps_layered_filter_block` (
 --
 
 INSERT INTO `ps_layered_filter_block` (`hash`, `data`) VALUES
+('7294acbb02cf4688c3709ca50e31fccf', 'a:1:{s:7:\"filters\";a:0:{}}'),
 ('769b8cb94282482f9e087a9892aaf0fb', 'a:1:{s:7:\"filters\";a:0:{}}'),
+('8ded5775b85bba05abaab4a8ba0b2e66', 'a:1:{s:7:\"filters\";a:0:{}}'),
 ('b6ef76568b6854f006835140ada721db', 'a:1:{s:7:\"filters\";a:0:{}}');
 
 -- --------------------------------------------------------
@@ -29554,7 +29558,7 @@ ALTER TABLE `ps_carrier`
 -- AUTO_INCREMENT dla tabeli `ps_cart`
 --
 ALTER TABLE `ps_cart`
-  MODIFY `id_cart` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_cart` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_cart_rule`

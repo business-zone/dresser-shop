@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.43, created on 2022-12-21 04:37:11
+/* Smarty version 3.1.43, created on 2022-12-21 15:13:04
   from 'module:psbannerpsbanner.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.43',
-  'unifunc' => 'content_63a27f67437a80_10948704',
+  'unifunc' => 'content_63a314704206a5_61257129',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,9 +18,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_63a27f67437a80_10948704 (Smarty_Internal_Template $_smarty_tpl) {
-?><a class="banner" href="http://localhost/promocje" title="Weekendowe obniżki!! Koniecznie sprawdź.">
-      <img src="http://localhost/modules/ps_banner/img/74ca18f6e255f3402ee9eae5402ceee1.png" alt="Weekendowe obniżki!! Koniecznie sprawdź." title="Weekendowe obniżki!! Koniecznie sprawdź." class="img-fluid" loading="lazy" width="1110" height="213">
+function content_63a314704206a5_61257129 (Smarty_Internal_Template $_smarty_tpl) {
+?><a class="banner" href="https://localhost/promocje" title="Weekendowe obniżki!! Koniecznie sprawdź.">
+      <img src="http://localhost/modules/ps_banner/img/88b757133689ac02b9bafb12e73a7497.jpg" alt="Weekendowe obniżki!! Koniecznie sprawdź." title="Weekendowe obniżki!! Koniecznie sprawdź." class="img-fluid" loading="lazy" width="1110" height="213">
   </a>
 <?php }
 }
