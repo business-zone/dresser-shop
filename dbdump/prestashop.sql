@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Czas generowania: 21 Gru 2022, 03:05
+-- Czas generowania: 21 Gru 2022, 03:09
 -- Wersja serwera: 8.0.31
 -- Wersja PHP: 8.0.19
 
@@ -1607,6 +1607,10 @@ INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
 (604, 'ROLE_MOD_MODULE_PS_FEATUREDPRODUCTS_DELETE'),
 (602, 'ROLE_MOD_MODULE_PS_FEATUREDPRODUCTS_READ'),
 (603, 'ROLE_MOD_MODULE_PS_FEATUREDPRODUCTS_UPDATE'),
+(857, 'ROLE_MOD_MODULE_PS_GOOGLEANALYTICS_CREATE'),
+(860, 'ROLE_MOD_MODULE_PS_GOOGLEANALYTICS_DELETE'),
+(858, 'ROLE_MOD_MODULE_PS_GOOGLEANALYTICS_READ'),
+(859, 'ROLE_MOD_MODULE_PS_GOOGLEANALYTICS_UPDATE'),
 (605, 'ROLE_MOD_MODULE_PS_IMAGESLIDER_CREATE'),
 (608, 'ROLE_MOD_MODULE_PS_IMAGESLIDER_DELETE'),
 (606, 'ROLE_MOD_MODULE_PS_IMAGESLIDER_READ'),
@@ -4290,7 +4294,11 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (467, NULL, NULL, 'PS_PRODUCT_ACTIVATION_DEFAULT', '0', '2022-12-20 23:18:02', '2022-12-20 23:18:02'),
 (468, NULL, NULL, 'PS_DISPLAY_DISCOUNT_PRICE', '0', '2022-12-20 23:18:21', '2022-12-20 23:18:21'),
 (469, NULL, NULL, 'PS_MAIL_EMAIL_MESSAGE', '1', '2022-12-20 23:33:31', '2022-12-20 23:33:31'),
-(470, NULL, NULL, 'PS_MAIL_DOMAIN', NULL, '2022-12-20 23:33:31', '2022-12-20 23:33:31');
+(470, NULL, NULL, 'PS_MAIL_DOMAIN', NULL, '2022-12-20 23:33:31', '2022-12-20 23:33:31'),
+(471, NULL, NULL, 'GA_CANCELLED_STATES', '[\"6\"]', '2022-12-21 04:08:49', '2022-12-21 04:08:49'),
+(472, NULL, NULL, 'GA_ACCOUNT_ID', 'UA-252430530-1', '2022-12-21 04:09:20', '2022-12-21 04:09:20'),
+(473, NULL, NULL, 'GANALYTICS_CONFIGURATION_OK', '1', '2022-12-21 04:09:20', '2022-12-21 04:09:20'),
+(474, NULL, NULL, 'GA_USERID_ENABLED', '1', '2022-12-21 04:09:20', '2022-12-21 04:09:20');
 
 -- --------------------------------------------------------
 
@@ -7247,6 +7255,9 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (64, 1, 713, 1),
 (64, 1, 714, 1),
 (64, 1, 715, 1),
+(67, 1, 36, 1),
+(67, 1, 62, 1),
+(67, 1, 76, 1),
 (3, 1, 682, 2),
 (3, 1, 686, 2),
 (4, 1, 687, 2),
@@ -7281,6 +7292,7 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (64, 1, 14, 2),
 (66, 1, 19, 2),
 (66, 1, 20, 2),
+(67, 1, 17, 2),
 (4, 1, 682, 3),
 (5, 1, 687, 3),
 (6, 1, 693, 3),
@@ -7304,6 +7316,7 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (62, 1, 46, 3),
 (64, 1, 82, 3),
 (66, 1, 28, 3),
+(67, 1, 69, 3),
 (1, 1, 41, 4),
 (5, 1, 682, 4),
 (6, 1, 687, 4),
@@ -7317,17 +7330,23 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (61, 1, 683, 4),
 (65, 1, 46, 4),
 (65, 1, 702, 4),
+(67, 1, 31, 4),
 (7, 1, 682, 5),
 (41, 1, 55, 5),
 (61, 1, 16, 5),
 (62, 1, 71, 5),
 (63, 1, 683, 5),
 (66, 1, 15, 5),
+(67, 1, 41, 5),
+(67, 1, 46, 5),
 (43, 1, 55, 6),
 (54, 1, 682, 6),
 (62, 1, 16, 6),
+(67, 1, 15, 6),
+(67, 1, 71, 6),
 (45, 1, 55, 7),
 (56, 1, 682, 7),
+(67, 1, 16, 7),
 (46, 1, 55, 8),
 (57, 1, 682, 8),
 (47, 1, 55, 9),
@@ -18365,7 +18384,8 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (575, 1, 0, 'Product modification', 'Product', 614, 1, NULL, 1, 0, 1, '2022-12-21 03:55:05', '2022-12-21 03:55:05'),
 (576, 1, 0, 'Product modification', 'Product', 608, 1, NULL, 1, 0, 1, '2022-12-21 03:58:02', '2022-12-21 03:58:02'),
 (577, 1, 0, 'Product modification', 'Product', 608, 1, NULL, 1, 0, 1, '2022-12-21 03:58:21', '2022-12-21 03:58:21'),
-(578, 1, 0, 'Product modification', 'Product', 608, 1, NULL, 1, 0, 1, '2022-12-21 03:58:47', '2022-12-21 03:58:47');
+(578, 1, 0, 'Product modification', 'Product', 608, 1, NULL, 1, 0, 1, '2022-12-21 03:58:47', '2022-12-21 03:58:47'),
+(579, 1, 0, 'Protect vendor folder in module ps_googleanalytics', '', 0, 1, NULL, 1, 0, 1, '2022-12-21 04:08:49', '2022-12-21 04:08:49');
 
 -- --------------------------------------------------------
 
@@ -18661,7 +18681,8 @@ INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
 (63, 'blockreassurance', 1, '5.1.0'),
 (64, 'ps_facetedsearch', 1, '3.8.0'),
 (65, 'ps_cashondelivery', 1, '2.0.1'),
-(66, 'ps_newproducts', 1, '1.0.1');
+(66, 'ps_newproducts', 1, '1.0.1'),
+(67, 'ps_googleanalytics', 1, '4.1.2');
 
 -- --------------------------------------------------------
 
@@ -18938,7 +18959,11 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_authorization_role`) VALUES
 (1, 853),
 (1, 854),
 (1, 855),
-(1, 856);
+(1, 856),
+(1, 857),
+(1, 858),
+(1, 859),
+(1, 860);
 
 -- --------------------------------------------------------
 
@@ -19424,7 +19449,10 @@ INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 (65, 1, 3),
 (66, 1, 1),
 (66, 1, 2),
-(66, 1, 3);
+(66, 1, 3),
+(67, 1, 1),
+(67, 1, 2),
+(67, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -19448,7 +19476,8 @@ INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `
 (1, 1, 63, '2022-12-20 22:35:51', '2022-12-20 22:35:51'),
 (2, 1, 14, '2022-12-20 22:41:09', '2022-12-20 22:41:09'),
 (3, 1, 35, '2022-12-20 22:42:45', '2022-12-20 22:42:45'),
-(4, 1, 59, '2022-12-20 22:44:50', '2022-12-20 22:44:50');
+(4, 1, 59, '2022-12-20 22:44:50', '2022-12-20 22:44:50'),
+(5, 1, 67, '2022-12-21 04:09:02', '2022-12-21 04:09:02');
 
 -- --------------------------------------------------------
 
@@ -19543,7 +19572,8 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (63, 1, 7),
 (64, 1, 7),
 (65, 1, 7),
-(66, 1, 7);
+(66, 1, 7),
+(67, 1, 7);
 
 -- --------------------------------------------------------
 
@@ -29279,7 +29309,7 @@ ALTER TABLE `ps_attribute_impact`
 -- AUTO_INCREMENT dla tabeli `ps_authorization_role`
 --
 ALTER TABLE `ps_authorization_role`
-  MODIFY `id_authorization_role` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=857;
+  MODIFY `id_authorization_role` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=861;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_badge`
@@ -29363,7 +29393,7 @@ ALTER TABLE `ps_condition`
 -- AUTO_INCREMENT dla tabeli `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=471;
+  MODIFY `id_configuration` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=475;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_configuration_kpi`
@@ -29603,7 +29633,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT dla tabeli `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=579;
+  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=580;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_mail`
@@ -29639,13 +29669,13 @@ ALTER TABLE `ps_meta`
 -- AUTO_INCREMENT dla tabeli `ps_module`
 --
 ALTER TABLE `ps_module`
-  MODIFY `id_module` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id_module` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_module_preference`
