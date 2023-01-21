@@ -15,12 +15,12 @@ jobs:
 
     - name: Build prod PrestaShop image
       run: |
-        docker build -t prestashop prestashop
+        docker compose build -t prestashop prestashop
         docker tag prestashop:latest ghcr.io/business-zone/dresser-shop/prestashop:latest
         
     - name: Build prod DataBase image
       run: |
-        docker build -t database mysql
+        docker compose build -t database mysql
         docker tag database:latest ghcr.io/business-zone/dresser-shop/database:latest
         
     - name: Log in to the Container registry
@@ -32,8 +32,8 @@ jobs:
       
     - name: Push prod PrestaShop image
       run: |
-        docker push ghcr.io/business-zone/dresser-shop/prestashop:latest
+        docker compose push ghcr.io/business-zone/dresser-shop/prestashop:latest
         
     - name: Push prod DataBase image
       run: |
-        docker push ghcr.io/business-zone/dresser-shop/database:latest
+        docker compose push ghcr.io/business-zone/dresser-shop/database:latest
