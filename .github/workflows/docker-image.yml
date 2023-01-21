@@ -13,10 +13,15 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Build PrestaShop image
+    - name: Build prod PrestaShop image
       run: |
-        docker build -t prestashop .
+        docker build -t prestashop
         docker tag prestashop:latest ghcr.io/business-zone/dresser-shop/prestashop:latest
+        
+    - name: Build prod DataBase image
+      run: |
+        docker build -t mysql
+        docker tag database:latest ghcr.io/business-zone/dresser-shop/database:latest
         
     - name: Log in to the Container registry
       uses: docker/login-action@v2
@@ -25,6 +30,10 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
       
-    - name: Push PrestaShop image
+    - name: Push prod PrestaShop image
       run: |
         docker push ghcr.io/business-zone/dresser-shop/prestashop:latest
+        
+    - name: Push prod DataBase image
+      run: |
+        docker push ghcr.io/business-zone/dresser-shop/database:latest
