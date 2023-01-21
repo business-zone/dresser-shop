@@ -48,7 +48,7 @@ services:
     depends_on:
       - mysql
 
-  phpmyadmin:
+  be_184390_phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
         PMA_HOST: mysql
