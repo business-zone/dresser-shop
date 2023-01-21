@@ -15,13 +15,13 @@ jobs:
 
     - name: Build prod PrestaShop image
       run: |
-        docker compose build -t prestashop prestashop
+        docker compose build prestashop
         docker tag prestashop:latest ghcr.io/business-zone/dresser-shop/prestashop:latest
         
     - name: Build prod DataBase image
       run: |
-        docker compose build -t database mysql
-        docker tag database:latest ghcr.io/business-zone/dresser-shop/database:latest
+        docker compose build mysql
+        docker tag mysql:latest ghcr.io/business-zone/dresser-shop/database:latest
         
     - name: Log in to the Container registry
       uses: docker/login-action@v2
