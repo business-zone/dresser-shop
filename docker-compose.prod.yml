@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  mysql:
+  be_184390_mysql:
     image: ghcr.io/business-zone/dresser-shop/database:latest
     build:
       context: .
@@ -14,7 +14,7 @@ services:
     ports:
       - 3306:3306
 
-  prestashop:
+  be_184390_prestashop:
     image: ghcr.io/business-zone/dresser-shop/prestashop:latest
     build:
       context: .
