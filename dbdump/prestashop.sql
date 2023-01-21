@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Jan 19, 2023 at 07:55 PM
--- Server version: 8.0.32
+-- Generation Time: Jan 21, 2023 at 07:06 PM
+-- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -4355,9 +4355,9 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (469, NULL, NULL, 'PS_MAIL_EMAIL_MESSAGE', '1', '2022-12-20 23:33:31', '2022-12-20 23:33:31'),
 (470, NULL, NULL, 'PS_MAIL_DOMAIN', NULL, '2022-12-20 23:33:31', '2022-12-20 23:33:31'),
 (471, NULL, NULL, 'GA_CANCELLED_STATES', '[\"6\"]', '2022-12-21 04:08:49', '2022-12-21 04:08:49'),
-(472, NULL, NULL, 'GA_ACCOUNT_ID', 'UA-252430530-1', '2022-12-21 04:09:20', '2022-12-21 04:09:20'),
-(473, NULL, NULL, 'GANALYTICS_CONFIGURATION_OK', '1', '2022-12-21 04:09:20', '2022-12-21 04:09:20'),
-(474, NULL, NULL, 'GA_USERID_ENABLED', '1', '2022-12-21 04:09:20', '2022-12-21 04:09:20'),
+(472, NULL, NULL, 'GA_ACCOUNT_ID', 'UA-252430530-2', '2022-12-21 04:09:20', '2023-01-21 20:04:55'),
+(473, NULL, NULL, 'GANALYTICS_CONFIGURATION_OK', '1', '2022-12-21 04:09:20', '2023-01-21 20:04:55'),
+(474, NULL, NULL, 'GA_USERID_ENABLED', '1', '2022-12-21 04:09:20', '2023-01-21 20:04:55'),
 (475, NULL, NULL, 'ONBOARDINGV2_CURRENT_STEP', '11', '2022-12-21 16:49:30', '2022-12-21 16:49:30');
 
 -- --------------------------------------------------------
@@ -4557,7 +4557,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (13, 1, 1, 8, 1, 3232243713, '2022-12-21 16:06:48', ''),
 (14, 1, 1, 10, 1, 3232243713, '2022-12-21 16:12:59', ''),
 (15, 1, 1, 11, 1, 3232243713, '2022-12-21 16:15:18', ''),
-(16, 1, 1, 12, 1, 3232243713, '2022-12-21 16:33:49', '');
+(16, 1, 1, 12, 1, 3232243713, '2022-12-21 16:33:49', ''),
+(17, 1, 1, 17, 1, 2887516161, '2023-01-21 20:03:28', '');
 
 -- --------------------------------------------------------
 
@@ -5911,7 +5912,7 @@ CREATE TABLE `ps_employee` (
 --
 
 INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`, `has_enabled_gravatar`) VALUES
-(1, 1, 1, 'Doe', 'John', 'prestadev@prestashop.com', '$2y$10$39SgWcwTIDUTlla23ULU/ulZO059.kVOzNzGKS6CemTKNH1l05tO.', '2022-12-18 14:42:42', '2022-11-18', '2022-12-18', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2023-01-19', NULL, '0000-00-00 00:00:00', 0);
+(1, 1, 1, 'Doe', 'John', 'prestadev@prestashop.com', '$2y$10$39SgWcwTIDUTlla23ULU/ulZO059.kVOzNzGKS6CemTKNH1l05tO.', '2022-12-18 14:42:42', '2022-11-18', '2022-12-18', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2023-01-21', NULL, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -5937,7 +5938,8 @@ INSERT INTO `ps_employee_session` (`id_employee_session`, `id_employee`, `token`
 (5, 1, '7ea5e6aca06a9cd86a7ab00e86667a074bef55b0'),
 (6, 1, '2c642e618dc4feb57048bbb3d6d475e8b7c9db5b'),
 (7, 1, '35aab0b1a51a31c75dbd368592230d1433f29f79'),
-(8, 1, '8a16dd768b054191c68956d02fe34276dfbcef2f');
+(8, 1, '8a16dd768b054191c68956d02fe34276dfbcef2f'),
+(9, 1, 'f84efaba4108b3f09495b0afaf814f9fb977b73c');
 
 -- --------------------------------------------------------
 
@@ -18716,7 +18718,8 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (700, 1, 0, 'SpecificPriceRule modyfikacja', 'SpecificPriceRule', 1, NULL, NULL, 1, 1, 1, '2023-01-19 20:44:29', '2023-01-19 20:44:29'),
 (701, 1, 0, 'usunięcie SpecificPriceRule', 'SpecificPriceRule', 1, NULL, NULL, 1, 1, 1, '2023-01-19 20:45:45', '2023-01-19 20:45:45'),
 (702, 1, 0, 'dodanie SpecificPriceRule', 'SpecificPriceRule', 2, NULL, NULL, 1, 1, 1, '2023-01-19 20:48:23', '2023-01-19 20:48:23'),
-(703, 1, 0, 'dodanie SpecificPriceRule', 'SpecificPriceRule', 3, NULL, NULL, 1, 1, 1, '2023-01-19 20:49:36', '2023-01-19 20:49:36');
+(703, 1, 0, 'dodanie SpecificPriceRule', 'SpecificPriceRule', 3, NULL, NULL, 1, 1, 1, '2023-01-19 20:49:36', '2023-01-19 20:49:36'),
+(704, 1, 0, 'Połączenie z panelem administracyjnym z 172.28.0.1', '', 0, NULL, NULL, 1, 1, 1, '2023-01-21 20:03:43', '2023-01-21 20:03:43');
 
 -- --------------------------------------------------------
 
@@ -19843,7 +19846,7 @@ INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `
 (2, 1, 14, '2022-12-20 22:41:09', '2022-12-20 22:41:09'),
 (3, 1, 35, '2022-12-20 22:42:45', '2022-12-20 22:42:45'),
 (4, 1, 59, '2022-12-20 22:44:50', '2022-12-20 22:44:50'),
-(5, 1, 67, '2022-12-21 04:09:02', '2022-12-21 04:09:02');
+(5, 1, 67, '2022-12-21 04:09:02', '2023-01-21 20:04:14');
 
 -- --------------------------------------------------------
 
@@ -30427,7 +30430,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT for table `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `ps_connections_source`
@@ -30517,7 +30520,7 @@ ALTER TABLE `ps_employee`
 -- AUTO_INCREMENT for table `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
-  MODIFY `id_employee_session` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_employee_session` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `ps_feature`
@@ -30661,7 +30664,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT for table `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=704;
+  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=705;
 
 --
 -- AUTO_INCREMENT for table `ps_mail`
