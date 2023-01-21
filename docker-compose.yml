@@ -44,7 +44,7 @@ services:
       - 80:80
       - 443:443
     depends_on:
-      - mysql
+      - be_184390_mysql
 
   be_184390_phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -53,5 +53,5 @@ services:
     ports:
         - 8081:80
     depends_on:
-        - mysql
+        - be_184390_mysql
 
