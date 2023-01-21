@@ -1,5 +1,7 @@
 FROM prestashop/prestashop:1.7.8.7
 
+COPY src/ ./
+
 RUN chown -R www-data:root ./
 
 COPY ssl/keys /etc/ssl/farmazone
