@@ -1,0 +1,30 @@
+name: Build and Push Docker Images
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build PrestaShop image
+      run: |
+        docker build -t prestashop .
+        docker tag prestashop:latest ghcr.io/business-zone/dresser-shop/prestashop:latest
+        
+    - name: Log in to the Container registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+      
+    - name: Push PrestaShop image
+      run: |
+        docker push ghcr.io/business-zone/dresser-shop/prestashop:latest
