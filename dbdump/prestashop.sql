@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Jan 22, 2023 at 07:26 PM
+-- Generation Time: Jan 22, 2023 at 07:57 PM
 -- Server version: 8.0.32
 -- PHP Version: 8.0.19
 
@@ -2646,7 +2646,7 @@ INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `del
 (16, 1, 1, 10, '{\"13\":\"10,\"}', 1, 13, 13, 1, 10, 12, '7a30c4b264b85dfd79abbd7a6f1546f4', 0, 0, '', 0, 0, '2022-12-21 16:33:55', '2022-12-21 16:34:55', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"af87fa32df1c9ab594c263f3ced405ea3b3cc9bf\"}'),
 (17, 1, 1, 10, '{\"11\":\"10,\"}', 1, 11, 11, 1, 7, 8, 'e3bfa1f2f94751b68be184f39f523180', 0, 0, '', 0, 0, '2022-12-21 16:36:26', '2022-12-21 16:36:39', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"3e221cdb40a9c0f12faaaa070e719824325e9e3c\"}'),
 (18, 1, 1, 0, '', 1, 0, 0, 1, 0, 0, '', 0, 0, '', 0, 0, '2023-01-19 20:50:11', '2023-01-19 20:50:44', NULL),
-(19, 1, 1, 0, '', 1, 0, 0, 1, 11, 13, '53845d36d199c71eda0a1ea955c1b3cd', 0, 0, '', 0, 0, '2023-01-22 20:21:18', '2023-01-22 20:26:15', NULL);
+(19, 1, 1, 0, '', 1, 0, 0, 1, 11, 13, '53845d36d199c71eda0a1ea955c1b3cd', 0, 0, '', 0, 0, '2023-01-22 20:21:18', '2023-01-22 20:56:19', NULL);
 
 -- --------------------------------------------------------
 
@@ -3899,7 +3899,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (5, NULL, NULL, 'PS_GROUP_FEATURE_ACTIVE', '1', '2022-12-18 20:42:38', '2022-12-18 20:42:38'),
 (6, NULL, NULL, 'PS_CURRENCY_DEFAULT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (7, NULL, NULL, 'PS_COUNTRY_DEFAULT', '14', '0000-00-00 00:00:00', '2022-12-18 20:42:39'),
-(8, NULL, NULL, 'PS_REWRITING_SETTINGS', '1', '0000-00-00 00:00:00', '2022-12-20 22:31:43'),
+(8, NULL, NULL, 'PS_REWRITING_SETTINGS', NULL, '0000-00-00 00:00:00', '2023-01-22 20:57:09'),
 (9, NULL, NULL, 'PS_ORDER_OUT_OF_STOCK', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (10, NULL, NULL, 'PS_LAST_QTIES', '5', '0000-00-00 00:00:00', '2022-12-20 23:18:21'),
 (11, NULL, NULL, 'PS_CONDITIONS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4336,8 +4336,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (449, NULL, NULL, 'PS_SAV_IMAP_OPT_NOVALIDATE-CERT', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
 (450, NULL, NULL, 'PS_SAV_IMAP_OPT_TLS', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
 (451, NULL, NULL, 'PS_SAV_IMAP_OPT_NOTLS', '0', '2022-12-20 14:44:33', '2022-12-20 14:44:33'),
-(452, NULL, NULL, 'PS_CCCJS_VERSION', '6', '2022-12-20 18:55:08', '2022-12-20 23:19:25'),
-(453, NULL, NULL, 'PS_CCCCSS_VERSION', '6', '2022-12-20 18:55:08', '2022-12-20 23:19:25'),
+(452, NULL, NULL, 'PS_CCCJS_VERSION', '7', '2022-12-20 18:55:08', '2023-01-22 20:57:09'),
+(453, NULL, NULL, 'PS_CCCCSS_VERSION', '7', '2022-12-20 18:55:08', '2023-01-22 20:57:09'),
 (454, NULL, NULL, 'BANK_WIRE_DETAILS', 'IBAN PL11109024021318789834756795', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
 (455, NULL, NULL, 'BANK_WIRE_OWNER', 'Dresser Shop Sp Z.o.o', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
 (456, NULL, NULL, 'BANK_WIRE_ADDRESS', 'Gdańsk 80-326, ul. Kołobrzeska', '2022-12-20 22:44:20', '2022-12-20 22:44:20'),
@@ -4559,7 +4559,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (14, 1, 1, 10, 1, 3232243713, '2022-12-21 16:12:59', ''),
 (15, 1, 1, 11, 1, 3232243713, '2022-12-21 16:15:18', ''),
 (16, 1, 1, 12, 1, 3232243713, '2022-12-21 16:33:49', ''),
-(17, 1, 1, 13, 1, 2887057409, '2023-01-22 20:21:01', '');
+(17, 1, 1, 13, 1, 2887057409, '2023-01-22 20:21:01', ''),
+(18, 1, 1, 13, 1, 2887254017, '2023-01-22 20:56:19', '');
 
 -- --------------------------------------------------------
 
@@ -5943,7 +5944,8 @@ INSERT INTO `ps_employee_session` (`id_employee_session`, `id_employee`, `token`
 (6, 1, '2c642e618dc4feb57048bbb3d6d475e8b7c9db5b'),
 (7, 1, '35aab0b1a51a31c75dbd368592230d1433f29f79'),
 (8, 1, '8a16dd768b054191c68956d02fe34276dfbcef2f'),
-(9, 1, 'bf9cab8390a19673d19836267d2478e2b00e8660');
+(9, 1, 'bf9cab8390a19673d19836267d2478e2b00e8660'),
+(10, 1, 'def5e208e51f2e1f5c903bb7d3d30b9647c031d6');
 
 -- --------------------------------------------------------
 
@@ -18724,7 +18726,8 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (701, 1, 0, 'usunięcie SpecificPriceRule', 'SpecificPriceRule', 1, NULL, NULL, 1, 1, 1, '2023-01-19 20:45:45', '2023-01-19 20:45:45'),
 (702, 1, 0, 'dodanie SpecificPriceRule', 'SpecificPriceRule', 2, NULL, NULL, 1, 1, 1, '2023-01-19 20:48:23', '2023-01-19 20:48:23'),
 (703, 1, 0, 'dodanie SpecificPriceRule', 'SpecificPriceRule', 3, NULL, NULL, 1, 1, 1, '2023-01-19 20:49:36', '2023-01-19 20:49:36'),
-(704, 1, 0, 'Połączenie z panelem administracyjnym z 172.21.0.1', '', 0, NULL, NULL, 1, 1, 1, '2023-01-22 20:21:58', '2023-01-22 20:21:58');
+(704, 1, 0, 'Połączenie z panelem administracyjnym z 172.21.0.1', '', 0, NULL, NULL, 1, 1, 1, '2023-01-22 20:21:58', '2023-01-22 20:21:58'),
+(705, 1, 0, 'Połączenie z panelem administracyjnym z 172.24.0.1', '', 0, NULL, NULL, 1, 1, 1, '2023-01-22 20:56:32', '2023-01-22 20:56:32');
 
 -- --------------------------------------------------------
 
@@ -30438,7 +30441,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT for table `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_connections` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `ps_connections_source`
@@ -30528,7 +30531,7 @@ ALTER TABLE `ps_employee`
 -- AUTO_INCREMENT for table `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
-  MODIFY `id_employee_session` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_employee_session` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `ps_feature`
@@ -30672,7 +30675,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT for table `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=705;
+  MODIFY `id_log` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=706;
 
 --
 -- AUTO_INCREMENT for table `ps_mail`
