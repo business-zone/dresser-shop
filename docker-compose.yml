@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  be_184390_mysql:
+  mysql:
     build:
       context: .
       dockerfile: dockerfiles/database.dockerfile
@@ -13,7 +13,7 @@ services:
     ports:
       - 3306:3306
 
-  be_184390_prestashop:
+  prestashop:
     build:
       context: .
       dockerfile: Dockerfile
@@ -44,14 +44,14 @@ services:
       - 80:80
       - 443:443
     depends_on:
-      - be_184390_mysql
+      - mysql
 
-  be_184390_phpmyadmin:
+  phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
         PMA_HOST: mysql
     ports:
         - 8081:80
     depends_on:
-        - be_184390_mysql
+        - mysql
 

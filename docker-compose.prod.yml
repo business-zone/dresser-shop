@@ -19,7 +19,7 @@ services:
       PS_INSTALL_AUTO: 0
       PS_ERASE_DB: 0
       PS_DEV_MODE: 0
-      DB_SERVER: mysql
+      DB_SERVER: be_184390_mysql
       DB_USER: root
       DB_PASSWD: root
       DB_NAME: prestashop
