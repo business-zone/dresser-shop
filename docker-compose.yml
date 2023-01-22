@@ -2,7 +2,9 @@ version: '3.9'
 
 services:
   mysql:
-    image: mysql:8
+    build:
+      context: .
+      dockerfile: dockerfiles/database.dockerfile
     environment:
       MYSQL_DATABASE: prestashop
       MYSQL_ROOT_PASSWORD: root
@@ -10,6 +12,12 @@ services:
       - ./dbdump:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 5
+        window: 60s
 
   prestashop:
     build:
@@ -30,7 +38,12 @@ services:
       ALLOW_OVERRIDE: 1
       PS_LANGUAGE: pl
       PS_COUNTRY: PL
-    restart: always
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 5
+        window: 60s
     volumes:
       - ./src:/var/www/html
     ports:
@@ -47,4 +60,10 @@ services:
         - 8081:80
     depends_on:
         - mysql
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 5
+        window: 60s
 
