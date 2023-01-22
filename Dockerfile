@@ -18,5 +18,7 @@ RUN /etc/init.d/apache2 restart
 
 RUN rm -rf /var/www/html/install
 
+COPY src/ ./
+
 EXPOSE 443 
 EXPOSE 80
