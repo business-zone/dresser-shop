@@ -20,5 +20,7 @@ RUN rm -rf /var/www/html/install
 
 COPY src/ ./
 
+RUN chmod 777 -R .
+
 EXPOSE 443 
 EXPOSE 80
