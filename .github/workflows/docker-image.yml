@@ -1,0 +1,39 @@
+name: Build and Push Docker Images
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build prod PrestaShop image
+      run: |
+        docker compose build be_184390_prestashop
+        docker tag docker.io/library/dresser-shop-be_184390_prestashop ghcr.io/business-zone/dresser-shop/be_184390_prestashop:latest
+        
+    - name: Build prod DataBase image
+      run: |
+        docker compose build be_184390_mysql
+        docker tag docker.io/library/dresser-shop-be_184390_mysql ghcr.io/business-zone/dresser-shop/be_184390_database:latest
+        
+    - name: Log in to the Container registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+      
+    - name: Push prod PrestaShop image
+      run: |
+        docker push ghcr.io/business-zone/dresser-shop/be_184390_prestashop:latest
+        
+    - name: Push prod DataBase image
+      run: |
+        docker push ghcr.io/business-zone/dresser-shop/be_184390_database:latest
