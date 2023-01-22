@@ -16,7 +16,9 @@ RUN echo extension=memcached.so >> /usr/local/etc/php/php.ini
 
 RUN /etc/init.d/apache2 restart
 
+RUN rm -rf ./install
 
+COPY src .
 
 EXPOSE 443 
 EXPOSE 80
