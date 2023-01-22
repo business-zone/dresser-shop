@@ -2,23 +2,19 @@ version: '3.9'
 
 services:
   be_184390_mysql:
-    image: ghcr.io/business-zone/dresser-shop/database:latest
-    build:
-      context: .
-      dockerfile: dockerfiles/database.dockerfile
+    image: ghcr.io/business-zone/dresser-shop/be_184390_database:latest
     environment:
       MYSQL_DATABASE: prestashop
       MYSQL_ROOT_PASSWORD: root
-    volumes:
-      - ./dbdump:/docker-entrypoint-initdb.d
-    ports:
-      - 3306:3306
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 5
+        window: 60s
 
   be_184390_prestashop:
-    image: ghcr.io/business-zone/dresser-shop/prestashop:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/business-zone/dresser-shop/be_184390_prestashop:latest
     environment:
       PS_INSTALL_AUTO: 0
       PS_ERASE_DB: 0
@@ -27,33 +23,20 @@ services:
       DB_USER: root
       DB_PASSWD: root
       DB_NAME: prestashop
-      PS_DOMAIN: localhost:8080
+      PS_DOMAIN: localhost:18440
       ADMIN_MAIL: prestadev@prestashop.com
       ADMIN_PASSWD: prestashop_dev
       PS_ENABLE_SSL: 1
       ALLOW_OVERRIDE: 1
       PS_LANGUAGE: pl
       PS_COUNTRY: PL
+      SHOP_HTTPS_PORT: "18440"
     deploy:
       restart_policy:
         condition: on-failure
         delay: 3s
         max_attempts: 5
         window: 60s
-    volumes:
-      - ./src:/var/www/html
     ports:
-      - 80:80
-      - 443:443
-    depends_on:
-      - be_184390_mysql
-
-  be_184390_phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    environment:
-        PMA_HOST: mysql
-    ports:
-        - 8081:80
-    depends_on:
-        - be_184390_mysql
-
+      - 18439:80
+      - 18440:443
